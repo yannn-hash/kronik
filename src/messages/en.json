@@ -12,6 +12,10 @@
     "about": "About",
     "profil": "Profile"
   },
+  "timelinePage": {
+    "title": "Chronology of Human History",
+    "subtitle": "Trace the footsteps of human civilization from the beginning to the modern era. Scroll down to see how history unfolds event by event."
+  },
   "about": {
     "title": "About Kronik",
     "intro": "Kronik is an open-source educational website that aims to present world history interactively, visually, and with verified sources. We believe that learning history should be fun and accessible to everyone.",

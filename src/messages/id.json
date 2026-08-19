@@ -12,6 +12,10 @@
     "about": "Tentang",
     "profil": "Profil"
   },
+  "timelinePage": {
+    "title": "Kronologi Sejarah Manusia",
+    "subtitle": "Telusuri jejak peradaban manusia dari masa paling awal hingga era modern. Gulir ke bawah untuk melihat bagaimana sejarah terukir peristiwa demi peristiwa."
+  },
   "about": {
     "title": "Tentang Kronik",
     "intro": "Kronik adalah website edukatif open-source yang bertujuan menyajikan sejarah dunia secara interaktif, visual, dan terverifikasi. Kami percaya bahwa belajar sejarah seharusnya menyenangkan dan mudah diakses oleh semua orang.",
