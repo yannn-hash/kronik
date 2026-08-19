@@ -12,6 +12,22 @@
     "about": "Tentang",
     "profil": "Profil"
   },
+  "about": {
+    "title": "Tentang Kronik",
+    "intro": "Kronik adalah website edukatif open-source yang bertujuan menyajikan sejarah dunia secara interaktif, visual, dan terverifikasi. Kami percaya bahwa belajar sejarah seharusnya menyenangkan dan mudah diakses oleh semua orang.",
+    "sourcesTitle": "Sumber & Referensi",
+    "sourcesDesc": "Setiap artikel di Kronik dilengkapi dengan referensi dari sumber akademis terpercaya seperti Encyclopaedia Britannica, World History Encyclopedia, dan jurnal-jurnal peer-reviewed. Kami menggunakan sistem badge kepercayaan:",
+    "badgeVerified": "Terverifikasi",
+    "badgeVerifiedDesc": "Konsensus akademis kuat, 2+ sumber konsisten",
+    "badgeDebatable": "Debatable",
+    "badgeDebatableDesc": "Ada variasi interpretasi antar sumber",
+    "badgeSpeculative": "Spekulatif",
+    "badgeSpeculativeDesc": "Bukti terbatas, diberi label jelas",
+    "openSourceTitle": "Open Source",
+    "openSourceDesc": "Kronik adalah proyek open-source. Kode sumber dilisensikan di bawah MIT License, dan konten artikel dilisensikan di bawah Creative Commons CC BY-SA 4.0.",
+    "contributeTitle": "Kontribusi",
+    "contributeDesc": "Kami menyambut kontribusi dari siapa saja! Baik itu perbaikan konten, penambahan artikel baru, atau peningkatan fitur website."
+  },
   "hero": {
     "tagline": "5000+ tahun peradaban manusia",
     "title": "Jelajahi Sejarah Dunia",

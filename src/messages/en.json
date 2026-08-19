@@ -12,6 +12,22 @@
     "about": "About",
     "profil": "Profile"
   },
+  "about": {
+    "title": "About Kronik",
+    "intro": "Kronik is an open-source educational website that aims to present world history interactively, visually, and with verified sources. We believe that learning history should be fun and accessible to everyone.",
+    "sourcesTitle": "Sources & References",
+    "sourcesDesc": "Every article in Kronik is accompanied by references from trusted academic sources such as Encyclopaedia Britannica, World History Encyclopedia, and peer-reviewed journals. We use a trust badge system:",
+    "badgeVerified": "Verified",
+    "badgeVerifiedDesc": "Strong academic consensus, 2+ consistent sources",
+    "badgeDebatable": "Debatable",
+    "badgeDebatableDesc": "Variation in interpretation among sources",
+    "badgeSpeculative": "Speculative",
+    "badgeSpeculativeDesc": "Limited evidence, clearly labeled",
+    "openSourceTitle": "Open Source",
+    "openSourceDesc": "Kronik is an open-source project. The source code is licensed under the MIT License, and the article content is licensed under Creative Commons CC BY-SA 4.0.",
+    "contributeTitle": "Contribution",
+    "contributeDesc": "We welcome contributions from anyone! Whether it's content improvements, adding new articles, or enhancing website features."
+  },
   "hero": {
     "tagline": "5000+ years of human civilization",
     "title": "Explore World History",
