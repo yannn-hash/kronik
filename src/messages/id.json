@@ -5,8 +5,9 @@
   },
   "nav": {
     "home": "Beranda",
-    "map": "Peta",
+    "map": "Peta Interaktif",
     "timeline": "Timeline",
+    "stats": "Statistik",
     "articles": "Artikel",
     "about": "Tentang",
     "profil": "Profil"

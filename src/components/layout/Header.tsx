@@ -11,6 +11,7 @@ const navItems = [
   { href: "/" as const, key: "home" },
   { href: "/peta" as const, key: "map" },
   { href: "/timeline" as const, key: "timeline" },
+  { href: "/statistik" as const, key: "stats" },
   { href: "/artikel" as const, key: "articles" },
   { href: "/tentang" as const, key: "about" },
   { href: "/profil" as const, key: "profil" },
