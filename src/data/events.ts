@@ -17,7 +17,21 @@ export const HISTORICAL_EVENTS: HistoricalEvent[] = [
       lng: 31.1342,
     },
     confidence: "verified",
-    references: [],
+    references: [
+      {
+        author: "Ian Shaw",
+        title: "The Oxford History of Ancient Egypt",
+        publisher: "Oxford University Press",
+        year: 2003,
+      },
+      {
+        author: "Mark Lehner",
+        title: "The Complete Pyramids",
+        publisher: "Thames & Hudson",
+        year: 2008,
+        url: "https://archive.org/details/completepyramids0000lehn",
+      }
+    ],
     tags: ["arsitektur", "mesir", "kuno"],
   },
   {
@@ -188,7 +202,14 @@ export const HISTORICAL_EVENTS: HistoricalEvent[] = [
       lng: 2.3522,
     },
     confidence: "verified",
-    references: [],
+    references: [
+      {
+        author: "William Doyle",
+        title: "The Oxford History of the French Revolution",
+        publisher: "Oxford University Press",
+        year: 2002,
+      }
+    ],
     tags: ["politik", "revolusi", "eropa"],
   },
   {

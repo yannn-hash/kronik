@@ -13,7 +13,7 @@ export interface EraInfo {
   yearEnd: number;
 }
 
-export type ConfidenceLevel = "verified" | "debatable" | "speculative";
+export type ConfidenceLevel = "verified" | "probable" | "disputed";
 
 export interface HistoricalEvent {
   id: string;
@@ -37,8 +37,10 @@ export interface HistoricalEvent {
 export interface Reference {
   title: string;
   author?: string;
+  publisher?: string;
+  year?: number;
   url?: string;
-  type: "book" | "journal" | "encyclopedia" | "archive" | "website";
+  type?: "book" | "journal" | "encyclopedia" | "archive" | "website";
   accessDate?: string;
 }
 
