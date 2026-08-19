@@ -16,6 +16,7 @@ export const HISTORICAL_EVENTS: HistoricalEvent[] = ([
       lat: 29.9792,
       lng: 31.1342,
     },
+    image: "https://images.unsplash.com/photo-1539667468225-eebb663053e6?q=80&w=800&auto=format&fit=crop",
     confidence: "verified",
     references: [
       {

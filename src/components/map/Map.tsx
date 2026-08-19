@@ -77,27 +77,39 @@ function EventMarker({ event, isActive, locale }: { event: HistoricalEvent, isAc
       position={[event.location.lat, event.location.lng]}
       icon={eraIcons[event.era]}
     >
-      <Popup className="rounded-lg overflow-hidden border-0 shadow-lg">
-        <div className="p-1 max-w-[280px]">
-          <h3 className="font-bold text-base mb-1 text-slate-900 leading-tight">{event.title[locale]}</h3>
-          <p className="text-sm text-slate-600 mb-3 leading-snug">{event.summary[locale]}</p>
-          <div className="flex flex-wrap gap-1 mb-3">
-            {event.tags.map(tag => (
-              <span key={tag} className="text-[10px] uppercase tracking-wider font-bold bg-primary/10 text-primary px-1.5 py-0.5 rounded-sm">
-                {TAG_TRANSLATIONS[tag]?.[locale] || tag.replace("-", " ")}
+      <Popup className="rounded-xl overflow-hidden border-0 shadow-xl">
+        <div className="flex flex-col -m-[13px] max-w-[280px]">
+          {event.image && (
+            <div className="w-full h-36 overflow-hidden rounded-t-xl mb-3 bg-slate-200">
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img 
+                src={event.image} 
+                alt={event.title[locale]}
+                className="w-full h-full object-cover sepia-[0.35] brightness-95 contrast-110"
+              />
+            </div>
+          )}
+          <div className={`px-4 pb-4 ${!event.image ? 'pt-4' : ''}`}>
+            <h3 className="font-bold text-base mb-1 text-slate-900 leading-tight">{event.title[locale]}</h3>
+            <p className="text-sm text-slate-600 mb-3 leading-snug">{event.summary[locale]}</p>
+            <div className="flex flex-wrap gap-1 mb-3">
+              {event.tags.map(tag => (
+                <span key={tag} className="text-[10px] uppercase tracking-wider font-bold bg-primary/10 text-primary px-1.5 py-0.5 rounded-sm">
+                  {TAG_TRANSLATIONS[tag]?.[locale] || tag.replace("-", " ")}
+                </span>
+              ))}
+            </div>
+            <div className="flex items-center justify-between border-t border-slate-200 pt-3">
+              <span className="text-xs font-semibold bg-slate-100 px-2 py-1 rounded-md text-slate-700 border border-slate-200">
+                {Math.abs(event.year)} {event.year < 0 ? (locale === 'id' ? 'SM' : 'BCE') : (locale === 'id' ? 'M' : 'CE')}
               </span>
-            ))}
-          </div>
-          <div className="flex items-center justify-between border-t border-slate-200 pt-3">
-            <span className="text-xs font-semibold bg-slate-100 px-2 py-1 rounded-md text-slate-700 border border-slate-200">
-              {Math.abs(event.year)} {event.year < 0 ? (locale === 'id' ? 'SM' : 'BCE') : (locale === 'id' ? 'M' : 'CE')}
-            </span>
-            <Link 
-              href={{ pathname: "/artikel/[slug]", params: { slug: event.slug[locale] } }}
-              className="text-xs font-semibold text-primary flex items-center gap-1 hover:underline group"
-            >
-              Detail <ArrowRight className="h-3 w-3 transition-transform group-hover:translate-x-0.5" />
-            </Link>
+              <Link 
+                href={{ pathname: "/artikel/[slug]", params: { slug: event.slug[locale] } }}
+                className="text-xs font-semibold text-primary flex items-center gap-1 hover:underline group"
+              >
+                Detail <ArrowRight className="h-3 w-3 transition-transform group-hover:translate-x-0.5" />
+              </Link>
+            </div>
           </div>
         </div>
       </Popup>
