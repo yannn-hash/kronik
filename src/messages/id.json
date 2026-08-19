@@ -13,6 +13,24 @@
     "about": "Tentang",
     "profil": "Profil"
   },
+  "versus": {
+    "title": "Perbandingan Peradaban",
+    "subtitle": "Pilih dua peristiwa atau peradaban untuk membandingkan rentang waktu, lokasi, dan dampaknya secara berdampingan.",
+    "firstEvent": "Peristiwa Pertama",
+    "secondEvent": "Peristiwa Kedua",
+    "analysis": "Analisis Otomatis",
+    "timeGap": "Selisih Waktu",
+    "timeGapDesc": "tahun terpisah",
+    "distance": "Jarak Geografis",
+    "distanceDesc": "kilometer terpisah",
+    "sharedTraits": "Kesamaan Topik",
+    "noSharedTraits": "Tidak ada topik yang sama",
+    "year": "Tahun",
+    "location": "Lokasi",
+    "era": "Era",
+    "evidenceLevel": "Tingkat Bukti",
+    "summary": "Ringkasan Singkat"
+  },
   "timelinePage": {
     "title": "Kronologi Sejarah Manusia",
     "subtitle": "Telusuri jejak peradaban manusia dari masa paling awal hingga era modern. Gulir ke bawah untuk melihat bagaimana sejarah terukir peristiwa demi peristiwa."

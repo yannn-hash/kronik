@@ -5,13 +5,14 @@ import { useTranslations, useLocale } from "next-intl";
 import { Link } from "@/i18n/routing";
 import { HISTORICAL_EVENTS } from "@/data/events";
 import { ERAS } from "@/data/eras";
-import { Calendar, MapPin, ArrowRight, ArrowLeftRight, ChevronsUpDown } from "lucide-react";
+import { TAG_TRANSLATIONS } from "@/data/tags";
+import { Calendar, MapPin, ArrowRight, ArrowLeftRight, ChevronsUpDown, Orbit, Milestone, Tags } from "lucide-react";
 import { FadeIn } from "@/components/ui/Animations";
 import { ConfidenceBadge } from "@/components/article/ConfidenceBadge";
-import { cn } from "@/lib/utils";
 
 export default function VersusPage() {
-  const t = useTranslations();
+  const t = useTranslations("versus");
+  const commonT = useTranslations("common");
   const locale = useLocale() as "id" | "en";
 
   const [event1Id, setEvent1Id] = useState<string>(HISTORICAL_EVENTS[0].id);
@@ -20,6 +21,9 @@ export default function VersusPage() {
   const event1 = HISTORICAL_EVENTS.find(e => e.id === event1Id)!;
   const event2 = HISTORICAL_EVENTS.find(e => e.id === event2Id)!;
 
+  const sortedEventsList = [...HISTORICAL_EVENTS].sort((a, b) => a.title[locale].localeCompare(b.title[locale]));
+
+  // Utils
   const formatYear = (year: number) => {
     return Math.abs(year) + (year < 0 ? (locale === "id" ? " SM" : " BCE") : (locale === "id" ? " M" : " CE"));
   };
@@ -28,9 +32,26 @@ export default function VersusPage() {
     return ERAS.find(e => e.id === eraId)?.label[locale] || eraId;
   };
 
-  const sortedEventsList = [...HISTORICAL_EVENTS].sort((a, b) => a.title[locale].localeCompare(b.title[locale]));
+  const getTranslatedTag = (tag: string) => {
+    return TAG_TRANSLATIONS[tag]?.[locale] || tag;
+  };
 
-  // Removed shared tags logic for simplicity
+  // Calculations for Insight Panel
+  const timeGap = Math.abs(event1.year - event2.year);
+  
+  const calculateDistance = (lat1: number, lon1: number, lat2: number, lon2: number) => {
+    const R = 6371; // km
+    const dLat = (lat2 - lat1) * Math.PI / 180;
+    const dLon = (lon2 - lon1) * Math.PI / 180;
+    const a = Math.sin(dLat/2) * Math.sin(dLat/2) +
+              Math.cos(lat1 * Math.PI / 180) * Math.cos(lat2 * Math.PI / 180) * 
+              Math.sin(dLon/2) * Math.sin(dLon/2); 
+    const c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1-a)); 
+    return Math.round(R * c);
+  };
+  const distanceKm = calculateDistance(event1.location.lat, event1.location.lng, event2.location.lat, event2.location.lng);
+  
+  const sharedTags = event1.tags.filter(tag => event2.tags.includes(tag));
 
   const EventSelector = ({ 
     selectedId, 
@@ -48,7 +69,7 @@ export default function VersusPage() {
           <select
             value={selectedId}
             onChange={(e) => onSelect(e.target.value)}
-            className="w-full appearance-none rounded-lg border border-border bg-card px-4 py-3 text-sm text-foreground transition-colors hover:bg-muted focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary"
+            className="w-full appearance-none rounded-lg border border-border bg-card px-4 py-3 text-sm font-semibold text-foreground transition-colors hover:bg-muted focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary shadow-sm"
           >
             {sortedEventsList.map((e) => (
               <option key={e.id} value={e.id}>
@@ -70,104 +91,143 @@ export default function VersusPage() {
       <FadeIn>
         <div className="text-center mb-12">
           <h1 className="text-3xl font-bold text-foreground sm:text-4xl mb-4">
-            {locale === "id" ? "Perbandingan Peradaban" : "Civilization Comparison"}
+            {t("title")}
           </h1>
           <p className="text-muted-foreground max-w-2xl mx-auto">
-            {locale === "id" 
-              ? "Pilih dua peristiwa atau peradaban untuk membandingkan rentang waktu, lokasi, dan dampaknya secara berdampingan." 
-              : "Select two events or civilizations to compare their timeline, location, and impact side-by-side."}
+            {t("subtitle")}
           </p>
         </div>
       </FadeIn>
 
       {/* Selectors */}
       <FadeIn delay={0.1}>
-        <div className="flex flex-col md:flex-row items-end gap-6 mb-12 bg-card p-6 rounded-2xl border border-border shadow-sm">
+        <div className="flex flex-col md:flex-row items-end gap-6 mb-8 p-1">
           <EventSelector 
-            label={locale === "id" ? "Peristiwa Pertama" : "First Event"}
+            label={t("firstEvent")}
             selectedId={event1Id} 
             onSelect={setEvent1Id} 
           />
           
-          <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-primary/10 text-primary md:mx-4 mx-auto mb-2 md:mb-0">
+          <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-primary/10 text-primary md:mx-4 mx-auto mb-1 md:mb-0">
             <ArrowLeftRight className="h-6 w-6" />
           </div>
           
           <EventSelector 
-            label={locale === "id" ? "Peristiwa Kedua" : "Second Event"}
+            label={t("secondEvent")}
             selectedId={event2Id} 
             onSelect={setEvent2Id} 
           />
         </div>
       </FadeIn>
 
-      {/* Comparison Matrix */}
+      {/* INSIGHT PANEL (The Engine) */}
       <FadeIn delay={0.2}>
+        <div className="mb-12 rounded-2xl border border-border bg-gradient-to-br from-card to-muted/30 p-6 md:p-8 shadow-sm">
+          <h2 className="text-lg font-bold text-foreground mb-6 flex items-center gap-2">
+            <Orbit className="h-5 w-5 text-primary" />
+            {t("analysis")}
+          </h2>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            
+            {/* Time Gap */}
+            <div className="flex flex-col gap-2 p-4 rounded-xl bg-background/50 border border-border/50">
+              <div className="flex items-center gap-2 text-muted-foreground mb-1">
+                <Calendar className="h-4 w-4" />
+                <span className="text-sm font-medium uppercase tracking-wider">{t("timeGap")}</span>
+              </div>
+              <div className="text-3xl font-extrabold text-foreground">
+                {timeGap.toLocaleString(locale)} <span className="text-lg font-normal text-muted-foreground">{t("timeGapDesc")}</span>
+              </div>
+            </div>
+
+            {/* Distance */}
+            <div className="flex flex-col gap-2 p-4 rounded-xl bg-background/50 border border-border/50">
+              <div className="flex items-center gap-2 text-muted-foreground mb-1">
+                <Milestone className="h-4 w-4" />
+                <span className="text-sm font-medium uppercase tracking-wider">{t("distance")}</span>
+              </div>
+              <div className="text-3xl font-extrabold text-foreground">
+                {distanceKm.toLocaleString(locale)} <span className="text-lg font-normal text-muted-foreground">{t("distanceDesc")}</span>
+              </div>
+            </div>
+
+            {/* Shared Tags */}
+            <div className="flex flex-col gap-2 p-4 rounded-xl bg-background/50 border border-border/50">
+              <div className="flex items-center gap-2 text-muted-foreground mb-1">
+                <Tags className="h-4 w-4" />
+                <span className="text-sm font-medium uppercase tracking-wider">{t("sharedTraits")}</span>
+              </div>
+              {sharedTags.length > 0 ? (
+                <div className="flex flex-wrap gap-2 mt-1">
+                  {sharedTags.map(tag => (
+                    <span key={tag} className="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-medium bg-primary/10 text-primary">
+                      {getTranslatedTag(tag)}
+                    </span>
+                  ))}
+                </div>
+              ) : (
+                <div className="text-lg font-medium text-muted-foreground mt-1">
+                  {t("noSharedTraits")}
+                </div>
+              )}
+            </div>
+
+          </div>
+        </div>
+      </FadeIn>
+
+      {/* Comparison Matrix */}
+      <FadeIn delay={0.3}>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 relative">
           
           {/* Card 1 */}
-          <div className="rounded-2xl border border-border bg-card overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+          <div className="rounded-2xl border border-border bg-card overflow-hidden shadow-sm hover:shadow-md transition-shadow relative">
+            <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-primary to-transparent opacity-50" />
             <div className="p-8">
-              <h2 className="text-2xl font-bold text-foreground mb-4">{event1.title[locale]}</h2>
+              <h2 className="text-2xl font-bold text-foreground mb-6">{event1.title[locale]}</h2>
               <div className="space-y-6">
                 
-                {/* Year */}
                 <div>
-                  <h3 className="text-sm font-semibold text-muted-foreground uppercase tracking-wider mb-2">
-                    {locale === "id" ? "Tahun" : "Year"}
-                  </h3>
+                  <h3 className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-2">{t("year")}</h3>
                   <div className="flex items-center gap-2 text-lg font-medium">
-                    <Calendar className="h-5 w-5 text-primary" />
+                    <Calendar className="h-5 w-5 text-primary/70" />
                     {formatYear(event1.year)}
                   </div>
                 </div>
 
-                {/* Location */}
                 <div>
-                  <h3 className="text-sm font-semibold text-muted-foreground uppercase tracking-wider mb-2">
-                    {locale === "id" ? "Lokasi" : "Location"}
-                  </h3>
+                  <h3 className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-2">{t("location")}</h3>
                   <div className="flex items-center gap-2 text-lg font-medium">
-                    <MapPin className="h-5 w-5 text-primary" />
+                    <MapPin className="h-5 w-5 text-primary/70" />
                     {event1.location.name[locale]}
                   </div>
                 </div>
 
-                {/* Era */}
                 <div>
-                  <h3 className="text-sm font-semibold text-muted-foreground uppercase tracking-wider mb-2">
-                    {locale === "id" ? "Era" : "Era"}
-                  </h3>
+                  <h3 className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-2">{t("era")}</h3>
                   <div className="text-lg font-medium">
                     {getEraName(event1.era)}
                   </div>
                 </div>
 
-                {/* Confidence */}
                 <div>
-                  <h3 className="text-sm font-semibold text-muted-foreground uppercase tracking-wider mb-2">
-                    {locale === "id" ? "Tingkat Bukti" : "Evidence Level"}
-                  </h3>
+                  <h3 className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-2">{t("evidenceLevel")}</h3>
                   <ConfidenceBadge level={event1.confidence} locale={locale} />
                 </div>
 
-                {/* Summary */}
                 <div>
-                  <h3 className="text-sm font-semibold text-muted-foreground uppercase tracking-wider mb-2">
-                    {locale === "id" ? "Ringkasan Singkat" : "Brief Summary"}
-                  </h3>
-                  <p className="text-muted-foreground leading-relaxed">
+                  <h3 className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-2">{t("summary")}</h3>
+                  <p className="text-muted-foreground leading-relaxed text-sm">
                     {event1.summary[locale]}
                   </p>
                 </div>
                 
-                {/* Action */}
                 <div className="pt-4 border-t border-border">
                   <Link 
                     href={{ pathname: "/artikel/[slug]", params: { slug: event1.slug } }}
                     className="inline-flex items-center gap-2 text-sm font-semibold text-primary hover:text-primary/80 transition-colors"
                   >
-                    {t("common.readMore")}
+                    {commonT("readMore")}
                     <ArrowRight className="h-4 w-4" />
                   </Link>
                 </div>
@@ -176,68 +236,53 @@ export default function VersusPage() {
           </div>
 
           {/* Card 2 */}
-          <div className="rounded-2xl border border-border bg-card overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+          <div className="rounded-2xl border border-border bg-card overflow-hidden shadow-sm hover:shadow-md transition-shadow relative">
+            <div className="absolute top-0 right-0 w-full h-1 bg-gradient-to-l from-primary to-transparent opacity-50" />
             <div className="p-8">
-              <h2 className="text-2xl font-bold text-foreground mb-4">{event2.title[locale]}</h2>
+              <h2 className="text-2xl font-bold text-foreground mb-6">{event2.title[locale]}</h2>
               <div className="space-y-6">
                 
-                {/* Year */}
                 <div>
-                  <h3 className="text-sm font-semibold text-muted-foreground uppercase tracking-wider mb-2">
-                    {locale === "id" ? "Tahun" : "Year"}
-                  </h3>
+                  <h3 className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-2">{t("year")}</h3>
                   <div className="flex items-center gap-2 text-lg font-medium">
-                    <Calendar className="h-5 w-5 text-primary" />
+                    <Calendar className="h-5 w-5 text-primary/70" />
                     {formatYear(event2.year)}
                   </div>
                 </div>
 
-                {/* Location */}
                 <div>
-                  <h3 className="text-sm font-semibold text-muted-foreground uppercase tracking-wider mb-2">
-                    {locale === "id" ? "Lokasi" : "Location"}
-                  </h3>
+                  <h3 className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-2">{t("location")}</h3>
                   <div className="flex items-center gap-2 text-lg font-medium">
-                    <MapPin className="h-5 w-5 text-primary" />
+                    <MapPin className="h-5 w-5 text-primary/70" />
                     {event2.location.name[locale]}
                   </div>
                 </div>
 
-                {/* Era */}
                 <div>
-                  <h3 className="text-sm font-semibold text-muted-foreground uppercase tracking-wider mb-2">
-                    {locale === "id" ? "Era" : "Era"}
-                  </h3>
+                  <h3 className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-2">{t("era")}</h3>
                   <div className="text-lg font-medium">
                     {getEraName(event2.era)}
                   </div>
                 </div>
 
-                {/* Confidence */}
                 <div>
-                  <h3 className="text-sm font-semibold text-muted-foreground uppercase tracking-wider mb-2">
-                    {locale === "id" ? "Tingkat Bukti" : "Evidence Level"}
-                  </h3>
+                  <h3 className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-2">{t("evidenceLevel")}</h3>
                   <ConfidenceBadge level={event2.confidence} locale={locale} />
                 </div>
 
-                {/* Summary */}
                 <div>
-                  <h3 className="text-sm font-semibold text-muted-foreground uppercase tracking-wider mb-2">
-                    {locale === "id" ? "Ringkasan Singkat" : "Brief Summary"}
-                  </h3>
-                  <p className="text-muted-foreground leading-relaxed">
+                  <h3 className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-2">{t("summary")}</h3>
+                  <p className="text-muted-foreground leading-relaxed text-sm">
                     {event2.summary[locale]}
                   </p>
                 </div>
                 
-                {/* Action */}
                 <div className="pt-4 border-t border-border">
                   <Link 
                     href={{ pathname: "/artikel/[slug]", params: { slug: event2.slug } }}
                     className="inline-flex items-center gap-2 text-sm font-semibold text-primary hover:text-primary/80 transition-colors"
                   >
-                    {t("common.readMore")}
+                    {commonT("readMore")}
                     <ArrowRight className="h-4 w-4" />
                   </Link>
                 </div>

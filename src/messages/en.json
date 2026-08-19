@@ -13,6 +13,24 @@
     "about": "About",
     "profil": "Profile"
   },
+  "versus": {
+    "title": "Civilization Comparison",
+    "subtitle": "Select two events or civilizations to compare their timeline, location, and impact side-by-side.",
+    "firstEvent": "First Event",
+    "secondEvent": "Second Event",
+    "analysis": "Automated Analysis",
+    "timeGap": "Time Gap",
+    "timeGapDesc": "years apart",
+    "distance": "Distance",
+    "distanceDesc": "kilometers apart",
+    "sharedTraits": "Shared Traits",
+    "noSharedTraits": "No shared topics",
+    "year": "Year",
+    "location": "Location",
+    "era": "Era",
+    "evidenceLevel": "Evidence Level",
+    "summary": "Brief Summary"
+  },
   "timelinePage": {
     "title": "Chronology of Human History",
     "subtitle": "Trace the footsteps of human civilization from the beginning to the modern era. Scroll down to see how history unfolds event by event."
