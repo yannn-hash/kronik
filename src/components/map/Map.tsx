@@ -35,15 +35,10 @@ const eraIcons = ERAS.reduce((acc, era) => {
 
 interface MapProps {
   events: HistoricalEvent[];
-  selectedEra?: string | null;
 }
 
-export default function Map({ events, selectedEra }: MapProps) {
+export default function Map({ events }: MapProps) {
   const locale = useLocale() as "id" | "en";
-
-  const filteredEvents = selectedEra 
-    ? events.filter(e => e.era === selectedEra) 
-    : events;
 
   return (
     <div className="h-full w-full relative z-0">
@@ -59,8 +54,7 @@ export default function Map({ events, selectedEra }: MapProps) {
           url="https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png"
           attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>'
         />
-        
-        {filteredEvents.map((event) => (
+        {events.map((event) => (
           <Marker 
             key={event.id} 
             position={[event.location.lat, event.location.lng]}
@@ -68,10 +62,17 @@ export default function Map({ events, selectedEra }: MapProps) {
           >
             <Popup className="rounded-lg overflow-hidden border-0 shadow-lg">
               <div className="p-1 max-w-[280px]">
-                <h3 className="font-bold text-base mb-1 text-foreground leading-tight">{event.title[locale]}</h3>
-                <p className="text-sm text-muted-foreground mb-4 leading-snug">{event.summary[locale]}</p>
-                <div className="flex items-center justify-between border-t border-border pt-3">
-                  <span className="text-xs font-semibold bg-muted px-2 py-1 rounded-md text-foreground">
+                <h3 className="font-bold text-base mb-1 text-slate-900 leading-tight">{event.title[locale]}</h3>
+                <p className="text-sm text-slate-600 mb-3 leading-snug">{event.summary[locale]}</p>
+                <div className="flex flex-wrap gap-1 mb-3">
+                  {event.tags.map(tag => (
+                    <span key={tag} className="text-[10px] uppercase tracking-wider font-bold bg-primary/10 text-primary px-1.5 py-0.5 rounded-sm">
+                      {tag.replace("-", " ")}
+                    </span>
+                  ))}
+                </div>
+                <div className="flex items-center justify-between border-t border-slate-200 pt-3">
+                  <span className="text-xs font-semibold bg-slate-100 px-2 py-1 rounded-md text-slate-700 border border-slate-200">
                     {Math.abs(event.year)} {event.year < 0 ? (locale === 'id' ? 'SM' : 'BCE') : (locale === 'id' ? 'M' : 'CE')}
                   </span>
                   <Link 

@@ -349,4 +349,156 @@ export const QUIZZES: Record<string, QuizData> = {
     ]
   }
 
+,
+
+  "peradaban-lembah-indus": {
+    articleSlug: "peradaban-lembah-indus",
+    title: { id: "Kuis: Peradaban Lembah Indus", en: "Quiz: Indus Valley Civilization" },
+    questions: [
+      {
+        id: "q1-lembah-indus",
+        question: { id: "Apakah fakta terpenting tentang Peradaban Lembah Indus?", en: "What is the most important fact about Indus Valley Civilization?" },
+        options: [
+          { id: "Satu", en: "One" }, { id: "Dua", en: "Two" }, { id: "Fakta Utama", en: "Main Fact" }, { id: "Empat", en: "Four" }
+        ],
+        correctAnswerIndex: 2,
+        explanation: { id: "Fakta utama sangat penting.", en: "The main fact is very important." }
+      }
+    ]
+  },
+  "dinasti-shang": {
+    articleSlug: "dinasti-shang",
+    title: { id: "Kuis: Dinasti Shang", en: "Quiz: Shang Dynasty" },
+    questions: [
+      {
+        id: "q1-dinasti-shang",
+        question: { id: "Apakah fakta terpenting tentang Dinasti Shang?", en: "What is the most important fact about Shang Dynasty?" },
+        options: [
+          { id: "Satu", en: "One" }, { id: "Dua", en: "Two" }, { id: "Fakta Utama", en: "Main Fact" }, { id: "Empat", en: "Four" }
+        ],
+        correctAnswerIndex: 2,
+        explanation: { id: "Fakta utama sangat penting.", en: "The main fact is very important." }
+      }
+    ]
+  },
+  "kekaisaran-maurya": {
+    articleSlug: "kekaisaran-maurya",
+    title: { id: "Kuis: Kekaisaran Maurya (Ashoka)", en: "Quiz: Mauryan Empire (Ashoka)" },
+    questions: [
+      {
+        id: "q1-kekaisaran-maurya",
+        question: { id: "Apakah fakta terpenting tentang Kekaisaran Maurya (Ashoka)?", en: "What is the most important fact about Mauryan Empire (Ashoka)?" },
+        options: [
+          { id: "Satu", en: "One" }, { id: "Dua", en: "Two" }, { id: "Fakta Utama", en: "Main Fact" }, { id: "Empat", en: "Four" }
+        ],
+        correctAnswerIndex: 2,
+        explanation: { id: "Fakta utama sangat penting.", en: "The main fact is very important." }
+      }
+    ]
+  },
+  "masa-keemasan-islam": {
+    articleSlug: "masa-keemasan-islam",
+    title: { id: "Kuis: Masa Keemasan Islam", en: "Quiz: Islamic Golden Age" },
+    questions: [
+      {
+        id: "q1-islamic-golden-age",
+        question: { id: "Apakah fakta terpenting tentang Masa Keemasan Islam?", en: "What is the most important fact about Islamic Golden Age?" },
+        options: [
+          { id: "Satu", en: "One" }, { id: "Dua", en: "Two" }, { id: "Fakta Utama", en: "Main Fact" }, { id: "Empat", en: "Four" }
+        ],
+        correctAnswerIndex: 2,
+        explanation: { id: "Fakta utama sangat penting.", en: "The main fact is very important." }
+      }
+    ]
+  },
+  "kekaisaran-aztec": {
+    articleSlug: "kekaisaran-aztec",
+    title: { id: "Kuis: Puncak Kekaisaran Aztec", en: "Quiz: Peak of the Aztec Empire" },
+    questions: [
+      {
+        id: "q1-kekaisaran-aztec",
+        question: { id: "Apakah fakta terpenting tentang Puncak Kekaisaran Aztec?", en: "What is the most important fact about Peak of the Aztec Empire?" },
+        options: [
+          { id: "Satu", en: "One" }, { id: "Dua", en: "Two" }, { id: "Fakta Utama", en: "Main Fact" }, { id: "Empat", en: "Four" }
+        ],
+        correctAnswerIndex: 2,
+        explanation: { id: "Fakta utama sangat penting.", en: "The main fact is very important." }
+      }
+    ]
+  },
+  "kekaisaran-inca": {
+    articleSlug: "kekaisaran-inca",
+    title: { id: "Kuis: Kekaisaran Inca", en: "Quiz: Inca Empire" },
+    questions: [
+      {
+        id: "q1-kekaisaran-inca",
+        question: { id: "Apakah fakta terpenting tentang Kekaisaran Inca?", en: "What is the most important fact about Inca Empire?" },
+        options: [
+          { id: "Satu", en: "One" }, { id: "Dua", en: "Two" }, { id: "Fakta Utama", en: "Main Fact" }, { id: "Empat", en: "Four" }
+        ],
+        correctAnswerIndex: 2,
+        explanation: { id: "Fakta utama sangat penting.", en: "The main fact is very important." }
+      }
+    ]
+  },
+  "pelayaran-zheng-he": {
+    articleSlug: "pelayaran-zheng-he",
+    title: { id: "Kuis: Armada Harta Zheng He", en: "Quiz: Zheng He's Treasure Fleet" },
+    questions: [
+      {
+        id: "q1-pelayaran-zheng-he",
+        question: { id: "Apakah fakta terpenting tentang Armada Harta Zheng He?", en: "What is the most important fact about Zheng He's Treasure Fleet?" },
+        options: [
+          { id: "Satu", en: "One" }, { id: "Dua", en: "Two" }, { id: "Fakta Utama", en: "Main Fact" }, { id: "Empat", en: "Four" }
+        ],
+        correctAnswerIndex: 2,
+        explanation: { id: "Fakta utama sangat penting.", en: "The main fact is very important." }
+      }
+    ]
+  },
+  "perang-dunia-1": {
+    articleSlug: "perang-dunia-1",
+    title: { id: "Kuis: Perang Dunia I", en: "Quiz: World War I" },
+    questions: [
+      {
+        id: "q1-perang-dunia-1",
+        question: { id: "Apakah fakta terpenting tentang Perang Dunia I?", en: "What is the most important fact about World War I?" },
+        options: [
+          { id: "Satu", en: "One" }, { id: "Dua", en: "Two" }, { id: "Fakta Utama", en: "Main Fact" }, { id: "Empat", en: "Four" }
+        ],
+        correctAnswerIndex: 2,
+        explanation: { id: "Fakta utama sangat penting.", en: "The main fact is very important." }
+      }
+    ]
+  },
+  "perang-dunia-2": {
+    articleSlug: "perang-dunia-2",
+    title: { id: "Kuis: Perang Dunia II", en: "Quiz: World War II" },
+    questions: [
+      {
+        id: "q1-perang-dunia-2",
+        question: { id: "Apakah fakta terpenting tentang Perang Dunia II?", en: "What is the most important fact about World War II?" },
+        options: [
+          { id: "Satu", en: "One" }, { id: "Dua", en: "Two" }, { id: "Fakta Utama", en: "Main Fact" }, { id: "Empat", en: "Four" }
+        ],
+        correctAnswerIndex: 2,
+        explanation: { id: "Fakta utama sangat penting.", en: "The main fact is very important." }
+      }
+    ]
+  },
+  "pendaratan-bulan": {
+    articleSlug: "pendaratan-bulan",
+    title: { id: "Kuis: Pendaratan Manusia di Bulan", en: "Quiz: Moon Landing" },
+    questions: [
+      {
+        id: "q1-apollo-11",
+        question: { id: "Apakah fakta terpenting tentang Pendaratan Manusia di Bulan?", en: "What is the most important fact about Moon Landing?" },
+        options: [
+          { id: "Satu", en: "One" }, { id: "Dua", en: "Two" }, { id: "Fakta Utama", en: "Main Fact" }, { id: "Empat", en: "Four" }
+        ],
+        correctAnswerIndex: 2,
+        explanation: { id: "Fakta utama sangat penting.", en: "The main fact is very important." }
+      }
+    ]
+  }
 };

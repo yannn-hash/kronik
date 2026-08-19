@@ -2,6 +2,7 @@ import { notFound } from "next/navigation";
 import { HISTORICAL_EVENTS } from "@/data/events";
 import { ConfidenceBadge } from "@/components/article/ConfidenceBadge";
 import { References } from "@/components/article/References";
+import { RelatedArticles } from "@/components/article/RelatedArticles";
 import { Link } from "@/i18n/routing";
 import { ArrowLeft, Calendar, MapPin } from "lucide-react";
 
@@ -84,6 +85,9 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
 
       {/* References */}
       <References references={event.references} locale={validLocale} />
+
+      {/* Related Articles */}
+      <RelatedArticles currentEvent={event} locale={validLocale} />
     </article>
   );
 }

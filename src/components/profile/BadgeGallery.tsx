@@ -19,6 +19,16 @@ const BADGES = [
   { id: "b10", icon: Factory, color: "text-slate-500", bg: "bg-slate-500/10", title: { id: "Pionir Industri", en: "Industry Pioneer" } },
   { id: "b11", icon: Flag, color: "text-red-600", bg: "bg-red-600/10", title: { id: "Pahlawan Merdeka", en: "Freedom Hero" } },
   { id: "b12", icon: Hammer, color: "text-stone-500", bg: "bg-stone-500/10", title: { id: "Peruntuh Tembok", en: "Wall Breaker" } },
+  { id: "b13", icon: Castle, color: "text-green-600", bg: "bg-green-600/10", title: { id: "Ahli Indus", en: "Indus Expert" } },
+  { id: "b14", icon: Award, color: "text-red-500", bg: "bg-red-500/10", title: { id: "Naga Shang", en: "Shang Dragon" } },
+  { id: "b15", icon: Landmark, color: "text-orange-600", bg: "bg-orange-600/10", title: { id: "Singa Maurya", en: "Mauryan Lion" } },
+  { id: "b16", icon: BookOpen, color: "text-cyan-600", bg: "bg-cyan-600/10", title: { id: "Sarjana Islam", en: "Islamic Scholar" } },
+  { id: "b17", icon: Flame, color: "text-emerald-600", bg: "bg-emerald-600/10", title: { id: "Prajurit Aztec", en: "Aztec Warrior" } },
+  { id: "b18", icon: Compass, color: "text-amber-700", bg: "bg-amber-700/10", title: { id: "Pembangun Inca", en: "Inca Builder" } },
+  { id: "b19", icon: Anchor, color: "text-blue-700", bg: "bg-blue-700/10", title: { id: "Armada Ming", en: "Ming Fleet" } },
+  { id: "b20", icon: Flag, color: "text-gray-600", bg: "bg-gray-600/10", title: { id: "Veteran PD 1", en: "WWI Veteran" } },
+  { id: "b21", icon: Flame, color: "text-red-800", bg: "bg-red-800/10", title: { id: "Veteran PD 2", en: "WWII Veteran" } },
+  { id: "b22", icon: BrainCircuit, color: "text-slate-800", bg: "bg-slate-800/10", title: { id: "Astronot Apollo", en: "Apollo Astronaut" } },
 ];
 
 export function BadgeGallery() {

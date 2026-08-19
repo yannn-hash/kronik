@@ -86,6 +86,16 @@ export function Quiz({ quizData, locale }: QuizProps) {
         if (quizData.articleSlug === "revolusi-industri") badgeId = "b10";
         if (quizData.articleSlug === "kemerdekaan-indonesia") badgeId = "b11";
         if (quizData.articleSlug === "runtuhnya-tembok-berlin") badgeId = "b12";
+        if (quizData.articleSlug === "peradaban-lembah-indus") badgeId = "b13";
+        if (quizData.articleSlug === "dinasti-shang") badgeId = "b14";
+        if (quizData.articleSlug === "kekaisaran-maurya") badgeId = "b15";
+        if (quizData.articleSlug === "masa-keemasan-islam") badgeId = "b16";
+        if (quizData.articleSlug === "kekaisaran-aztec") badgeId = "b17";
+        if (quizData.articleSlug === "kekaisaran-inca") badgeId = "b18";
+        if (quizData.articleSlug === "pelayaran-zheng-he") badgeId = "b19";
+        if (quizData.articleSlug === "perang-dunia-1") badgeId = "b20";
+        if (quizData.articleSlug === "perang-dunia-2") badgeId = "b21";
+        if (quizData.articleSlug === "pendaratan-bulan") badgeId = "b22";
         
         if (badgeId) {
           await supabase.from("user_badges").upsert({
