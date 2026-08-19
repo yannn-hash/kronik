@@ -25,11 +25,9 @@ export function AuthButton({ locale }: { locale: "id" | "en" }) {
     return () => subscription.unsubscribe();
   }, [supabase]);
 
-  const handleLogin = async () => {
-    // For MVP, we'll use GitHub OAuth. The user needs to enable it in Supabase Dashboard.
-    // If not enabled, this will show an error on Supabase side, which is fine for testing the redirect.
+  const handleLogin = async (provider: "github" | "google") => {
     await supabase.auth.signInWithOAuth({
-      provider: "github",
+      provider: provider,
       options: {
         redirectTo: `${window.location.origin}/auth/callback`,
       },
@@ -62,12 +60,21 @@ export function AuthButton({ locale }: { locale: "id" | "en" }) {
   }
 
   return (
-    <button
-      onClick={handleLogin}
-      className="inline-flex items-center gap-2 rounded-full bg-primary px-4 py-1.5 text-sm font-medium text-primary-foreground shadow-sm transition-colors hover:bg-primary/90"
-    >
-      <LogIn className="h-4 w-4" />
-      <span className="hidden sm:inline-block">Login (GitHub)</span>
-    </button>
+    <div className="flex items-center gap-2">
+      <button
+        onClick={() => handleLogin("google")}
+        className="inline-flex items-center gap-2 rounded-full bg-red-600 px-4 py-1.5 text-sm font-medium text-white shadow-sm transition-colors hover:bg-red-700"
+      >
+        <LogIn className="h-4 w-4" />
+        <span className="hidden sm:inline-block">Google</span>
+      </button>
+      <button
+        onClick={() => handleLogin("github")}
+        className="inline-flex items-center gap-2 rounded-full bg-slate-900 px-4 py-1.5 text-sm font-medium text-white shadow-sm transition-colors hover:bg-slate-800 dark:bg-slate-100 dark:text-slate-900 dark:hover:bg-slate-200"
+      >
+        <LogIn className="h-4 w-4" />
+        <span className="hidden sm:inline-block">GitHub</span>
+      </button>
+    </div>
   );
 }
