@@ -31,6 +31,10 @@ export const routing = defineRouting({
       id: "/statistik",
       en: "/statistics",
     },
+    "/versus": {
+      id: "/versus",
+      en: "/versus",
+    },
   },
 });
 

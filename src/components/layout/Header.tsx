@@ -13,6 +13,7 @@ const navItems = [
   { href: "/timeline" as const, key: "timeline" },
   { href: "/statistik" as const, key: "stats" },
   { href: "/artikel" as const, key: "articles" },
+  { href: "/versus" as const, key: "versus" },
   { href: "/tentang" as const, key: "about" },
   { href: "/profil" as const, key: "profil" },
 ] as const;
