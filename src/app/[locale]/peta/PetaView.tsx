@@ -4,6 +4,7 @@ import { useState, useMemo } from "react";
 import { DynamicMap } from "@/components/map/DynamicMap";
 import { Timeline } from "@/components/timeline/Timeline";
 import { HISTORICAL_EVENTS } from "@/data/events";
+import { TAG_TRANSLATIONS } from "@/data/tags";
 import { useLocale } from "next-intl";
 import { cn } from "@/lib/utils";
 import { Tag } from "lucide-react";
@@ -54,7 +55,7 @@ export function PetaView() {
               {locale === "id" ? "Filter Topik" : "Topic Filter"}
               {selectedTag && (
                 <span className="ml-2 text-xs font-normal text-muted-foreground capitalize">
-                  ({selectedTag.replace("-", " ")})
+                  ({TAG_TRANSLATIONS[selectedTag]?.[locale] || selectedTag.replace("-", " ")})
                 </span>
               )}
             </div>
@@ -91,7 +92,7 @@ export function PetaView() {
                       : "bg-muted text-muted-foreground hover:bg-muted/80"
                   )}
                 >
-                  {tag.replace("-", " ")}
+                  {TAG_TRANSLATIONS[tag]?.[locale] || tag.replace("-", " ")}
                 </button>
               ))}
             </div>

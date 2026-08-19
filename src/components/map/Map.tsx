@@ -6,6 +6,7 @@ import { type HistoricalEvent } from "@/types/history";
 import { useLocale } from "next-intl";
 import { Link } from "@/i18n/routing";
 import { ERAS } from "@/data/eras";
+import { TAG_TRANSLATIONS } from "@/data/tags";
 import { ArrowRight } from "lucide-react";
 
 const createCustomIcon = (color: string) => {
@@ -67,7 +68,7 @@ export default function Map({ events }: MapProps) {
                 <div className="flex flex-wrap gap-1 mb-3">
                   {event.tags.map(tag => (
                     <span key={tag} className="text-[10px] uppercase tracking-wider font-bold bg-primary/10 text-primary px-1.5 py-0.5 rounded-sm">
-                      {tag.replace("-", " ")}
+                      {TAG_TRANSLATIONS[tag]?.[locale] || tag.replace("-", " ")}
                     </span>
                   ))}
                 </div>
