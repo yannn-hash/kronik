@@ -36,7 +36,7 @@ export const HISTORICAL_EVENTS: HistoricalEvent[] = [
   },
   {
     id: "mesopotamia-uruk",
-    slug: "peradaban-mesopotamia",
+    slug: { id: "peradaban-mesopotamia", en: "mesopotamian-civilization" },
     title: { id: "Kebangkitan Uruk", en: "Rise of Uruk" },
     summary: {
       id: "Salah satu kota pertama di dunia, pusat peradaban Sumeria di Mesopotamia, tempat lahirnya tulisan paku (Cuneiform).",
@@ -74,7 +74,7 @@ export const HISTORICAL_EVENTS: HistoricalEvent[] = [
   },
   {
     id: "kekaisaran-romawi",
-    slug: "kekaisaran-romawi",
+    slug: { id: "kekaisaran-romawi", en: "roman-empire" },
     title: { id: "Pendirian Kekaisaran Romawi", en: "Founding of the Roman Empire" },
     summary: {
       id: "Augustus Caesar menjadi Kaisar pertama, menandai akhir dari Republik Romawi dan dimulainya Pax Romana.",
@@ -112,7 +112,7 @@ export const HISTORICAL_EVENTS: HistoricalEvent[] = [
   },
   {
     id: "mongol-empire",
-    slug: "kekaisaran-mongol",
+    slug: { id: "kekaisaran-mongol", en: "mongol-empire" },
     title: { id: "Ekspansi Kekaisaran Mongol", en: "Mongol Empire Expansion" },
     summary: {
       id: "Genghis Khan menyatukan suku-suku stepa dan memulai penaklukan besar-besaran melintasi Asia dan Eropa.",
@@ -169,7 +169,7 @@ export const HISTORICAL_EVENTS: HistoricalEvent[] = [
   },
   {
     id: "revolusi-industri",
-    slug: "revolusi-industri",
+    slug: { id: "revolusi-industri", en: "industrial-revolution" },
     title: { id: "Awal Revolusi Industri", en: "Dawn of the Industrial Revolution" },
     summary: {
       id: "Transisi menuju proses manufaktur baru dengan ditemukannya mesin uap, mengubah drastis ekonomi dan masyarakat dunia.",
@@ -188,7 +188,7 @@ export const HISTORICAL_EVENTS: HistoricalEvent[] = [
   },
   {
     id: "revolusi-prancis",
-    slug: "revolusi-prancis",
+    slug: { id: "revolusi-prancis", en: "french-revolution" },
     title: { id: "Revolusi Prancis", en: "French Revolution" },
     summary: {
       id: "Runtuhnya monarki absolut Prancis (Penyerbuan Bastille), menginspirasi gerakan demokrasi modern di seluruh dunia.",
@@ -265,7 +265,7 @@ export const HISTORICAL_EVENTS: HistoricalEvent[] = [
   },
   {
     id: "dinasti-shang",
-    slug: "dinasti-shang",
+    slug: { id: "dinasti-shang", en: "shang-dynasty" },
     title: { id: "Dinasti Shang", en: "Shang Dynasty" },
     summary: { id: "Dinasti pertama Tiongkok yang tercatat dalam sejarah, terkenal dengan kerajinan perunggu dan tulisan tulang ramalan.", en: "The first historically recorded dynasty of China, famous for bronze work and oracle bone script." },
     year: -1600,
@@ -301,7 +301,7 @@ export const HISTORICAL_EVENTS: HistoricalEvent[] = [
   },
   {
     id: "kekaisaran-aztec",
-    slug: "kekaisaran-aztec",
+    slug: { id: "kekaisaran-aztec", en: "aztec-empire" },
     title: { id: "Puncak Kekaisaran Aztec", en: "Peak of the Aztec Empire" },
     summary: { id: "Peradaban Mesoamerika yang membangun ibu kota megah Tenochtitlan di atas danau Texcoco.", en: "Mesoamerican civilization that built the magnificent capital Tenochtitlan on Lake Texcoco." },
     year: 1428,
@@ -313,7 +313,7 @@ export const HISTORICAL_EVENTS: HistoricalEvent[] = [
   },
   {
     id: "kekaisaran-inca",
-    slug: "kekaisaran-inca",
+    slug: { id: "kekaisaran-inca", en: "inca-empire" },
     title: { id: "Kekaisaran Inca", en: "Inca Empire" },
     summary: { id: "Kekaisaran terbesar di Amerika pra-Columbus, terkenal dengan arsitektur batu monumental seperti Machu Picchu.", en: "The largest empire in pre-Columbian America, known for monumental stone architecture like Machu Picchu." },
     year: 1438,
@@ -337,7 +337,7 @@ export const HISTORICAL_EVENTS: HistoricalEvent[] = [
   },
   {
     id: "perang-dunia-1",
-    slug: "perang-dunia-1",
+    slug: { id: "perang-dunia-1", en: "world-war-1" },
     title: { id: "Perang Dunia I", en: "World War I" },
     summary: { id: "Pembunuhan Archduke Franz Ferdinand memicu salah satu konflik global paling mematikan dalam sejarah (The Great War).", en: "The assassination of Archduke Franz Ferdinand sparked one of the deadliest global conflicts in history (The Great War)." },
     year: 1914,
@@ -349,7 +349,7 @@ export const HISTORICAL_EVENTS: HistoricalEvent[] = [
   },
   {
     id: "perang-dunia-2",
-    slug: "perang-dunia-2",
+    slug: { id: "perang-dunia-2", en: "world-war-2" },
     title: { id: "Perang Dunia II", en: "World War II" },
     summary: { id: "Konflik paling merusak dalam sejarah umat manusia yang berakhir dengan penjatuhan bom atom pertama.", en: "The most destructive conflict in human history, ending with the dropping of the first atomic bombs." },
     year: 1939,
@@ -361,7 +361,7 @@ export const HISTORICAL_EVENTS: HistoricalEvent[] = [
   },
   {
     id: "apollo-11",
-    slug: "pendaratan-bulan",
+    slug: { id: "pendaratan-bulan", en: "moon-landing" },
     title: { id: "Pendaratan Manusia di Bulan", en: "Moon Landing" },
     summary: { id: "Misi Apollo 11 berhasil mendaratkan manusia (Neil Armstrong & Buzz Aldrin) di permukaan bulan untuk pertama kalinya.", en: "Apollo 11 mission successfully landed humans (Neil Armstrong & Buzz Aldrin) on the lunar surface for the first time." },
     year: 1969,

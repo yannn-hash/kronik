@@ -41,7 +41,7 @@ export function RelatedArticles({ currentEvent, locale }: RelatedArticlesProps) 
         {related.map((event) => (
           <Link
             key={event.id}
-            href={{ pathname: "/artikel/[slug]", params: { slug: event.slug } }}
+            href={{ pathname: "/artikel/[slug]", params: { slug: event.slug[locale] } }}
             className="group flex flex-col rounded-xl border border-border bg-card p-5 shadow-sm transition-all hover:border-primary/50 hover:shadow-md"
           >
             <div className="mb-3 flex items-center justify-between">

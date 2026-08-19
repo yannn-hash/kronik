@@ -224,7 +224,7 @@ export default function VersusPage() {
                 
                 <div className="pt-4 border-t border-border">
                   <Link 
-                    href={{ pathname: "/artikel/[slug]", params: { slug: event1.slug } }}
+                    href={{ pathname: "/artikel/[slug]", params: { slug: event1.slug[locale] } }}
                     className="inline-flex items-center gap-2 text-sm font-semibold text-primary hover:text-primary/80 transition-colors"
                   >
                     {commonT("readMore")}
@@ -279,7 +279,7 @@ export default function VersusPage() {
                 
                 <div className="pt-4 border-t border-border">
                   <Link 
-                    href={{ pathname: "/artikel/[slug]", params: { slug: event2.slug } }}
+                    href={{ pathname: "/artikel/[slug]", params: { slug: event2.slug[locale] } }}
                     className="inline-flex items-center gap-2 text-sm font-semibold text-primary hover:text-primary/80 transition-colors"
                   >
                     {commonT("readMore")}

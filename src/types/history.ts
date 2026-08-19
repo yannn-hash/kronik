@@ -17,7 +17,10 @@ export type ConfidenceLevel = "verified" | "probable" | "disputed";
 
 export interface HistoricalEvent {
   id: string;
-  slug: string;
+  slug: {
+    id: string;
+    en: string;
+  };
   title: { id: string; en: string };
   summary: { id: string; en: string };
   year: number; // negative = SM/BCE

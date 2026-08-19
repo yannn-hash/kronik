@@ -13,9 +13,10 @@ interface ArticlePageProps {
 
 export default async function ArticlePage({ params }: ArticlePageProps) {
   const { locale, slug } = await params;
+  const validLocale = locale as "id" | "en";
   
-  // Find event metadata
-  const event = HISTORICAL_EVENTS.find((e) => e.slug === slug);
+  // Find event metadata by comparing the current slug with the localized slug
+  const event = HISTORICAL_EVENTS.find((e) => e.slug[validLocale] === slug);
   
   if (!event) {
     notFound();
@@ -40,7 +41,6 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
     );
   }
 
-  const validLocale = locale as "id" | "en";
   const displayYear = Math.abs(event.year) + (event.year < 0 ? (locale === 'id' ? ' SM' : ' BCE') : (locale === 'id' ? ' M' : ' CE'));
 
   return (

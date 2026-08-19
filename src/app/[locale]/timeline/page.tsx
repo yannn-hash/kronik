@@ -86,7 +86,7 @@ export default function TimelinePage() {
 
                     {/* Action */}
                     <Link 
-                      href={{ pathname: "/artikel/[slug]", params: { slug: event.slug } }}
+                      href={{ pathname: "/artikel/[slug]", params: { slug: event.slug[locale] } }}
                       className={`inline-flex items-center gap-2 text-sm font-semibold text-primary hover:text-primary/80 transition-colors ${isEven ? 'md:flex-row-reverse' : ''}`}
                     >
                       {t("common.readMore")}

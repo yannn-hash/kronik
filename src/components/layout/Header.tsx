@@ -4,6 +4,7 @@ import { useState } from "react";
 import { useTranslations, useLocale } from "next-intl";
 import { Link, usePathname, useRouter } from "@/i18n/routing";
 import { useParams } from "next/navigation";
+import { HISTORICAL_EVENTS } from "@/data/events";
 import { cn } from "@/lib/utils";
 import { Menu, X, Globe, Scroll } from "lucide-react";
 import { AuthButton } from "@/components/auth/AuthButton";
@@ -29,8 +30,18 @@ export function Header() {
 
   const switchLocale = () => {
     const newLocale = locale === "id" ? "en" : "id";
+    let newParams = { ...params };
+
+    // Translate slug if we are on an article page
+    if (pathname === "/artikel/[slug]" && params.slug) {
+      const event = HISTORICAL_EVENTS.find((e) => e.slug[locale] === params.slug);
+      if (event) {
+        newParams.slug = event.slug[newLocale];
+      }
+    }
+
     // @ts-ignore - dynamic params needed for routes like /artikel/[slug]
-    router.replace({ pathname, params }, { locale: newLocale });
+    router.replace({ pathname, params: newParams }, { locale: newLocale });
   };
 
   return (

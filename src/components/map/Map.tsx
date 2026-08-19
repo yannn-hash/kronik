@@ -77,7 +77,7 @@ export default function Map({ events }: MapProps) {
                     {Math.abs(event.year)} {event.year < 0 ? (locale === 'id' ? 'SM' : 'BCE') : (locale === 'id' ? 'M' : 'CE')}
                   </span>
                   <Link 
-                    href={{ pathname: "/artikel/[slug]", params: { slug: event.slug } }}
+                    href={{ pathname: "/artikel/[slug]", params: { slug: event.slug[locale] } }}
                     className="text-xs font-semibold text-primary flex items-center gap-1 hover:underline group"
                   >
                     Detail <ArrowRight className="h-3 w-3 transition-transform group-hover:translate-x-0.5" />
