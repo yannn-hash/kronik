@@ -1,6 +1,6 @@
 import { type HistoricalEvent } from "@/types/history";
 
-export const HISTORICAL_EVENTS: HistoricalEvent[] = [
+export const HISTORICAL_EVENTS: HistoricalEvent[] = ([
   {
     id: "mesir-kuno-giza",
     slug: { id: "peradaban-mesir-kuno", en: "ancient-egypt" },
@@ -371,4 +371,4 @@ export const HISTORICAL_EVENTS: HistoricalEvent[] = [
     references: [],
     tags: ["sains","teknologi","eksplorasi"]
   }
-];
+] as HistoricalEvent[]).sort((a, b) => a.year - b.year);
