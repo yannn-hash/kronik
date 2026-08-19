@@ -69,6 +69,7 @@ export const HISTORICAL_EVENTS: HistoricalEvent[] = ([
       lat: 37.9838,
       lng: 23.7275,
     },
+    image: "/images/events/yunani-kuno-athena.jpg",
     confidence: "verified",
     references: [],
     tags: ["demokrasi", "filsafat", "eropa"],
@@ -88,6 +89,7 @@ export const HISTORICAL_EVENTS: HistoricalEvent[] = ([
       lat: 41.8902,
       lng: 12.4922,
     },
+    image: "/images/events/kekaisaran-romawi.jpg",
     confidence: "verified",
     references: [],
     tags: ["politik", "eropa", "imperium"],
@@ -107,6 +109,7 @@ export const HISTORICAL_EVENTS: HistoricalEvent[] = ([
       lat: 24.4672,
       lng: 39.6112,
     },
+    image: "/images/events/islam-awal.jpg",
     confidence: "verified",
     references: [],
     tags: ["agama", "timur-tengah"],
@@ -146,6 +149,7 @@ export const HISTORICAL_EVENTS: HistoricalEvent[] = ([
       lat: 43.7695,
       lng: 11.2558,
     },
+    image: "/images/events/renaisans.jpg",
     confidence: "verified",
     references: [],
     tags: ["seni", "budaya", "eropa"],
@@ -165,6 +169,7 @@ export const HISTORICAL_EVENTS: HistoricalEvent[] = ([
       lat: 24.0,
       lng: -74.0,
     },
+    image: "/images/events/penjelajahan-columbus.jpg",
     confidence: "verified",
     references: [],
     tags: ["eksplorasi", "amerika"],
@@ -231,6 +236,7 @@ export const HISTORICAL_EVENTS: HistoricalEvent[] = ([
       lat: -6.2088,
       lng: 106.8456,
     },
+    image: "/images/events/kemerdekaan-indonesia.jpg",
     confidence: "verified",
     references: [],
     tags: ["kemerdekaan", "asia", "politik"],
@@ -250,6 +256,7 @@ export const HISTORICAL_EVENTS: HistoricalEvent[] = ([
       lat: 52.52,
       lng: 13.405,
     },
+    image: "/images/events/runtuhnya-tembok-berlin.jpg",
     confidence: "verified",
     references: [],
     tags: ["politik", "perang-dingin", "eropa"],
@@ -263,6 +270,7 @@ export const HISTORICAL_EVENTS: HistoricalEvent[] = ([
     year: -2500,
     era: "ancient",
     location: { name: { id: "Mohenjo-Daro, Pakistan", en: "Mohenjo-Daro, Pakistan" }, lat: 27.3292, lng: 68.1388 },
+    image: "/images/events/lembah-indus.jpg",
     confidence: "verified",
     references: [],
     tags: ["kota","asia","kuno"]
@@ -275,6 +283,7 @@ export const HISTORICAL_EVENTS: HistoricalEvent[] = ([
     year: -1600,
     era: "ancient",
     location: { name: { id: "Anyang, Tiongkok", en: "Anyang, China" }, lat: 36.1, lng: 114.3333 },
+    image: "/images/events/dinasti-shang.jpg",
     confidence: "verified",
     references: [],
     tags: ["asia","kuno","budaya"]
@@ -287,6 +296,7 @@ export const HISTORICAL_EVENTS: HistoricalEvent[] = ([
     year: -250,
     era: "classical",
     location: { name: { id: "Pataliputra, India", en: "Pataliputra, India" }, lat: 25.61, lng: 85.1414 },
+    image: "/images/events/kekaisaran-maurya.jpg",
     confidence: "verified",
     references: [],
     tags: ["politik","agama","asia"]
@@ -312,6 +322,7 @@ export const HISTORICAL_EVENTS: HistoricalEvent[] = ([
     year: 1428,
     era: "medieval",
     location: { name: { id: "Tenochtitlan, Meksiko", en: "Tenochtitlan, Mexico" }, lat: 19.4326, lng: -99.1332 },
+    image: "/images/events/kekaisaran-aztec.jpg",
     confidence: "verified",
     references: [],
     tags: ["amerika","kota","budaya"]
@@ -324,6 +335,7 @@ export const HISTORICAL_EVENTS: HistoricalEvent[] = ([
     year: 1438,
     era: "medieval",
     location: { name: { id: "Cusco, Peru", en: "Cusco, Peru" }, lat: -13.5226, lng: -71.9673 },
+    image: "/images/events/kekaisaran-inca.jpg",
     confidence: "verified",
     references: [],
     tags: ["amerika","arsitektur"]
@@ -336,6 +348,7 @@ export const HISTORICAL_EVENTS: HistoricalEvent[] = ([
     year: 1405,
     era: "medieval",
     location: { name: { id: "Nanjing, Tiongkok", en: "Nanjing, China" }, lat: 32.0603, lng: 118.7969 },
+    image: "/images/events/pelayaran-zheng-he.jpg",
     confidence: "verified",
     references: [],
     tags: ["eksplorasi","asia","ekonomi"]
@@ -348,6 +361,7 @@ export const HISTORICAL_EVENTS: HistoricalEvent[] = ([
     year: 1914,
     era: "modern",
     location: { name: { id: "Sarajevo, Bosnia", en: "Sarajevo, Bosnia" }, lat: 43.8563, lng: 18.4131 },
+    image: "/images/events/perang-dunia-1.jpg",
     confidence: "verified",
     references: [],
     tags: ["perang","eropa","politik"]
@@ -360,6 +374,7 @@ export const HISTORICAL_EVENTS: HistoricalEvent[] = ([
     year: 1939,
     era: "modern",
     location: { name: { id: "Berlin, Jerman", en: "Berlin, Germany" }, lat: 52.52, lng: 13.405 },
+    image: "/images/events/perang-dunia-2.jpg",
     confidence: "verified",
     references: [],
     tags: ["perang","global"]
@@ -372,6 +387,7 @@ export const HISTORICAL_EVENTS: HistoricalEvent[] = ([
     year: 1969,
     era: "modern",
     location: { name: { id: "Bulan (Peluncuran: Florida, AS)", en: "Moon (Launch: Florida, USA)" }, lat: 28.5721, lng: -80.648 },
+    image: "/images/events/apollo-11.jpg",
     confidence: "verified",
     references: [],
     tags: ["sains","teknologi","eksplorasi"]
