@@ -3,7 +3,7 @@ import { type HistoricalEvent } from "@/types/history";
 export const HISTORICAL_EVENTS: HistoricalEvent[] = [
   {
     id: "mesir-kuno-giza",
-    slug: "peradaban-mesir-kuno",
+    slug: { id: "peradaban-mesir-kuno", en: "ancient-egypt" },
     title: { id: "Pembangunan Piramida Giza", en: "Construction of Giza Pyramids" },
     summary: { 
       id: "Puncak arsitektur Kerajaan Lama Mesir. Piramida Agung dibangun sebagai makam Firaun Khufu.", 
@@ -55,7 +55,7 @@ export const HISTORICAL_EVENTS: HistoricalEvent[] = [
   },
   {
     id: "yunani-kuno-athena",
-    slug: "kejayaan-yunani-kuno",
+    slug: { id: "kejayaan-yunani-kuno", en: "ancient-greece" },
     title: { id: "Zaman Keemasan Athena", en: "Golden Age of Athens" },
     summary: {
       id: "Masa di mana demokrasi, filsafat, dan seni Yunani berkembang pesat di bawah kepemimpinan Perikles.",
@@ -93,7 +93,7 @@ export const HISTORICAL_EVENTS: HistoricalEvent[] = [
   },
   {
     id: "islam-awal",
-    slug: "kelahiran-islam",
+    slug: { id: "kelahiran-islam", en: "birth-of-islam" },
     title: { id: "Kelahiran Islam & Hijrah", en: "Birth of Islam & Hijrah" },
     summary: {
       id: "Nabi Muhammad memimpin umat Muslim dari Makkah ke Madinah, menandai tahun pertama dalam kalender Hijriah.",
@@ -131,7 +131,7 @@ export const HISTORICAL_EVENTS: HistoricalEvent[] = [
   },
   {
     id: "renaisans",
-    slug: "renaisans-eropa",
+    slug: { id: "renaisans-eropa", en: "european-renaissance" },
     title: { id: "Puncak Renaisans", en: "High Renaissance" },
     summary: {
       id: "Zaman kebangkitan kembali seni, sains, dan budaya klasik yang berpusat di Florence.",
@@ -150,7 +150,7 @@ export const HISTORICAL_EVENTS: HistoricalEvent[] = [
   },
   {
     id: "penjelajahan-columbus",
-    slug: "penjelajahan-columbus",
+    slug: { id: "penjelajahan-columbus", en: "columbus-exploration" },
     title: { id: "Pelayaran Columbus", en: "Columbus Voyages" },
     summary: {
       id: "Christopher Columbus tiba di benua Amerika, membuka era eksplorasi dan kolonisasi Eropa secara global.",
@@ -214,7 +214,7 @@ export const HISTORICAL_EVENTS: HistoricalEvent[] = [
   },
   {
     id: "kemerdekaan-indonesia",
-    slug: "kemerdekaan-indonesia",
+    slug: { id: "kemerdekaan-indonesia", en: "indonesian-independence" },
     title: { id: "Proklamasi Kemerdekaan Indonesia", en: "Proclamation of Indonesian Independence" },
     summary: {
       id: "Soekarno dan Hatta memproklamasikan kemerdekaan Indonesia dari penjajahan Belanda dan Jepang.",
@@ -233,7 +233,7 @@ export const HISTORICAL_EVENTS: HistoricalEvent[] = [
   },
   {
     id: "runtuhnya-tembok-berlin",
-    slug: "runtuhnya-tembok-berlin",
+    slug: { id: "runtuhnya-tembok-berlin", en: "fall-of-berlin-wall" },
     title: { id: "Runtuhnya Tembok Berlin", en: "Fall of the Berlin Wall" },
     summary: {
       id: "Peristiwa simbolis yang menandai berakhirnya Perang Dingin dan menyatukan kembali Jerman.",
@@ -253,7 +253,7 @@ export const HISTORICAL_EVENTS: HistoricalEvent[] = [
 ,
   {
     id: "lembah-indus",
-    slug: "peradaban-lembah-indus",
+    slug: { id: "peradaban-lembah-indus", en: "indus-valley-civilization" },
     title: { id: "Peradaban Lembah Indus", en: "Indus Valley Civilization" },
     summary: { id: "Salah satu peradaban awal terbesar dengan tata kota paling maju di zamannya (Mohenjo-Daro & Harappa).", en: "One of the largest early civilizations with the most advanced city planning of its time (Mohenjo-Daro & Harappa)." },
     year: -2500,
@@ -277,7 +277,7 @@ export const HISTORICAL_EVENTS: HistoricalEvent[] = [
   },
   {
     id: "kekaisaran-maurya",
-    slug: "kekaisaran-maurya",
+    slug: { id: "kekaisaran-maurya", en: "mauryan-empire" },
     title: { id: "Kekaisaran Maurya (Ashoka)", en: "Mauryan Empire (Ashoka)" },
     summary: { id: "Kekaisaran India kuno yang menyatukan hampir seluruh anak benua di bawah pimpinan Kaisar Ashoka yang memeluk Buddha.", en: "Ancient Indian empire that united most of the subcontinent under Emperor Ashoka, who embraced Buddhism." },
     year: -250,
@@ -289,7 +289,7 @@ export const HISTORICAL_EVENTS: HistoricalEvent[] = [
   },
   {
     id: "islamic-golden-age",
-    slug: "masa-keemasan-islam",
+    slug: { id: "masa-keemasan-islam", en: "islamic-golden-age" },
     title: { id: "Masa Keemasan Islam", en: "Islamic Golden Age" },
     summary: { id: "Era pencapaian ilmiah, budaya, dan ekonomi yang luar biasa berpusat di Rumah Kebijaksanaan (House of Wisdom) Baghdad.", en: "Era of immense scientific, cultural, and economic achievements centered around the House of Wisdom in Baghdad." },
     year: 800,
@@ -325,7 +325,7 @@ export const HISTORICAL_EVENTS: HistoricalEvent[] = [
   },
   {
     id: "pelayaran-zheng-he",
-    slug: "pelayaran-zheng-he",
+    slug: { id: "pelayaran-zheng-he", en: "zheng-he-voyages" },
     title: { id: "Armada Harta Zheng He", en: "Zheng He's Treasure Fleet" },
     summary: { id: "Laksamana Cheng Ho dari Dinasti Ming memimpin armada raksasa mengarungi Samudra Hindia, membangun relasi diplomatik dan dagang.", en: "Admiral Zheng He of the Ming Dynasty led massive fleets across the Indian Ocean, establishing trade and diplomacy." },
     year: 1405,

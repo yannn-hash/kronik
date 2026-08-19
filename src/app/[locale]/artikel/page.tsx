@@ -36,7 +36,7 @@ export default async function ArticlesPage({ params }: { params: Promise<{ local
           return (
             <Link 
               key={event.id}
-              href={{ pathname: "/artikel/[slug]", params: { slug: event.slug[locale] } }}
+              href={{ pathname: "/artikel/[slug]", params: { slug: event.slug[validLocale] } }}
               className="group flex flex-col justify-between rounded-2xl border border-border bg-card p-6 shadow-sm transition-all hover:border-primary/50 hover:shadow-md"
             >
               <div>
