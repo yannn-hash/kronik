@@ -1,6 +1,7 @@
 "use client";
 
-import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
+import { MapContainer, TileLayer, Marker, Popup, useMap } from "react-leaflet";
+import { useEffect } from "react";
 import L from "leaflet";
 import { type HistoricalEvent } from "@/types/history";
 import { useLocale } from "next-intl";
@@ -34,6 +35,24 @@ const eraIcons = ERAS.reduce((acc, era) => {
   return acc;
 }, {} as Record<string, L.DivIcon>);
 
+// Helper component to auto-pan map when events change
+function MapUpdater({ events }: { events: HistoricalEvent[] }) {
+  const map = useMap();
+  
+  useEffect(() => {
+    if (events.length === 0) return;
+    
+    if (events.length === 1) {
+      map.flyTo([events[0].location.lat, events[0].location.lng], 5, { duration: 1.5 });
+    } else {
+      const bounds = L.latLngBounds(events.map(e => [e.location.lat, e.location.lng]));
+      map.flyToBounds(bounds, { padding: [50, 50], duration: 1.5, maxZoom: 6 });
+    }
+  }, [events, map]);
+  
+  return null;
+}
+
 interface MapProps {
   events: HistoricalEvent[];
 }
@@ -51,6 +70,7 @@ export default function Map({ events }: MapProps) {
         maxBounds={[[-90, -180], [90, 180]]}
         scrollWheelZoom={false}
       >
+        <MapUpdater events={events} />
         <TileLayer
           url="https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png"
           attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>'
