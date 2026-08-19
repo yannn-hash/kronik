@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import { createPortal } from "react-dom";
 import { createClient } from "@/lib/supabase/client";
 import { LogIn, LogOut, Loader2 } from "lucide-react";
 import type { User } from "@supabase/supabase-js";
@@ -71,7 +72,7 @@ export function AuthButton({ locale }: { locale: "id" | "en" }) {
         <span className="hidden sm:inline-block">Login</span>
       </button>
 
-      {showModal && (
+      {showModal && typeof document !== "undefined" && createPortal(
         <div className="fixed inset-0 z-[100] flex items-center justify-center bg-background/80 backdrop-blur-sm p-4">
           <div className="w-full max-w-sm rounded-2xl border border-border bg-card p-6 shadow-xl animate-in fade-in zoom-in duration-200">
             <div className="mb-6 text-center">
@@ -112,7 +113,8 @@ export function AuthButton({ locale }: { locale: "id" | "en" }) {
               {locale === "id" ? "Batal" : "Cancel"}
             </button>
           </div>
-        </div>
+        </div>,
+        document.body
       )}
     </>
   );
