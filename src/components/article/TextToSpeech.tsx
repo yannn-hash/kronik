@@ -1,8 +1,7 @@
 "use client";
 
 import { useState, useEffect, useRef } from "react";
-import { Play, Square, Pause, Volume2, Loader2 } from "lucide-react";
-import { cn } from "@/lib/utils";
+import { Play, Square, Pause, Volume2, Loader2, AlertCircle } from "lucide-react";
 
 interface TextToSpeechProps {
   locale: "id" | "en";
@@ -14,6 +13,8 @@ export function TextToSpeech({ locale, title }: TextToSpeechProps) {
   const [isPaused, setIsPaused] = useState(false);
   const [isReady, setIsReady] = useState(false);
   const [supported, setSupported] = useState(true);
+  const [selectedVoice, setSelectedVoice] = useState<SpeechSynthesisVoice | null>(null);
+  
   const utteranceRef = useRef<SpeechSynthesisUtterance | null>(null);
 
   useEffect(() => {
@@ -21,35 +22,58 @@ export function TextToSpeech({ locale, title }: TextToSpeechProps) {
       setSupported(false);
       return;
     }
-    setSupported(true);
-    setIsReady(true);
+
+    const loadVoices = () => {
+      const voices = window.speechSynthesis.getVoices();
+      if (voices.length === 0) return;
+
+      // Find appropriate voice based on locale
+      let voiceToUse = null;
+      if (locale === "id") {
+        // Look for Indonesian voices
+        voiceToUse = voices.find((v) => v.lang === "id-ID" || v.lang === "id_ID" || v.lang.startsWith("id"));
+      } else {
+        // Look for English voices (prefer US or UK)
+        voiceToUse = voices.find((v) => v.lang === "en-US" || v.lang === "en-GB" || v.lang.startsWith("en"));
+      }
+
+      if (voiceToUse) {
+        setSelectedVoice(voiceToUse);
+        setSupported(true);
+        setIsReady(true);
+      } else {
+        // If we strictly cannot find the required language voice, disable the player
+        setSupported(false);
+      }
+    };
+
+    // Browsers load voices asynchronously
+    loadVoices();
+    if (window.speechSynthesis.onvoiceschanged !== undefined) {
+      window.speechSynthesis.onvoiceschanged = loadVoices;
+    }
 
     return () => {
-      // Cleanup on unmount
       if (window.speechSynthesis) {
         window.speechSynthesis.cancel();
       }
     };
-  }, []);
+  }, [locale]);
 
   const getTextToRead = () => {
-    // We grab the title, and then the content inside the prose article tag
     const contentElement = document.querySelector(".prose");
     if (!contentElement) return title;
     
-    // Create a clone to remove things we don't want to read (like Quiz components)
     const clone = contentElement.cloneNode(true) as HTMLElement;
-    
-    // Remove quiz components or non-readable elements if they exist
-    const quizzes = clone.querySelectorAll(".quiz-container, button");
-    quizzes.forEach(q => q.remove());
+    const exclude = clone.querySelectorAll(".quiz-container, button");
+    exclude.forEach(q => q.remove());
 
     const textContent = clone.textContent || "";
     return `${title}. ${textContent}`;
   };
 
   const handlePlay = () => {
-    if (!window.speechSynthesis) return;
+    if (!window.speechSynthesis || !selectedVoice) return;
 
     if (isPaused) {
       window.speechSynthesis.resume();
@@ -58,14 +82,14 @@ export function TextToSpeech({ locale, title }: TextToSpeechProps) {
       return;
     }
 
-    // Cancel any ongoing speech
     window.speechSynthesis.cancel();
 
     const text = getTextToRead();
     const utterance = new SpeechSynthesisUtterance(text);
     
-    utterance.lang = locale === "id" ? "id-ID" : "en-US";
-    utterance.rate = 0.95; // Slightly slower for better comprehension of history
+    utterance.voice = selectedVoice;
+    utterance.lang = selectedVoice.lang;
+    utterance.rate = 0.95; 
     utterance.pitch = 1;
 
     utterance.onstart = () => {
@@ -102,7 +126,10 @@ export function TextToSpeech({ locale, title }: TextToSpeechProps) {
     setIsPaused(false);
   };
 
-  if (!supported) return null;
+  // If unsupported or native voice for the required language is missing, hide entirely
+  if (!supported) {
+    return null;
+  }
 
   return (
     <div className="flex items-center gap-3 rounded-xl border border-border bg-card p-3 shadow-sm max-w-sm mb-8 transition-all hover:shadow-md">
@@ -113,12 +140,12 @@ export function TextToSpeech({ locale, title }: TextToSpeechProps) {
         <span className="text-sm font-semibold text-foreground">
           {locale === "id" ? "Dengarkan Artikel" : "Listen to Article"}
         </span>
-        <span className="text-xs text-muted-foreground">
+        <span className="text-xs text-muted-foreground truncate w-32">
           {isPlaying 
             ? (locale === "id" ? "Sedang memutar..." : "Playing...") 
             : isPaused 
               ? (locale === "id" ? "Dijeda" : "Paused")
-              : (locale === "id" ? "Audio AI" : "AI Audio")}
+              : selectedVoice?.name || (locale === "id" ? "Audio AI" : "AI Audio")}
         </span>
       </div>
       <div className="flex items-center gap-1">

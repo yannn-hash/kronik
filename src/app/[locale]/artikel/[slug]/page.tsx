@@ -79,8 +79,8 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
         </p>
       </header>
 
-      {/* Audio Player (Temporarily Disabled due to native TTS Indonesian pronunciation issues) */}
-      {/* <TextToSpeech locale={validLocale} title={event.title[validLocale]} /> */}
+      {/* Audio Player */}
+      <TextToSpeech locale={validLocale} title={event.title[validLocale]} />
 
       {/* MDX Content */}
       <article className="prose prose-sm sm:prose-base lg:prose-lg mx-auto mt-8 max-w-[65ch] dark:prose-invert prose-headings:font-bold prose-a:text-primary hover:prose-a:text-primary/80 prose-img:rounded-xl">
