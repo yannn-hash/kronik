@@ -16,7 +16,7 @@ export const HISTORICAL_EVENTS: HistoricalEvent[] = ([
       lat: 29.9792,
       lng: 31.1342,
     },
-    image: "https://images.unsplash.com/photo-1539667468225-eebb663053e6?q=80&w=800&auto=format&fit=crop",
+    image: "/images/events/mesir-kuno-giza.jpg",
     confidence: "verified",
     references: [
       {
@@ -126,6 +126,7 @@ export const HISTORICAL_EVENTS: HistoricalEvent[] = ([
       lat: 47.1983,
       lng: 102.8238,
     },
+    image: "/images/events/mongol-empire.jpg",
     confidence: "verified",
     references: [],
     tags: ["militer", "asia"],
@@ -183,6 +184,7 @@ export const HISTORICAL_EVENTS: HistoricalEvent[] = ([
       lat: 53.4808,
       lng: -2.2426,
     },
+    image: "/images/events/revolusi-industri.jpg",
     confidence: "verified",
     references: [],
     tags: ["teknologi", "ekonomi", "eropa"],
@@ -202,6 +204,7 @@ export const HISTORICAL_EVENTS: HistoricalEvent[] = ([
       lat: 48.8566,
       lng: 2.3522,
     },
+    image: "/images/events/revolusi-prancis.jpg",
     confidence: "verified",
     references: [
       {
@@ -296,6 +299,7 @@ export const HISTORICAL_EVENTS: HistoricalEvent[] = ([
     year: 800,
     era: "medieval",
     location: { name: { id: "Baghdad, Irak", en: "Baghdad, Iraq" }, lat: 33.3152, lng: 44.3661 },
+    image: "/images/events/islamic-golden-age.jpg",
     confidence: "verified",
     references: [],
     tags: ["sains","budaya","timur-tengah"]
