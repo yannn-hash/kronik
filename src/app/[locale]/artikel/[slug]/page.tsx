@@ -81,6 +81,9 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
               src={event.image} 
               alt={event.title[validLocale]} 
               className="object-cover w-full h-full"
+              onError={(e) => {
+                e.currentTarget.parentElement!.style.display = 'none';
+              }}
             />
           </div>
         )}

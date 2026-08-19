@@ -86,6 +86,9 @@ function EventMarker({ event, isActive, locale }: { event: HistoricalEvent, isAc
                 src={event.image} 
                 alt={event.title[locale]}
                 className="w-full h-full object-cover sepia-[0.35] brightness-95 contrast-110"
+                onError={(e) => {
+                  e.currentTarget.parentElement!.style.display = 'none';
+                }}
               />
             </div>
           )}
