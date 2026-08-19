@@ -43,7 +43,9 @@ function MapUpdater({ events, activeEventId }: { events: HistoricalEvent[], acti
     if (activeEventId) {
       const activeEvent = events.find(e => e.id === activeEventId);
       if (activeEvent) {
-        map.flyTo([activeEvent.location.lat, activeEvent.location.lng], 5, { duration: 1.5 });
+        // Add a slight offset to latitude (e.g., +4 degrees at zoom 5) 
+        // so the marker appears lower on the screen, making room for the popup above it.
+        map.flyTo([activeEvent.location.lat + 6, activeEvent.location.lng], 5, { duration: 1.5 });
       }
     } else {
       if (events.length === 0) return;
