@@ -17,7 +17,7 @@ export default function HomePage() {
             <FadeIn delay={0.1}>
               <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-border bg-card px-4 py-2 text-sm text-muted-foreground">
                 <Compass className="h-4 w-4" />
-                <span>5000+ tahun peradaban manusia</span>
+                <span>{t("hero.tagline")}</span>
               </div>
             </FadeIn>
             <FadeIn delay={0.2}>
