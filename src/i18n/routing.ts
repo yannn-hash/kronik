@@ -23,6 +23,10 @@ export const routing = defineRouting({
       id: "/artikel/[slug]",
       en: "/articles/[slug]",
     },
+    "/profil": {
+      id: "/profil",
+      en: "/profile",
+    },
   },
 });
 

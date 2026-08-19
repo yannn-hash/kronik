@@ -5,6 +5,7 @@ import { useTranslations, useLocale } from "next-intl";
 import { Link, usePathname, useRouter } from "@/i18n/routing";
 import { cn } from "@/lib/utils";
 import { Menu, X, Globe, Scroll } from "lucide-react";
+import { AuthButton } from "@/components/auth/AuthButton";
 
 const navItems = [
   { href: "/" as const, key: "home" },
@@ -12,11 +13,12 @@ const navItems = [
   { href: "/timeline" as const, key: "timeline" },
   { href: "/artikel" as const, key: "articles" },
   { href: "/tentang" as const, key: "about" },
+  { href: "/profil" as const, key: "profil" },
 ] as const;
 
 export function Header() {
   const t = useTranslations("nav");
-  const locale = useLocale();
+  const locale = useLocale() as "id" | "en";
   const pathname = usePathname();
   const router = useRouter();
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -55,8 +57,9 @@ export function Header() {
           ))}
         </nav>
 
-        {/* Language Switcher + Mobile Menu Button */}
+        {/* Language Switcher + Auth Button + Mobile Menu Button */}
         <div className="flex items-center gap-2">
+          <AuthButton locale={locale} />
           <button
             onClick={switchLocale}
             className="inline-flex items-center gap-1.5 rounded-lg border border-border px-3 py-1.5 text-sm font-medium text-muted-foreground transition-colors hover:bg-muted hover:text-foreground"
@@ -68,7 +71,7 @@ export function Header() {
 
           <button
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            className="rounded-lg p-2 text-muted-foreground hover:bg-muted md:hidden"
+            className="rounded-lg p-3 text-muted-foreground hover:bg-muted md:hidden"
             aria-label="Toggle menu"
           >
             {mobileMenuOpen ? (
@@ -99,6 +102,9 @@ export function Header() {
                 {t(item.key)}
               </Link>
             ))}
+            <div className="mt-2 pt-2 border-t border-border">
+              <AuthButton locale={locale} />
+            </div>
           </div>
         </nav>
       )}

@@ -57,3 +57,17 @@ export interface Article {
   updatedAt?: string;
   readingTime: number; // minutes
 }
+
+export interface QuizQuestion {
+  id: string;
+  question: { id: string; en: string };
+  options: { id: string; en: string }[];
+  correctAnswerIndex: number;
+  explanation: { id: string; en: string };
+}
+
+export interface QuizData {
+  articleSlug: string;
+  title: { id: string; en: string };
+  questions: QuizQuestion[];
+}

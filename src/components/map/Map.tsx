@@ -53,6 +53,7 @@ export default function Map({ events, selectedEra }: MapProps) {
         style={{ height: "100%", width: "100%", background: "#e5e5f7", zIndex: 0 }}
         minZoom={2}
         maxBounds={[[-90, -180], [90, 180]]}
+        scrollWheelZoom={false}
       >
         <TileLayer
           url="https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png"

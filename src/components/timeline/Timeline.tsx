@@ -36,12 +36,12 @@ export function Timeline({ selectedEra, onSelectEra }: TimelineProps) {
           {/* Horizontal Line */}
           <div className="absolute top-1/2 left-0 w-full h-1 bg-muted -translate-y-1/2 rounded-full hidden md:block"></div>
 
-          <div className="flex flex-wrap md:flex-nowrap justify-between gap-2 md:gap-4 relative z-10">
+          <div className="flex overflow-x-auto md:overflow-visible scrollbar-hide snap-x snap-mandatory md:snap-none justify-start md:justify-between gap-3 md:gap-4 relative z-10 pb-4 md:pb-0 px-1 md:px-0">
             {ERAS.map((era, index) => {
               const isSelected = selectedEra === era.id;
               
               return (
-                <div key={era.id} className="flex-1 min-w-[120px] flex flex-col items-center group cursor-pointer" onClick={() => onSelectEra(era.id)}>
+                <div key={era.id} className="snap-center shrink-0 w-[150px] md:flex-1 md:w-auto min-w-[120px] flex flex-col items-center group cursor-pointer" onClick={() => onSelectEra(era.id)}>
                   {/* Timeline Node */}
                   <div 
                     className={cn(

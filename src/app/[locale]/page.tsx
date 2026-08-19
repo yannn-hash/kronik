@@ -1,7 +1,8 @@
 import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/routing";
-import { Map, Clock, BookOpen, ArrowRight, Compass } from "lucide-react";
+import { Map, Clock, BookOpen, ArrowRight, Compass, BrainCircuit } from "lucide-react";
 import { FadeIn, StaggerContainer, StaggerItem } from "@/components/ui/Animations";
+import { DailyFactComponent } from "@/components/home/DailyFact";
 
 export default function HomePage() {
   const t = useTranslations();
@@ -49,6 +50,9 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+
+      {/* Daily Fact Section */}
+      <DailyFactComponent locale={t("hero.cta") === "Mulai Jelajahi" ? "id" : "en"} />
 
       {/* Features Section */}
       <section className="mx-auto max-w-6xl px-4 py-20">

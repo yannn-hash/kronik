@@ -78,9 +78,9 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
       </header>
 
       {/* MDX Content */}
-      <div className="prose prose-lg dark:prose-invert prose-headings:font-bold prose-a:text-primary max-w-none">
+      <article className="prose prose-sm sm:prose-base lg:prose-lg mx-auto mt-12 max-w-[65ch] dark:prose-invert prose-headings:font-bold prose-a:text-primary hover:prose-a:text-primary/80 prose-img:rounded-xl">
         <MDXContent />
-      </div>
+      </article>
 
       {/* References */}
       <References references={event.references} locale={validLocale} />
