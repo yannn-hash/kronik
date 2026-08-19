@@ -3,7 +3,8 @@
 import { ERAS } from "@/data/eras";
 import { useLocale } from "next-intl";
 import { cn } from "@/lib/utils";
-import { ChevronRight } from "lucide-react";
+import { ChevronRight, Play, Square } from "lucide-react";
+import { useState, useRef, useEffect } from "react";
 
 interface TimelineProps {
   selectedEra: string | null;
@@ -12,15 +13,84 @@ interface TimelineProps {
 
 export function Timeline({ selectedEra, onSelectEra }: TimelineProps) {
   const locale = useLocale() as "id" | "en";
+  const [isPlaying, setIsPlaying] = useState(false);
+  const timerRef = useRef<NodeJS.Timeout | null>(null);
+
+  const stopAnimation = () => {
+    setIsPlaying(false);
+    if (timerRef.current) clearInterval(timerRef.current);
+  };
+
+  const startAnimation = () => {
+    setIsPlaying(true);
+    let currentIndex = selectedEra ? ERAS.findIndex(e => e.id === selectedEra) : -1;
+    
+    // If not selected or already at the end, start from beginning
+    if (currentIndex === -1 || currentIndex === ERAS.length - 1) {
+      currentIndex = 0;
+    }
+    
+    // Select first one immediately if needed
+    onSelectEra(ERAS[currentIndex].id);
+
+    timerRef.current = setInterval(() => {
+      currentIndex++;
+      if (currentIndex >= ERAS.length) {
+        // We reached the end, stay on the last era but stop playing
+        stopAnimation();
+      } else {
+        onSelectEra(ERAS[currentIndex].id);
+      }
+    }, 4000); // 4 seconds per era gives time for map to fly to bounds
+  };
+
+  const toggleAnimation = () => {
+    if (isPlaying) {
+      stopAnimation();
+    } else {
+      startAnimation();
+    }
+  };
+
+  useEffect(() => {
+    return () => {
+      if (timerRef.current) clearInterval(timerRef.current);
+    };
+  }, []);
 
   return (
     <div className="bg-card border-t border-border p-4 shadow-[0_-10px_40px_rgba(0,0,0,0.05)] z-10 relative">
       <div className="mx-auto max-w-6xl">
         <div className="flex flex-col md:flex-row items-center justify-between gap-4 mb-4">
-          <h2 className="text-lg font-bold text-foreground">Timeline Peradaban</h2>
+          <div className="flex items-center gap-3">
+            <h2 className="text-lg font-bold text-foreground">
+              {locale === "id" ? "Timeline Peradaban" : "Civilization Timeline"}
+            </h2>
+            <button
+              onClick={toggleAnimation}
+              className={cn(
+                "flex items-center justify-center gap-1.5 px-3 py-1.5 text-xs font-semibold rounded-full transition-all",
+                isPlaying 
+                  ? "bg-red-500/10 text-red-500 hover:bg-red-500/20" 
+                  : "bg-primary/10 text-primary hover:bg-primary/20"
+              )}
+            >
+              {isPlaying ? (
+                <>
+                  <Square className="h-3.5 w-3.5 fill-current" />
+                  {locale === "id" ? "Stop" : "Stop"}
+                </>
+              ) : (
+                <>
+                  <Play className="h-3.5 w-3.5 fill-current" />
+                  {locale === "id" ? "Putar Animasi" : "Watch History"}
+                </>
+              )}
+            </button>
+          </div>
           
-          <button
-            onClick={() => onSelectEra(null)}
+            <button
+            onClick={() => { stopAnimation(); onSelectEra(null); }}
             className={cn(
               "text-sm font-medium px-4 py-1.5 rounded-full transition-colors",
               selectedEra === null 
@@ -41,7 +111,7 @@ export function Timeline({ selectedEra, onSelectEra }: TimelineProps) {
               const isSelected = selectedEra === era.id;
               
               return (
-                <div key={era.id} className="snap-center shrink-0 w-[150px] md:flex-1 md:w-auto min-w-[120px] flex flex-col items-center group cursor-pointer" onClick={() => onSelectEra(era.id)}>
+                <div key={era.id} className="snap-center shrink-0 w-[150px] md:flex-1 md:w-auto min-w-[120px] flex flex-col items-center group cursor-pointer" onClick={() => { stopAnimation(); onSelectEra(era.id); }}>
                   {/* Timeline Node */}
                   <div 
                     className={cn(
