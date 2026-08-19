@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { useTranslations, useLocale } from "next-intl";
 import { Link, usePathname, useRouter } from "@/i18n/routing";
+import { useParams } from "next/navigation";
 import { cn } from "@/lib/utils";
 import { Menu, X, Globe, Scroll } from "lucide-react";
 import { AuthButton } from "@/components/auth/AuthButton";
@@ -23,11 +24,13 @@ export function Header() {
   const locale = useLocale() as "id" | "en";
   const pathname = usePathname();
   const router = useRouter();
+  const params = useParams();
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   const switchLocale = () => {
     const newLocale = locale === "id" ? "en" : "id";
-    router.replace(pathname as any, { locale: newLocale });
+    // @ts-ignore - dynamic params needed for routes like /artikel/[slug]
+    router.replace({ pathname, params }, { locale: newLocale });
   };
 
   return (
