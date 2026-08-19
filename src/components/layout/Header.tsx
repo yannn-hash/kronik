@@ -23,7 +23,7 @@ export function Header() {
 
   const switchLocale = () => {
     const newLocale = locale === "id" ? "en" : "id";
-    router.replace(pathname, { locale: newLocale });
+    router.replace(pathname as any, { locale: newLocale });
   };
 
   return (

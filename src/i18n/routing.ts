@@ -19,6 +19,10 @@ export const routing = defineRouting({
       id: "/tentang",
       en: "/about",
     },
+    "/artikel/[slug]": {
+      id: "/artikel/[slug]",
+      en: "/articles/[slug]",
+    },
   },
 });
 

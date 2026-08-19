@@ -1,16 +1,15 @@
-import { useTranslations } from "next-intl";
+import { PetaView } from "./PetaView";
+import { getTranslations } from "next-intl/server";
+import type { Metadata } from "next";
+
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: "nav" });
+  return {
+    title: t("map"),
+  };
+}
 
 export default function MapPage() {
-  const t = useTranslations();
-
-  return (
-    <div className="flex min-h-[calc(100vh-4rem)] items-center justify-center">
-      <div className="text-center">
-        <h1 className="text-3xl font-bold text-foreground">
-          {t("features.map.title")}
-        </h1>
-        <p className="mt-2 text-muted-foreground">Segera hadir...</p>
-      </div>
-    </div>
-  );
+  return <PetaView />;
 }
