@@ -1,0 +1,58 @@
+{
+  "metadata": {
+    "title": "Kronik — Jelajahi Sejarah Dunia",
+    "description": "Website edukatif interaktif tentang sejarah dunia. Jelajahi peta, timeline, dan artikel sejarah yang terverifikasi."
+  },
+  "nav": {
+    "home": "Beranda",
+    "map": "Peta",
+    "timeline": "Timeline",
+    "articles": "Artikel",
+    "about": "Tentang"
+  },
+  "hero": {
+    "title": "Jelajahi Sejarah Dunia",
+    "subtitle": "Pelajari peristiwa-peristiwa penting yang membentuk peradaban manusia melalui peta interaktif, timeline, dan artikel mendalam.",
+    "cta": "Mulai Jelajahi",
+    "ctaSecondary": "Lihat Timeline"
+  },
+  "features": {
+    "title": "Cara Baru Belajar Sejarah",
+    "subtitle": "Sejarah bukan sekadar hafalan. Kronik menyajikan sejarah dunia secara visual, interaktif, dan terverifikasi.",
+    "map": {
+      "title": "Peta Interaktif",
+      "description": "Jelajahi lokasi-lokasi bersejarah di seluruh dunia. Klik untuk melihat peristiwa yang terjadi di sana."
+    },
+    "timeline": {
+      "title": "Timeline Peradaban",
+      "description": "Geser dari 3000 SM hingga masa kini. Lihat bagaimana peradaban tumbuh dan runtuh."
+    },
+    "articles": {
+      "title": "Artikel Terverifikasi",
+      "description": "Setiap artikel dilengkapi referensi akademis dan badge tingkat kepercayaan."
+    }
+  },
+  "cta": {
+    "title": "Siap Menjelajahi Sejarah?",
+    "subtitle": "Mulai perjalananmu menelusuri 5000 tahun peradaban manusia.",
+    "button": "Buka Peta Interaktif"
+  },
+  "footer": {
+    "description": "Website edukatif open-source tentang sejarah dunia.",
+    "navigation": "Navigasi",
+    "resources": "Sumber Daya",
+    "references": "Referensi",
+    "methodology": "Metodologi",
+    "contribute": "Kontribusi",
+    "license": "Lisensi",
+    "copyright": "Konten dilisensikan di bawah",
+    "builtWith": "Dibangun dengan"
+  },
+  "common": {
+    "readMore": "Baca Selengkapnya",
+    "back": "Kembali",
+    "loading": "Memuat...",
+    "error": "Terjadi kesalahan",
+    "notFound": "Halaman tidak ditemukan"
+  }
+}

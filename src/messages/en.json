@@ -1,0 +1,58 @@
+{
+  "metadata": {
+    "title": "Kronik — Explore World History",
+    "description": "An interactive educational website about world history. Explore maps, timelines, and verified historical articles."
+  },
+  "nav": {
+    "home": "Home",
+    "map": "Map",
+    "timeline": "Timeline",
+    "articles": "Articles",
+    "about": "About"
+  },
+  "hero": {
+    "title": "Explore World History",
+    "subtitle": "Learn about the key events that shaped human civilization through interactive maps, timelines, and in-depth articles.",
+    "cta": "Start Exploring",
+    "ctaSecondary": "View Timeline"
+  },
+  "features": {
+    "title": "A New Way to Learn History",
+    "subtitle": "History is more than memorization. Kronik presents world history visually, interactively, and with verified sources.",
+    "map": {
+      "title": "Interactive Map",
+      "description": "Explore historical locations around the world. Click to see events that happened there."
+    },
+    "timeline": {
+      "title": "Civilization Timeline",
+      "description": "Slide from 3000 BCE to the present. See how civilizations rose and fell."
+    },
+    "articles": {
+      "title": "Verified Articles",
+      "description": "Every article includes academic references and confidence level badges."
+    }
+  },
+  "cta": {
+    "title": "Ready to Explore History?",
+    "subtitle": "Begin your journey through 5000 years of human civilization.",
+    "button": "Open Interactive Map"
+  },
+  "footer": {
+    "description": "An open-source educational website about world history.",
+    "navigation": "Navigation",
+    "resources": "Resources",
+    "references": "References",
+    "methodology": "Methodology",
+    "contribute": "Contribute",
+    "license": "License",
+    "copyright": "Content licensed under",
+    "builtWith": "Built with"
+  },
+  "common": {
+    "readMore": "Read More",
+    "back": "Go Back",
+    "loading": "Loading...",
+    "error": "An error occurred",
+    "notFound": "Page not found"
+  }
+}

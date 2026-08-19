@@ -1,0 +1,110 @@
+@import "tailwindcss";
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-border: var(--border);
+  --color-ring: var(--ring);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+
+  --color-era-ancient: #C4A265;
+  --color-era-classical: #8B4513;
+  --color-era-medieval: #4A6741;
+  --color-era-early-modern: #6B4C8A;
+  --color-era-modern: #2C5F8A;
+
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+
+  --radius-lg: 0.5rem;
+  --radius-md: calc(var(--radius-lg) - 2px);
+  --radius-sm: calc(var(--radius-lg) - 4px);
+}
+
+:root {
+  --background: #FDFBF7;
+  --foreground: #1C1917;
+  --muted: #F5F0E8;
+  --muted-foreground: #78716C;
+  --primary: #92400E;
+  --primary-foreground: #FDFBF7;
+  --secondary: #D6CFC4;
+  --secondary-foreground: #1C1917;
+  --accent: #C4A265;
+  --accent-foreground: #1C1917;
+  --border: #E7E0D5;
+  --ring: #92400E;
+  --card: #FFFFFF;
+  --card-foreground: #1C1917;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #1C1917;
+    --foreground: #FDFBF7;
+    --muted: #292524;
+    --muted-foreground: #A8A29E;
+    --primary: #D4A853;
+    --primary-foreground: #1C1917;
+    --secondary: #44403C;
+    --secondary-foreground: #FDFBF7;
+    --accent: #92400E;
+    --accent-foreground: #FDFBF7;
+    --border: #44403C;
+    --ring: #D4A853;
+    --card: #292524;
+    --card-foreground: #FDFBF7;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans, Arial, Helvetica, sans-serif);
+}
+
+/* Vintage texture overlay for history content */
+.vintage-bg {
+  position: relative;
+}
+
+.vintage-bg::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg width='100' height='100' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.03'/%3E%3C/svg%3E");
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--muted);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--secondary);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--muted-foreground);
+}
