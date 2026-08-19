@@ -1,7 +1,7 @@
 "use client";
 
 import { MapContainer, TileLayer, Marker, Popup, useMap } from "react-leaflet";
-import { useEffect } from "react";
+import { useEffect, useRef } from "react";
 import L from "leaflet";
 import { type HistoricalEvent } from "@/types/history";
 import { useLocale } from "next-intl";
@@ -36,28 +36,79 @@ const eraIcons = ERAS.reduce((acc, era) => {
 }, {} as Record<string, L.DivIcon>);
 
 // Helper component to auto-pan map when events change
-function MapUpdater({ events }: { events: HistoricalEvent[] }) {
+function MapUpdater({ events, activeEventId }: { events: HistoricalEvent[], activeEventId?: string | null }) {
   const map = useMap();
   
   useEffect(() => {
-    if (events.length === 0) return;
-    
-    if (events.length === 1) {
-      map.flyTo([events[0].location.lat, events[0].location.lng], 5, { duration: 1.5 });
+    if (activeEventId) {
+      const activeEvent = events.find(e => e.id === activeEventId);
+      if (activeEvent) {
+        map.flyTo([activeEvent.location.lat, activeEvent.location.lng], 5, { duration: 1.5 });
+      }
     } else {
-      const bounds = L.latLngBounds(events.map(e => [e.location.lat, e.location.lng]));
-      map.flyToBounds(bounds, { padding: [50, 50], duration: 1.5, maxZoom: 6 });
+      if (events.length === 0) return;
+      
+      if (events.length === 1) {
+        map.flyTo([events[0].location.lat, events[0].location.lng], 5, { duration: 1.5 });
+      } else {
+        const bounds = L.latLngBounds(events.map(e => [e.location.lat, e.location.lng]));
+        map.flyToBounds(bounds, { padding: [50, 50], duration: 1.5, maxZoom: 6 });
+      }
     }
-  }, [events, map]);
+  }, [events, activeEventId, map]);
   
   return null;
 }
 
-interface MapProps {
-  events: HistoricalEvent[];
+function EventMarker({ event, isActive, locale }: { event: HistoricalEvent, isActive: boolean, locale: "id"|"en" }) {
+  const markerRef = useRef<L.Marker>(null);
+  
+  useEffect(() => {
+    if (isActive && markerRef.current) {
+      markerRef.current.openPopup();
+    }
+  }, [isActive]);
+
+  return (
+    <Marker 
+      ref={markerRef}
+      position={[event.location.lat, event.location.lng]}
+      icon={eraIcons[event.era]}
+    >
+      <Popup className="rounded-lg overflow-hidden border-0 shadow-lg">
+        <div className="p-1 max-w-[280px]">
+          <h3 className="font-bold text-base mb-1 text-slate-900 leading-tight">{event.title[locale]}</h3>
+          <p className="text-sm text-slate-600 mb-3 leading-snug">{event.summary[locale]}</p>
+          <div className="flex flex-wrap gap-1 mb-3">
+            {event.tags.map(tag => (
+              <span key={tag} className="text-[10px] uppercase tracking-wider font-bold bg-primary/10 text-primary px-1.5 py-0.5 rounded-sm">
+                {TAG_TRANSLATIONS[tag]?.[locale] || tag.replace("-", " ")}
+              </span>
+            ))}
+          </div>
+          <div className="flex items-center justify-between border-t border-slate-200 pt-3">
+            <span className="text-xs font-semibold bg-slate-100 px-2 py-1 rounded-md text-slate-700 border border-slate-200">
+              {Math.abs(event.year)} {event.year < 0 ? (locale === 'id' ? 'SM' : 'BCE') : (locale === 'id' ? 'M' : 'CE')}
+            </span>
+            <Link 
+              href={{ pathname: "/artikel/[slug]", params: { slug: event.slug[locale] } }}
+              className="text-xs font-semibold text-primary flex items-center gap-1 hover:underline group"
+            >
+              Detail <ArrowRight className="h-3 w-3 transition-transform group-hover:translate-x-0.5" />
+            </Link>
+          </div>
+        </div>
+      </Popup>
+    </Marker>
+  );
 }
 
-export default function Map({ events }: MapProps) {
+interface MapProps {
+  events: HistoricalEvent[];
+  activeEventId?: string | null;
+}
+
+export default function Map({ events, activeEventId }: MapProps) {
   const locale = useLocale() as "id" | "en";
 
   return (
@@ -70,42 +121,18 @@ export default function Map({ events }: MapProps) {
         maxBounds={[[-90, -180], [90, 180]]}
         scrollWheelZoom={false}
       >
-        <MapUpdater events={events} />
+        <MapUpdater events={events} activeEventId={activeEventId} />
         <TileLayer
           url="https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png"
           attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>'
         />
         {events.map((event) => (
-          <Marker 
-            key={event.id} 
-            position={[event.location.lat, event.location.lng]}
-            icon={eraIcons[event.era]}
-          >
-            <Popup className="rounded-lg overflow-hidden border-0 shadow-lg">
-              <div className="p-1 max-w-[280px]">
-                <h3 className="font-bold text-base mb-1 text-slate-900 leading-tight">{event.title[locale]}</h3>
-                <p className="text-sm text-slate-600 mb-3 leading-snug">{event.summary[locale]}</p>
-                <div className="flex flex-wrap gap-1 mb-3">
-                  {event.tags.map(tag => (
-                    <span key={tag} className="text-[10px] uppercase tracking-wider font-bold bg-primary/10 text-primary px-1.5 py-0.5 rounded-sm">
-                      {TAG_TRANSLATIONS[tag]?.[locale] || tag.replace("-", " ")}
-                    </span>
-                  ))}
-                </div>
-                <div className="flex items-center justify-between border-t border-slate-200 pt-3">
-                  <span className="text-xs font-semibold bg-slate-100 px-2 py-1 rounded-md text-slate-700 border border-slate-200">
-                    {Math.abs(event.year)} {event.year < 0 ? (locale === 'id' ? 'SM' : 'BCE') : (locale === 'id' ? 'M' : 'CE')}
-                  </span>
-                  <Link 
-                    href={{ pathname: "/artikel/[slug]", params: { slug: event.slug[locale] } }}
-                    className="text-xs font-semibold text-primary flex items-center gap-1 hover:underline group"
-                  >
-                    Detail <ArrowRight className="h-3 w-3 transition-transform group-hover:translate-x-0.5" />
-                  </Link>
-                </div>
-              </div>
-            </Popup>
-          </Marker>
+          <EventMarker 
+            key={event.id}
+            event={event}
+            isActive={activeEventId === event.id}
+            locale={locale}
+          />
         ))}
       </MapContainer>
     </div>

@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useMemo } from "react";
+import { useState, useMemo, useRef, useEffect } from "react";
 import { DynamicMap } from "@/components/map/DynamicMap";
 import { Timeline } from "@/components/timeline/Timeline";
 import { HISTORICAL_EVENTS } from "@/data/events";
@@ -15,6 +15,72 @@ export function PetaView() {
   const locale = useLocale() as "id" | "en";
 
   const [isTagsOpen, setIsTagsOpen] = useState(false);
+  
+  // Animation states
+  const [activeEventId, setActiveEventId] = useState<string | null>(null);
+  const [isPlaying, setIsPlaying] = useState(false);
+  const timerRef = useRef<NodeJS.Timeout | null>(null);
+
+  const stopAnimation = () => {
+    setIsPlaying(false);
+    if (timerRef.current) clearInterval(timerRef.current);
+    // Optional: we leave the activeEventId as is, so the popup stays open
+  };
+
+  const startAnimation = () => {
+    setIsPlaying(true);
+    // Find where we are currently
+    let currentIndex = activeEventId 
+      ? HISTORICAL_EVENTS.findIndex(e => e.id === activeEventId)
+      : -1;
+      
+    if (currentIndex === -1 || currentIndex >= HISTORICAL_EVENTS.length - 1) {
+      currentIndex = 0;
+    }
+    
+    const playNext = (index: number) => {
+      const event = HISTORICAL_EVENTS[index];
+      // Select era to highlight timeline
+      setSelectedEra(event.era);
+      // Select event to fly map and open popup
+      setActiveEventId(event.id);
+    };
+    
+    playNext(currentIndex);
+
+    timerRef.current = setInterval(() => {
+      currentIndex++;
+      if (currentIndex >= HISTORICAL_EVENTS.length) {
+        stopAnimation();
+      } else {
+        playNext(currentIndex);
+      }
+    }, 4500); // 4.5s gives time to read and fly
+  };
+
+  const toggleAnimation = () => {
+    if (isPlaying) stopAnimation();
+    else startAnimation();
+  };
+
+  useEffect(() => {
+    return () => {
+      if (timerRef.current) clearInterval(timerRef.current);
+    };
+  }, []);
+
+  const handleEraSelect = (eraId: string | null) => {
+    stopAnimation();
+    setSelectedEra(eraId);
+    setActiveEventId(null); // clear specific event when manually clicking era
+  };
+
+  const handleTagSelect = (tag: string | null) => {
+    stopAnimation();
+    setSelectedTag(tag);
+    setIsTagsOpen(false);
+    setActiveEventId(null);
+  };
 
   // Extract all unique tags
   const allTags = useMemo(() => {
@@ -28,6 +94,9 @@ export function PetaView() {
   // Filter events based on selected era and selected tag
   const filteredEvents = useMemo(() => {
     let result = HISTORICAL_EVENTS;
+    // When playing animation, we actually want ALL events in the current era to show up,
+    // so we don't break the standard filter logic. 
+    // activeEventId will just be highlighted among the era's events.
     if (selectedEra) {
       result = result.filter(e => e.era === selectedEra);
     }
@@ -40,7 +109,7 @@ export function PetaView() {
   return (
     <div className="flex flex-col h-[calc(100vh-4rem)] relative">
       <div className="flex-1 relative z-0">
-        <DynamicMap events={filteredEvents} />
+        <DynamicMap events={filteredEvents} activeEventId={activeEventId} />
       </div>
 
       {/* Floating Tag Filter */}
@@ -65,10 +134,7 @@ export function PetaView() {
           {isTagsOpen && (
             <div className="flex flex-wrap gap-1.5 mt-3 max-h-[250px] overflow-y-auto scrollbar-hide">
               <button
-                onClick={() => {
-                  setSelectedTag(null);
-                  setIsTagsOpen(false);
-                }}
+                onClick={() => handleTagSelect(null)}
                 className={cn(
                   "px-2.5 py-1 text-xs font-medium rounded-full transition-colors",
                   selectedTag === null
@@ -81,10 +147,7 @@ export function PetaView() {
               {allTags.map(tag => (
                 <button
                   key={tag}
-                  onClick={() => {
-                    setSelectedTag(tag);
-                    setIsTagsOpen(false);
-                  }}
+                  onClick={() => handleTagSelect(tag)}
                   className={cn(
                     "px-2.5 py-1 text-xs font-medium rounded-full transition-colors capitalize",
                     selectedTag === tag
@@ -101,7 +164,12 @@ export function PetaView() {
       </div>
 
       <div className="shrink-0 relative z-10">
-        <Timeline selectedEra={selectedEra} onSelectEra={setSelectedEra} />
+        <Timeline 
+          selectedEra={selectedEra} 
+          onSelectEra={handleEraSelect}
+          isPlaying={isPlaying}
+          onTogglePlay={toggleAnimation} 
+        />
       </div>
     </div>
   );

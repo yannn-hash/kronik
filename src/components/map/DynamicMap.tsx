@@ -16,8 +16,9 @@ const Map = dynamic(() => import("./Map"), {
 
 interface DynamicMapProps {
   events: HistoricalEvent[];
+  activeEventId?: string | null;
 }
 
-export function DynamicMap({ events }: DynamicMapProps) {
-  return <Map events={events} />;
+export function DynamicMap({ events, activeEventId }: DynamicMapProps) {
+  return <Map events={events} activeEventId={activeEventId} />;
 }
