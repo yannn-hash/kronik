@@ -1,46 +1,42 @@
-# 🌍 Kronik — Jelajahi Sejarah Dunia
+# Kronik - Atlas Sejarah Dunia 🌍⏳
 
-**Kronik** adalah website edukatif open-source yang menyajikan sejarah dunia secara interaktif, visual, dan terverifikasi. Ditujukan untuk pelajar SMA dan mahasiswa.
+Kronik adalah platform edukatif interaktif yang bertujuan untuk membuat pembelajaran sejarah dunia menjadi lebih menarik, mudah dipahami, dan dapat diandalkan. Proyek ini menggabungkan peta interaktif, timeline, dan artikel-artikel mendalam.
 
-## ✨ Fitur
+## Fitur Utama ✨
+- **Peta Interaktif (TimeLine Atlas):** Jelajahi peristiwa sejarah langsung di atas peta dunia.
+- **Timeline Dinamis:** Filter peristiwa berdasarkan era (Kuno, Klasik, Pertengahan, Modern Awal, Modern).
+- **Artikel Terpercaya:** Artikel sejarah lengkap dengan *Confidence Badge* (tingkat verifikasi sejarah) dan sumber referensi.
+- **Multibahasa (i18n):** Tersedia dalam Bahasa Indonesia dan Bahasa Inggris.
+- **UI/UX Menawan:** Desain bertema *Vintage-Modern* dengan animasi transisi yang halus.
 
-- 🗺️ **Peta Interaktif** — Jelajahi lokasi bersejarah di seluruh dunia
-- ⏳ **Timeline Peradaban** — Geser dari 3000 SM hingga masa kini
-- 📖 **Artikel Terverifikasi** — Setiap artikel dilengkapi referensi akademis
-- 🌐 **Multi-bahasa** — Bahasa Indonesia & English
-- 📱 **Responsif** — Tampil sempurna di desktop & mobile
+## Tech Stack 🛠️
+- **Framework:** Next.js 15 (App Router)
+- **Bahasa:** TypeScript
+- **Styling:** Tailwind CSS v4
+- **Peta:** Leaflet & React-Leaflet
+- **Animasi:** Framer Motion
+- **Konten:** MDX (@next/mdx)
+- **I18n:** next-intl
+- **Ikon:** Lucide React
 
-## 🛠️ Tech Stack
+## Cara Menjalankan di Lokal 🚀
 
-- [Next.js 15](https://nextjs.org/) — React framework dengan App Router
-- [TypeScript](https://www.typescriptlang.org/) — Type-safe development
-- [Tailwind CSS v4](https://tailwindcss.com/) — Utility-first CSS
-- [Leaflet](https://leafletjs.com/) — Peta interaktif
-- [next-intl](https://next-intl.dev/) — Internationalization
-- [Framer Motion](https://www.framer.com/motion/) — Animasi
-- [MDX](https://mdxjs.com/) — Konten artikel interaktif
+1. Pastikan Anda telah menginstal Node.js (direkomendasikan v20+).
+2. Clone repositori ini.
+3. Instal semua dependensi:
+   ```bash
+   npm install
+   ```
+4. Jalankan server pengembangan:
+   ```bash
+   npm run dev
+   ```
+5. Buka [http://localhost:3000](http://localhost:3000) di browser Anda.
 
-## 🚀 Getting Started
+## Kontribusi 🤝
+Karena proyek ini 100% *open source*, kontribusi dari komunitas sangat dinantikan! Mulai dari penambahan artikel sejarah baru (dalam format MDX), perbaikan *typo*, hingga peningkatan fitur.
+Silakan buat *Pull Request* atau ajukan *Issue* di repositori ini.
 
-```bash
-# Clone repository
-git clone https://github.com/your-username/kronik.git
-cd kronik
-
-# Install dependencies
-npm install
-
-# Jalankan development server
-npm run dev
-
-# Buka http://localhost:3000
-```
-
-## 📜 Lisensi
-
-- **Kode**: [MIT License](LICENSE)
-- **Konten**: [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)
-
-## 🤝 Kontribusi
-
-Kami menyambut kontribusi! Silakan buka issue atau pull request.
+## Lisensi 📄
+- **Kode Sumber (Source Code):** Dilindungi di bawah [MIT License](LICENSE).
+- **Konten Artikel & Data:** Didistribusikan di bawah [Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)](https://creativecommons.org/licenses/by-sa/4.0/).
