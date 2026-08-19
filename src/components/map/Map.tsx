@@ -80,16 +80,18 @@ function EventMarker({ event, isActive, locale }: { event: HistoricalEvent, isAc
       <Popup className="rounded-xl overflow-hidden border-0 shadow-xl">
         <div className="flex flex-col -m-[13px] max-w-[280px]">
           {event.image && (
-            <div className="w-full h-36 overflow-hidden rounded-t-xl mb-3 bg-slate-200">
+            <div className="w-full h-36 relative overflow-hidden rounded-t-xl mb-3 bg-slate-200">
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img 
                 src={event.image} 
                 alt={event.title[locale]}
                 className="w-full h-full object-cover sepia-[0.35] brightness-95 contrast-110"
-                onError={(e) => {
-                  e.currentTarget.parentElement!.style.display = 'none';
-                }}
               />
+              <div className="absolute bottom-0 left-0 right-0 bg-black/60 px-2 py-1">
+                <p className="text-[9px] text-white/90 text-center italic">
+                  {locale === 'id' ? 'Ilustrasi oleh AI' : 'Illustration by AI'}
+                </p>
+              </div>
             </div>
           )}
           <div className={`px-4 pb-4 ${!event.image ? 'pt-4' : ''}`}>
