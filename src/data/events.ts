@@ -145,7 +145,29 @@ export const HISTORICAL_EVENTS: HistoricalEvent[] = ([
     },
     image: "/images/events/kekaisaran-romawi.jpg",
     confidence: "verified",
-    references: [],
+    references: [
+      {
+            author: "Mary Beard",
+            title: "SPQR: A History of Ancient Rome",
+            publisher: "W. W. Norton & Company",
+            year: 2015,
+            type: "book"
+      },
+      {
+            author: "Adrian Goldsworthy",
+            title: "Augustus: First Emperor of Rome",
+            publisher: "Yale University Press",
+            year: 2014,
+            type: "book"
+      },
+      {
+            author: "Ronald Syme",
+            title: "The Roman Revolution",
+            publisher: "Oxford University Press",
+            year: 2002,
+            type: "book"
+      }
+],
     tags: ["politik", "eropa", "imperium"],
   },
   {
@@ -165,7 +187,29 @@ export const HISTORICAL_EVENTS: HistoricalEvent[] = ([
     },
     image: "/images/events/islam-awal.jpg",
     confidence: "verified",
-    references: [],
+    references: [
+      {
+            author: "Martin Lings",
+            title: "Muhammad: His Life Based on the Earliest Sources",
+            publisher: "Inner Traditions",
+            year: 2006,
+            type: "book"
+      },
+      {
+            author: "Fred M. Donner",
+            title: "Muhammad and the Believers: At the Origins of Islam",
+            publisher: "Harvard University Press",
+            year: 2010,
+            type: "book"
+      },
+      {
+            author: "Karen Armstrong",
+            title: "Muhammad: A Prophet for Our Time",
+            publisher: "HarperOne",
+            year: 2007,
+            type: "book"
+      }
+],
     tags: ["agama", "timur-tengah"],
   },
   {
@@ -185,7 +229,29 @@ export const HISTORICAL_EVENTS: HistoricalEvent[] = ([
     },
     image: "https://images.unsplash.com/photo-1582650893333-e02fb28532f4?q=80&w=800&auto=format&fit=crop",
     confidence: "verified",
-    references: [],
+    references: [
+      {
+            author: "Jack Weatherford",
+            title: "Genghis Khan and the Making of the Modern World",
+            publisher: "Crown",
+            year: 2004,
+            type: "book"
+      },
+      {
+            author: "Timothy May",
+            title: "The Mongol Conquests in World History",
+            publisher: "Reaktion Books",
+            year: 2012,
+            type: "book"
+      },
+      {
+            author: "Morris Rossabi",
+            title: "The Mongols and Global History",
+            publisher: "W. W. Norton & Company",
+            year: 2011,
+            type: "book"
+      }
+],
     tags: ["militer", "asia"],
   },
   {
@@ -432,7 +498,29 @@ export const HISTORICAL_EVENTS: HistoricalEvent[] = ([
     location: { name: { id: "Baghdad, Irak", en: "Baghdad, Iraq" }, lat: 33.3152, lng: 44.3661 },
     image: "https://images.unsplash.com/photo-1542125574-e866e447b97e?q=80&w=800&auto=format&fit=crop",
     confidence: "verified",
-    references: [],
+    references: [
+      {
+            author: "Jim Al-Khalili",
+            title: "The House of Wisdom: How Arabic Science Saved Ancient Knowledge and Gave Us the Renaissance",
+            publisher: "Penguin Press",
+            year: 2011,
+            type: "book"
+      },
+      {
+            author: "George Saliba",
+            title: "Islamic Science and the Making of the European Renaissance",
+            publisher: "MIT Press",
+            year: 2007,
+            type: "book"
+      },
+      {
+            author: "Jonathan Lyons",
+            title: "The House of Wisdom: How the Arabs Transformed Western Civilization",
+            publisher: "Bloomsbury Press",
+            year: 2009,
+            type: "book"
+      }
+],
     tags: ["sains","budaya","timur-tengah"]
   },
   {
@@ -494,7 +582,29 @@ export const HISTORICAL_EVENTS: HistoricalEvent[] = ([
     location: { name: { id: "Nanjing, Tiongkok", en: "Nanjing, China" }, lat: 32.0603, lng: 118.7969 },
     image: "https://images.unsplash.com/photo-1534008897995-27a23e859048?q=80&w=800&auto=format&fit=crop",
     confidence: "verified",
-    references: [],
+    references: [
+      {
+            author: "Edward L. Dreyer",
+            title: "Zheng He: China and the Oceans in the Early Ming Dynasty, 1405–1433",
+            publisher: "Pearson Longman",
+            year: 2007,
+            type: "book"
+      },
+      {
+            author: "Louise Levathes",
+            title: "When China Ruled the Seas: The Treasure Fleet of the Dragon Throne, 1405–1433",
+            publisher: "Oxford University Press",
+            year: 1996,
+            type: "book"
+      },
+      {
+            author: "Sally K. Church",
+            title: "The Colossal Ships of Zheng He: Image or Reality?",
+            publisher: "Bulletin of SOAS",
+            year: 2005,
+            type: "journal"
+      }
+],
     tags: ["eksplorasi","asia","ekonomi"]
   },
   {
