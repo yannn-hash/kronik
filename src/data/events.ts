@@ -70,9 +70,31 @@ export const HISTORICAL_EVENTS: HistoricalEvent[] = ([
       lat: 37.9838,
       lng: 23.7275,
     },
-    image: "/images/events/yunani-kuno-athena.jpg",
     confidence: "verified",
-    references: [],
+    references: [
+      {
+        author: "Donald Kagan",
+        title: "Pericles of Athens and the Birth of Democracy",
+        publisher: "The Free Press",
+        year: 1991,
+        type: "book",
+      },
+      {
+        author: "Simon Hornblower",
+        title: "The Greek World: 479–323 BC",
+        publisher: "Routledge",
+        year: 2011,
+        type: "book",
+      },
+      {
+        author: "Encyclopedia Britannica",
+        title: "Ancient Greek Civilization: The Classical Period",
+        publisher: "Encyclopædia Britannica, Inc.",
+        year: 2024,
+        type: "encyclopedia",
+        url: "https://www.britannica.com/place/ancient-Greece/The-classical-period",
+      }
+    ],
     tags: ["demokrasi", "filsafat", "eropa"],
   },
   {
@@ -325,7 +347,30 @@ export const HISTORICAL_EVENTS: HistoricalEvent[] = ([
     location: { name: { id: "Tenochtitlan, Meksiko", en: "Tenochtitlan, Mexico" }, lat: 19.4326, lng: -99.1332 },
     image: "https://images.unsplash.com/photo-1518105779142-d975f22f1b0a?q=80&w=800&auto=format&fit=crop",
     confidence: "verified",
-    references: [],
+    references: [
+      {
+        author: "Michael E. Smith",
+        title: "The Aztecs (3rd Edition)",
+        publisher: "Wiley-Blackwell",
+        year: 2012,
+        type: "book",
+      },
+      {
+        author: "Frances Berdan",
+        title: "Aztec Archaeology and Ethnohistory",
+        publisher: "Cambridge University Press",
+        year: 2014,
+        type: "book",
+      },
+      {
+        author: "INAH (Instituto Nacional de Antropología e Historia)",
+        title: "Templo Mayor y el Recinto Sagrado de Tenochtitlan",
+        publisher: "Secretaría de Cultura de México",
+        year: 2023,
+        type: "archive",
+        url: "https://www.templomayor.inah.gob.mx/",
+      }
+    ],
     tags: ["amerika","kota","budaya"]
   },
   {

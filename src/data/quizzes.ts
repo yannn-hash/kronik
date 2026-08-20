@@ -131,24 +131,60 @@ export const QUIZZES: Record<string, QuizData> = {
   },
   "kejayaan-yunani-kuno": {
     articleSlug: "kejayaan-yunani-kuno",
-    title: { id: "Kuis: Yunani Kuno", en: "Quiz: Ancient Greece" },
+    title: { id: "Kuis: Zaman Keemasan Athena", en: "Quiz: Golden Age of Athens" },
     questions: [
       {
         id: "q1-yunani",
         question: {
-          id: "Siapa pemimpin yang membawa Athena menuju Zaman Keemasannya?",
-          en: "Which leader brought Athens into its Golden Age?"
+          id: "Siapa negarawan terkemuka yang memprakarsai pembangunan Akropolis dan memimpin Athena pada puncak Zaman Keemasannya?",
+          en: "Which prominent statesman initiated the reconstruction of the Acropolis and led Athens during its Golden Age?"
         },
         options: [
           { id: "Alexander Agung", en: "Alexander the Great" },
           { id: "Perikles", en: "Pericles" },
           { id: "Sokrates", en: "Socrates" },
-          { id: "Leonidas", en: "Leonidas" }
+          { id: "Klishenes", en: "Cleisthenes" }
         ],
         correctAnswerIndex: 1,
         explanation: {
-          id: "Di bawah Perikles, Athena mengalami kemajuan pesat dalam bidang demokrasi, seni, dan filsafat.",
-          en: "Under Pericles, Athens experienced rapid advancements in democracy, art, and philosophy."
+          id: "Perikles memimpin Athena antara 461-429 SM, memperluas demokrasi langsung dan mendanai pembangunan mahakarya seperti Parthenon.",
+          en: "Pericles led Athens between 461-429 BCE, expanding direct democracy and commissioning masterworks such as the Parthenon."
+        }
+      },
+      {
+        id: "q2-yunani",
+        question: {
+          id: "Bagaimana sebagian besar pejabat publik dan dewan (Boule) dipilih dalam sistem demokrasi Athena kuno?",
+          en: "How were most public officials and council members (Boule) selected in ancient Athenian democracy?"
+        },
+        options: [
+          { id: "Melalui sistem undian (sortisi) dari seluruh warga negara", en: "Through a lot drawing system (sortition) among all citizens" },
+          { id: "Berdasarkan keturunan bangsawan dan kekayaan tanah", en: "Based on aristocratic lineage and land ownership" },
+          { id: "Ditunjuk seumur hidup oleh imam agung kuil", en: "Appointed for life by temple high priests" },
+          { id: "Dipilih secara eksklusif oleh para komandan militer", en: "Elected exclusively by military commanders" }
+        ],
+        correctAnswerIndex: 0,
+        explanation: {
+          id: "Warga Athena menganggap undian (sortition) lebih demokratis daripada pemilu karena mencegah manipulasi oleh orang-orang kaya dan berpengaruh.",
+          en: "Athenians viewed sortition as more democratic than elections because it prevented domination by wealthy elites."
+        }
+      },
+      {
+        id: "q3-yunani",
+        question: {
+          id: "Konflik berkepanjangan manakah yang pada akhirnya melumpuhkan kekuasaan hegemoni Athena di dunia Yunani?",
+          en: "Which prolonged conflict ultimately crippled Athenian hegemony across the Greek world?"
+        },
+        options: [
+          { id: "Perang Troya", en: "The Trojan War" },
+          { id: "Perang Yunani-Persia", en: "The Greco-Persian Wars" },
+          { id: "Perang Peloponnesos", en: "The Peloponnesian War" },
+          { id: "Penaklukan Romawi", en: "The Roman Conquest" }
+        ],
+        correctAnswerIndex: 2,
+        explanation: {
+          id: "Perang Peloponnesos (431–404 SM) antara Liga Delos pimpinan Athena dan Liga Peloponnesos pimpinan Sparta berakhir dengan kekalahan telak Athena.",
+          en: "The Peloponnesian War (431–404 BCE) between Athens' Delian League and Sparta's Peloponnesian League ended in catastrophic defeat for Athens."
         }
       }
     ]
@@ -416,13 +452,58 @@ export const QUIZZES: Record<string, QuizData> = {
     title: { id: "Kuis: Puncak Kekaisaran Aztec", en: "Quiz: Peak of the Aztec Empire" },
     questions: [
       {
-        id: "q1-kekaisaran-aztec",
-        question: { id: "Apakah fakta terpenting tentang Puncak Kekaisaran Aztec?", en: "What is the most important fact about Peak of the Aztec Empire?" },
+        id: "q1-aztec",
+        question: {
+          id: "Di manakah lokasi unik berdirinya Tenochtitlan, ibu kota monumental Kekaisaran Aztec?",
+          en: "Where was the unique location of Tenochtitlan, the monumental capital of the Aztec Empire?"
+        },
         options: [
-          { id: "Satu", en: "One" }, { id: "Dua", en: "Two" }, { id: "Fakta Utama", en: "Main Fact" }, { id: "Empat", en: "Four" }
+          { id: "Di lembah terisolasi pegunungan Andes", en: "In an isolated valley of the Andes mountains" },
+          { id: "Di sebuah pulau di tengah Danau Texcoco", en: "On an island in the middle of Lake Texcoco" },
+          { id: "Di pesisir pantai Semenanjung Yucatan", en: "On the coastline of the Yucatan Peninsula" },
+          { id: "Di dalam gua vulkanik Popocatepetl", en: "Inside the volcanic caves of Popocatepetl" }
         ],
-        correctAnswerIndex: 2,
-        explanation: { id: "Fakta utama sangat penting.", en: "The main fact is very important." }
+        correctAnswerIndex: 1,
+        explanation: {
+          id: "Suku Mexica mendirikan Tenochtitlan di pulau berawa di Danau Texcoco pada 1325 setelah melihat elang bertengger di atas kaktus memakan ular.",
+          en: "The Mexica founded Tenochtitlan on a marshy island in Lake Texcoco in 1325 following a prophecy of an eagle perched on a cactus devouring a snake."
+        }
+      },
+      {
+        id: "q2-aztec",
+        question: {
+          id: "Inovasi rekayasa pertanian apakah yang memungkinkan bangsa Aztec memberi makan ratusan ribu penduduk kotanya?",
+          en: "Which agricultural engineering innovation allowed the Aztecs to feed hundreds of thousands of urban inhabitants?"
+        },
+        options: [
+          { id: "Terasering batu bertingkat di lereng terjal", en: "Stone terracing on steep mountain slopes" },
+          { id: "Chinampa, pulau buatan terapung yang sangat subur", en: "Chinampas, highly fertile artificial floating islands" },
+          { id: "Kincir angin pengering rawa bertenaga hewan", en: "Animal-powered windmill marsh drainage" },
+          { id: "Impor gandum skala besar dari bangsa Inca", en: "Large-scale grain imports from the Inca" }
+        ],
+        correctAnswerIndex: 1,
+        explanation: {
+          id: "Chinampa dibuat dari anyaman ranting, lumpur danau, dan tanaman pelindung yang mampu menghasilkan panen hingga 7 kali setahun.",
+          en: "Chinampas were constructed from woven reeds, lake mud, and willow trees, capable of yielding up to 7 harvests a year."
+        }
+      },
+      {
+        id: "q3-aztec",
+        question: {
+          id: "Persekutuan militer dan politik apakah yang mendasari berdirinya Kekaisaran Aztec pada tahun 1428?",
+          en: "Which military and political coalition formed the foundation of the Aztec Empire in 1428?"
+        },
+        options: [
+          { id: "Aliansi Tiga (Tenochtitlan, Texcoco, dan Tlacopan)", en: "The Triple Alliance (Tenochtitlan, Texcoco, and Tlacopan)" },
+          { id: "Konfederasi Tlaxcala dan Cholula", en: "The Confederation of Tlaxcala and Cholula" },
+          { id: "Perjanjian Tordesillas Mesoamerika", en: "The Mesoamerican Treaty of Tordesillas" },
+          { id: "Liga Bangsa-Bangsa Maya-Mexica", en: "The Maya-Mexica League of Nations" }
+        ],
+        correctAnswerIndex: 0,
+        explanation: {
+          id: "Aliansi Tiga Kota (Triple Alliance) menyatukan kekuatan Mexica dan Acolhua untuk menumbangkan hegemoni Azcapotzalco dan mendominasi Mesoamerika.",
+          en: "The Triple Alliance united the Mexica and Acolhua forces to overthrow Azcapotzalco hegemony and dominate Mesoamerica."
+        }
       }
     ]
   },
