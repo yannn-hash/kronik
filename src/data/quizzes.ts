@@ -106,29 +106,104 @@ export const QUIZZES: Record<string, QuizData> = {
 ,
 
   "peradaban-mesopotamia": {
-    articleSlug: "peradaban-mesopotamia",
-    title: { id: "Kuis: Mesopotamia", en: "Quiz: Mesopotamia" },
-    questions: [
-      {
-        id: "q1-mesopotamia",
-        question: {
-          id: "Apa nama sistem tulisan pertama di dunia yang diciptakan oleh bangsa Sumeria?",
-          en: "What is the name of the world's first writing system created by the Sumerians?"
-        },
-        options: [
-          { id: "Hieroglif", en: "Hieroglyphs" },
-          { id: "Alfabet Latin", en: "Latin Alphabet" },
-          { id: "Huruf Paku (Cuneiform)", en: "Cuneiform" },
-          { id: "Aksara Han", en: "Han Characters" }
-        ],
-        correctAnswerIndex: 2,
-        explanation: {
-          id: "Huruf paku (cuneiform) diciptakan sekitar 3200 SM untuk mencatat transaksi dan berkembang menjadi media sastra.",
-          en: "Cuneiform was created around 3200 BCE to record transactions and evolved into a literary medium."
-        }
-      }
-    ]
+  articleSlug: "peradaban-mesopotamia",
+  title: {
+    id: "Kuis: Peradaban Mesopotamia & Uruk",
+    en: "Quiz: Mesopotamian Civilization & Uruk"
   },
+  questions: [
+    {
+      id: "q1-mesopotamia",
+      question: {
+        id: "Apa inovasi sistem tulisan pertama di dunia yang diciptakan bangsa Sumeria di Mesopotamia?",
+        en: "What was the world's first writing system created by the Sumerians in Mesopotamia?"
+      },
+      options: [
+        {
+          id: "Hieroglif batu",
+          en: "Stone Hieroglyphs"
+        },
+        {
+          id: "Huruf Paku (Cuneiform) pada lempung basah",
+          en: "Cuneiform script on wet clay tablets"
+        },
+        {
+          id: "Aksara Fenisia",
+          en: "Phoenician Alphabet"
+        },
+        {
+          id: "Tulisan Tulang Ramalan",
+          en: "Oracle Bone Script"
+        }
+      ],
+      correctAnswerIndex: 1,
+      explanation: {
+        id: "Huruf paku (cuneiform) diciptakan sekitar 3200 SM di Uruk menggunakan batang gelagah runcing pada lempengan tanah liat.",
+        en: "Cuneiform script was created around 3200 BCE in Uruk using reed styluses pressed into wet clay tablets."
+      }
+    },
+    {
+      id: "q2-mesopotamia",
+      question: {
+        id: "Bangunan monumental bertingkat apakah yang menjadi pusat keagamaan dan administrasi di kota-kota Mesopotamia?",
+        en: "Which monumental stepped structure served as the religious and administrative center of Mesopotamian cities?"
+      },
+      options: [
+        {
+          id: "Piramida batu kapur",
+          en: "Limestone Pyramid"
+        },
+        {
+          id: "Ziggurat dari batu bata lumpur",
+          en: "Mud-brick Ziggurat"
+        },
+        {
+          id: "Kuil Parthenon marmer",
+          en: "Marble Parthenon temple"
+        },
+        {
+          id: "Kastel benteng parit",
+          en: "Moated fortress castle"
+        }
+      ],
+      correctAnswerIndex: 1,
+      explanation: {
+        id: "Ziggurat adalah menara kuil bertingkat dari bata lumpur yang menjulang tinggi, melambangkan tangga penghubung bumi dan surga.",
+        en: "A Ziggurat was a stepped temple tower of baked mud brick, symbolizing a bridge between heaven and earth."
+      }
+    },
+    {
+      id: "q3-mesopotamia",
+      question: {
+        id: "Karya sastra epik tertua dalam sejarah manusia yang menceritakan raja legendaris Uruk adalah...",
+        en: "The oldest epic literary work in human history narrating the legendary king of Uruk is..."
+      },
+      options: [
+        {
+          id: "Iliad karya Homer",
+          en: "The Iliad by Homer"
+        },
+        {
+          id: "Epik Gilgamesh",
+          en: "The Epic of Gilgamesh"
+        },
+        {
+          id: "Kitab Orang Mati",
+          en: "The Book of the Dead"
+        },
+        {
+          id: "Mahabharata",
+          en: "The Mahabharata"
+        }
+      ],
+      correctAnswerIndex: 1,
+      explanation: {
+        id: "Epik Gilgamesh mengisahkan perjalanan raja Uruk mencari keabadian dan memuat kisah banjir besar yang legendaris.",
+        en: "The Epic of Gilgamesh recounts the journey of Uruk's king in search of immortality and features the legendary Great Flood narrative."
+      }
+    }
+  ]
+},
   "kejayaan-yunani-kuno": {
     articleSlug: "kejayaan-yunani-kuno",
     title: { id: "Kuis: Zaman Keemasan Athena", en: "Quiz: Golden Age of Athens" },
@@ -388,65 +463,104 @@ export const QUIZZES: Record<string, QuizData> = {
 ,
 
   "peradaban-lembah-indus": {
-    articleSlug: "peradaban-lembah-indus",
-    title: { id: "Kuis: Peradaban Lembah Indus", en: "Quiz: Indus Valley Civilization" },
-    questions: [
-      {
-        id: "q1-lembah-indus",
-        question: { id: "Apakah fakta terpenting tentang Peradaban Lembah Indus?", en: "What is the most important fact about Indus Valley Civilization?" },
-        options: [
-          { id: "Satu", en: "One" }, { id: "Dua", en: "Two" }, { id: "Fakta Utama", en: "Main Fact" }, { id: "Empat", en: "Four" }
-        ],
-        correctAnswerIndex: 2,
-        explanation: { id: "Fakta utama sangat penting.", en: "The main fact is very important." }
-      }
-    ]
+  articleSlug: "peradaban-lembah-indus",
+  title: {
+    id: "Kuis: Peradaban Lembah Indus",
+    en: "Quiz: Indus Valley Civilization"
   },
-  "dinasti-shang": {
-    articleSlug: "dinasti-shang",
-    title: { id: "Kuis: Dinasti Shang", en: "Quiz: Shang Dynasty" },
-    questions: [
-      {
-        id: "q1-dinasti-shang",
-        question: { id: "Apakah fakta terpenting tentang Dinasti Shang?", en: "What is the most important fact about Shang Dynasty?" },
-        options: [
-          { id: "Satu", en: "One" }, { id: "Dua", en: "Two" }, { id: "Fakta Utama", en: "Main Fact" }, { id: "Empat", en: "Four" }
-        ],
-        correctAnswerIndex: 2,
-        explanation: { id: "Fakta utama sangat penting.", en: "The main fact is very important." }
+  questions: [
+    {
+      id: "q1-lembah-indus",
+      question: {
+        id: "Ciri paling mencolok dan maju dari tata kota Mohenjo-Daro dan Harappa adalah...",
+        en: "The most striking and advanced urban feature of Mohenjo-Daro and Harappa was..."
+      },
+      options: [
+        {
+          id: "Piramida megah makam para raja",
+          en: "Monumental royal tomb pyramids"
+        },
+        {
+          id: "Tata kota berpetak (grid) dengan sistem sanitasi dan drainase tertutup",
+          en: "Grid-planned streets with covered drainage and sanitation systems"
+        },
+        {
+          id: "Tembok pertahanan berlapis dengan parit beracun",
+          en: "Multi-layered defensive walls with poisoned moats"
+        },
+        {
+          id: "Kanal laut dalam untuk armada perang",
+          en: "Deep sea canals for war fleets"
+        }
+      ],
+      correctAnswerIndex: 1,
+      explanation: {
+        id: "Peradaban Indus memiliki tata kota berorientasi mata angin dengan sistem saluran pembuangan air tertutup di setiap rumah yang melampaui zamannya.",
+        en: "The Indus civilization featured grid-aligned city planning with indoor bathrooms and covered drainage networks centuries ahead of its time."
       }
-    ]
-  },
-  "kekaisaran-maurya": {
-    articleSlug: "kekaisaran-maurya",
-    title: { id: "Kuis: Kekaisaran Maurya (Ashoka)", en: "Quiz: Mauryan Empire (Ashoka)" },
-    questions: [
-      {
-        id: "q1-kekaisaran-maurya",
-        question: { id: "Apakah fakta terpenting tentang Kekaisaran Maurya (Ashoka)?", en: "What is the most important fact about Mauryan Empire (Ashoka)?" },
-        options: [
-          { id: "Satu", en: "One" }, { id: "Dua", en: "Two" }, { id: "Fakta Utama", en: "Main Fact" }, { id: "Empat", en: "Four" }
-        ],
-        correctAnswerIndex: 2,
-        explanation: { id: "Fakta utama sangat penting.", en: "The main fact is very important." }
+    },
+    {
+      id: "q2-lembah-indus",
+      question: {
+        id: "Struktur pemandian publik besar yang terkenal di Mohenjo-Daro dikenal sebagai...",
+        en: "The famous monumental public bathing structure discovered at Mohenjo-Daro is known as..."
+      },
+      options: [
+        {
+          id: "The Great Bath (Pemandian Agung)",
+          en: "The Great Bath"
+        },
+        {
+          id: "Thermae Antonina",
+          en: "Thermae Antonina"
+        },
+        {
+          id: "Danau Suci Karnak",
+          en: "Sacred Lake of Karnak"
+        },
+        {
+          id: "Kolam Bidadari",
+          en: "Pool of Nymphs"
+        }
+      ],
+      correctAnswerIndex: 0,
+      explanation: {
+        id: "The Great Bath adalah kolam kedap air beralaskan aspal alami (bitumen) yang diduga digunakan untuk ritual penyucian keagamaan.",
+        en: "The Great Bath was a waterproof basin lined with natural bitumen, believed to be utilized for ritual purification ceremonies."
       }
-    ]
-  },
-  "masa-keemasan-islam": {
-    articleSlug: "masa-keemasan-islam",
-    title: { id: "Kuis: Masa Keemasan Islam", en: "Quiz: Islamic Golden Age" },
-    questions: [
-      {
-        id: "q1-islamic-golden-age",
-        question: { id: "Apakah fakta terpenting tentang Masa Keemasan Islam?", en: "What is the most important fact about Islamic Golden Age?" },
-        options: [
-          { id: "Satu", en: "One" }, { id: "Dua", en: "Two" }, { id: "Fakta Utama", en: "Main Fact" }, { id: "Empat", en: "Four" }
-        ],
-        correctAnswerIndex: 2,
-        explanation: { id: "Fakta utama sangat penting.", en: "The main fact is very important." }
+    },
+    {
+      id: "q3-lembah-indus",
+      question: {
+        id: "Mengapa sistem tulisan peradaban Lembah Indus (Indus Script) masih menjadi misteri hingga kini?",
+        en: "Why does the Indus Valley writing system (Indus Script) remain a major mystery today?"
+      },
+      options: [
+        {
+          id: "Semua prasasti musnah terbakar",
+          en: "All inscriptions were burned and destroyed"
+        },
+        {
+          id: "Aksaranya belum berhasil dipecahkan/diterjemahkan (undeciphered)",
+          en: "The script remains undeciphered due to lack of bilingual texts"
+        },
+        {
+          id: "Mereka hanya menggunakan bahasa isyarat tangan",
+          en: "They exclusively used hand sign language"
+        },
+        {
+          id: "Dilarang dibaca oleh kasta pendeta",
+          en: "It was forbidden to be read by the priest caste"
+        }
+      ],
+      correctAnswerIndex: 1,
+      explanation: {
+        id: "Aksara Indus pada segel batu belum berhasil dipecahkan karena sebagian besar prasasti sangat pendek dan belum ditemukan teks dwibahasa seperti Batu Rosetta.",
+        en: "The Indus script remains undeciphered because surviving inscriptions are brief and no bilingual key (like the Rosetta Stone) has been found."
       }
-    ]
-  },
+    }
+  ]
+},
   "kekaisaran-aztec": {
     articleSlug: "kekaisaran-aztec",
     title: { id: "Kuis: Puncak Kekaisaran Aztec", en: "Quiz: Peak of the Aztec Empire" },

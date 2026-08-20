@@ -20,19 +20,28 @@ export const HISTORICAL_EVENTS: HistoricalEvent[] = ([
     confidence: "verified",
     references: [
       {
-        author: "Ian Shaw",
-        title: "The Oxford History of Ancient Egypt",
-        publisher: "Oxford University Press",
-        year: 2003,
+            author: "Ian Shaw",
+            title: "The Oxford History of Ancient Egypt",
+            publisher: "Oxford University Press",
+            year: 2003,
+            type: "book"
       },
       {
-        author: "Mark Lehner",
-        title: "The Complete Pyramids",
-        publisher: "Thames & Hudson",
-        year: 2008,
-        url: "https://archive.org/details/completepyramids0000lehn",
+            author: "Mark Lehner",
+            title: "The Complete Pyramids",
+            publisher: "Thames & Hudson",
+            year: 2008,
+            type: "book",
+            url: "https://archive.org/details/completepyramids0000lehn"
+      },
+      {
+            author: "Zahi Hawass",
+            title: "Mountains of the Pharaohs: The Untold Story of the Pyramid Builders",
+            publisher: "Doubleday",
+            year: 2006,
+            type: "book"
       }
-    ],
+],
     tags: ["arsitektur", "mesir", "kuno"],
   },
   {
@@ -52,7 +61,29 @@ export const HISTORICAL_EVENTS: HistoricalEvent[] = ([
     },
     image: "/images/events/mesopotamia-uruk.jpg",
     confidence: "verified",
-    references: [],
+    references: [
+      {
+            author: "Marc Van De Mieroop",
+            title: "A History of the Ancient Near East, ca. 3000-323 BC",
+            publisher: "Wiley-Blackwell",
+            year: 2015,
+            type: "book"
+      },
+      {
+            author: "Samuel Noah Kramer",
+            title: "History Begins at Sumer: Thirty-Nine Firsts in Recorded History",
+            publisher: "University of Pennsylvania Press",
+            year: 1988,
+            type: "book"
+      },
+      {
+            author: "Guillermo Algaze",
+            title: "The Uruk World System: The Dynamics of Expansion of Early Mesopotamian Civilization",
+            publisher: "University of Chicago Press",
+            year: 2008,
+            type: "book"
+      }
+],
     tags: ["kota", "sumeria", "tulisan"],
   },
   {
@@ -295,7 +326,30 @@ export const HISTORICAL_EVENTS: HistoricalEvent[] = ([
     location: { name: { id: "Mohenjo-Daro, Pakistan", en: "Mohenjo-Daro, Pakistan" }, lat: 27.3292, lng: 68.1388 },
     image: "https://images.unsplash.com/photo-1621376841267-31c360c74900?q=80&w=800&auto=format&fit=crop",
     confidence: "verified",
-    references: [],
+    references: [
+      {
+            author: "Jonathan Mark Kenoyer",
+            title: "Ancient Cities of the Indus Valley Civilization",
+            publisher: "Oxford University Press",
+            year: 1998,
+            type: "book"
+      },
+      {
+            author: "Gregory L. Possehl",
+            title: "The Indus Civilization: A Contemporary Perspective",
+            publisher: "AltaMira Press",
+            year: 2002,
+            type: "book"
+      },
+      {
+            author: "UNESCO World Heritage Centre",
+            title: "Archaeological Ruins at Moenjodaro",
+            publisher: "UNESCO",
+            year: 2024,
+            type: "archive",
+            url: "https://whc.unesco.org/en/list/138/"
+      }
+],
     tags: ["kota","asia","kuno"]
   },
   {
@@ -308,7 +362,29 @@ export const HISTORICAL_EVENTS: HistoricalEvent[] = ([
     location: { name: { id: "Anyang, Tiongkok", en: "Anyang, China" }, lat: 36.1, lng: 114.3333 },
     image: "https://images.unsplash.com/photo-1508804185872-47d8b920bf05?q=80&w=800&auto=format&fit=crop",
     confidence: "verified",
-    references: [],
+    references: [
+      {
+            author: "Kwang-chih Chang",
+            title: "Shang Civilization",
+            publisher: "Yale University Press",
+            year: 1980,
+            type: "book"
+      },
+      {
+            author: "David N. Keightley",
+            title: "Sources of Shang History: The Oracle-Bone Inscriptions of Bronze Age China",
+            publisher: "University of California Press",
+            year: 1985,
+            type: "book"
+      },
+      {
+            author: "Michael Loewe & Edward L. Shaughnessy",
+            title: "The Cambridge History of Ancient China",
+            publisher: "Cambridge University Press",
+            year: 1999,
+            type: "encyclopedia"
+      }
+],
     tags: ["asia","kuno","budaya"]
   },
   {
@@ -321,7 +397,29 @@ export const HISTORICAL_EVENTS: HistoricalEvent[] = ([
     location: { name: { id: "Pataliputra, India", en: "Pataliputra, India" }, lat: 25.61, lng: 85.1414 },
     image: "https://images.unsplash.com/photo-1587595431973-160d0d94add1?q=80&w=800&auto=format&fit=crop",
     confidence: "verified",
-    references: [],
+    references: [
+      {
+            author: "Romila Thapar",
+            title: "Aśoka and the Decline of the Mauryas",
+            publisher: "Oxford University Press",
+            year: 1997,
+            type: "book"
+      },
+      {
+            author: "Upinder Singh",
+            title: "A History of Ancient and Early Medieval India",
+            publisher: "Pearson Longman",
+            year: 2008,
+            type: "book"
+      },
+      {
+            author: "Nayanjot Lahiri",
+            title: "Ashoka in Ancient India",
+            publisher: "Harvard University Press",
+            year: 2015,
+            type: "book"
+      }
+],
     tags: ["politik","agama","asia"]
   },
   {
