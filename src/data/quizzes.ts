@@ -1192,15 +1192,15 @@ export const QUIZZES: Record<string, QuizData> = {
   "renaisans-eropa": {
     "articleSlug": "renaisans-eropa",
     "title": {
-      "id": "Kuis: Era Renaisans",
-      "en": "Quiz: The Renaissance"
+      "id": "Kuis: Renaisans Eropa",
+      "en": "Quiz: European Renaissance"
     },
     "questions": [
       {
         "id": "q1-renaisans",
         "question": {
-          "id": "Di kota manakah gerakan Renaisans pertama kali bermula?",
-          "en": "In which city did the Renaissance movement first begin?"
+          "id": "Di kota manakah gerakan Renaisans pertama kali mekar berkat perlindungan finansial dan politik keluarga bangsawan pedagang klan Medici?",
+          "en": "In which Italian city did the Renaissance first flourish, fueled by the financial and political patronage of the merchant Medici family?"
         },
         "options": [
           {
@@ -1208,22 +1208,82 @@ export const QUIZZES: Record<string, QuizData> = {
             "en": "Rome"
           },
           {
-            "id": "Florence",
-            "en": "Florence"
-          },
-          {
-            "id": "Paris",
-            "en": "Paris"
+            "id": "Florence (Firenze)",
+            "en": "Florence (Firenze)"
           },
           {
             "id": "Venesia",
             "en": "Venice"
+          },
+          {
+            "id": "Milan",
+            "en": "Milan"
           }
         ],
         "correctAnswerIndex": 1,
         "explanation": {
-          "id": "Renaisans bermula di kota Florence, Italia, yang didukung oleh keluarga kaya seperti klan Medici.",
-          "en": "The Renaissance began in Florence, Italy, heavily sponsored by wealthy families like the Medicis."
+          "id": "Florence menjadi episentrum seni dan filsafat Renaisans di bawah naungan Cosimo dan Lorenzo de' Medici yang mendanai seniman dan perpustakaan.",
+          "en": "Florence became the epicenter of Renaissance art and philosophy under Cosimo and Lorenzo de' Medici, who patronized artists and libraries."
+        }
+      },
+      {
+        "id": "q2-renaisans",
+        "question": {
+          "id": "Gerakan intelektual yang menekankan martabat, potensi nalar mandiri, dan studi terhadap teks klasik Yunani-Romawi (*Studia Humanitatis*) disebut...",
+          "en": "The intellectual movement emphasizing human dignity, rational individual potential, and classical Greco-Roman scholarship (*Studia Humanitatis*) is called..."
+        },
+        "options": [
+          {
+            "id": "Humanisme Renaisans",
+            "en": "Renaissance Humanism"
+          },
+          {
+            "id": "Skolastisisme Dogmatis",
+            "en": "Dogmatic Scholasticism"
+          },
+          {
+            "id": "Feodalisme Agraria",
+            "en": "Agrarian Feudalism"
+          },
+          {
+            "id": "Monastisisme Asketik",
+            "en": "Ascetic Monasticism"
+          }
+        ],
+        "correctAnswerIndex": 0,
+        "explanation": {
+          "id": "Humanisme yang dipelopori Petrarch menggeser fokus dari dogma mistisisme abad pertengahan menuju eksplorasi potensi manusia, etika, dan sains sekuler.",
+          "en": "Humanism, pioneered by Petrarch, shifted focus from medieval dogmatic mysticism toward human potential, civic virtue, and secular inquiry."
+        }
+      },
+      {
+        "id": "q3-renaisans",
+        "question": {
+          "id": "Siapakah tokoh polimatik legendaris yang melukis Mona Lisa, Perjamuan Terakhir, dan merancang sketsa anatomi tubuh serta mesin terbang?",
+          "en": "Which legendary polymath painted the Mona Lisa, The Last Supper, and engineered anatomical treatises alongside flying machine blueprints?"
+        },
+        "options": [
+          {
+            "id": "Michelangelo Buonarroti",
+            "en": "Michelangelo Buonarroti"
+          },
+          {
+            "id": "Leonardo da Vinci",
+            "en": "Leonardo da Vinci"
+          },
+          {
+            "id": "Raffaello Sanzio (Raphael)",
+            "en": "Raphael Sanzio"
+          },
+          {
+            "id": "Sandro Botticelli",
+            "en": "Sandro Botticelli"
+          }
+        ],
+        "correctAnswerIndex": 1,
+        "explanation": {
+          "id": "Leonardo da Vinci adalah personifikasi manusia universal (*Uomo Universale*) yang memadukan kejeniusan seni rupa dengan pengamatan sains empiris.",
+          "en": "Leonardo da Vinci was the quintessential 'Universal Man' (*Uomo Universale*), uniting fine artistic mastery with empirical scientific observation."
         }
       }
     ]
@@ -1231,38 +1291,98 @@ export const QUIZZES: Record<string, QuizData> = {
   "penjelajahan-columbus": {
     "articleSlug": "penjelajahan-columbus",
     "title": {
-      "id": "Kuis: Penjelajahan Dunia",
-      "en": "Quiz: World Exploration"
+      "id": "Kuis: Pelayaran Columbus & Pertukaran Global",
+      "en": "Quiz: Columbus Voyages & Columbian Exchange"
     },
     "questions": [
       {
         "id": "q1-columbus",
         "question": {
-          "id": "Apa yang memicu Pertukaran Columbian?",
-          "en": "What triggered the Columbian Exchange?"
+          "id": "Monarki Eropa manakah yang mendanai pelayaran ekspedisi Christopher Columbus melintasi Samudra Atlantik pada tahun 1492?",
+          "en": "Which European monarchy financed Christopher Columbus' expedition across the Atlantic Ocean in 1492?"
         },
         "options": [
           {
-            "id": "Jatuhnya Konstantinopel",
-            "en": "Fall of Constantinople"
+            "id": "Kerajaan Inggris di bawah Henry VII",
+            "en": "Kingdom of England under Henry VII"
           },
           {
-            "id": "Pendaratan Columbus di benua Amerika",
-            "en": "Columbus landing in the Americas"
+            "id": "Kerajaan Spanyol di bawah Ratu Isabella I dan Raja Ferdinand II",
+            "en": "Kingdom of Spain under Queen Isabella I and King Ferdinand II"
           },
           {
-            "id": "Ditemukannya jalur sutra",
-            "en": "Discovery of the Silk Road"
+            "id": "Kerajaan Portugal di bawah Raja Manuel I",
+            "en": "Kingdom of Portugal under King Manuel I"
           },
           {
-            "id": "Perjanjian Tordesillas",
-            "en": "Treaty of Tordesillas"
+            "id": "Republik Venesia",
+            "en": "Republic of Venice"
           }
         ],
         "correctAnswerIndex": 1,
         "explanation": {
-          "id": "Pendaratan Columbus memulai pertukaran besar-besaran biologi, budaya, dan manusia antara Dunia Lama dan Baru.",
-          "en": "Columbus's landing initiated the massive biological, cultural, and human exchange between the Old and New Worlds."
+          "id": "Penguasa Katolik Spanyol (Reyes Católicos) menyetujui pendanaan tiga kapal (Santa Maria, Pinta, Nina) setelah penaklukan Granada pada 1492.",
+          "en": "The Catholic Monarchs of Spain approved funding for three ships (Santa Maria, Pinta, Niña) following the capture of Granada in 1492."
+        }
+      },
+      {
+        "id": "q2-columbus",
+        "question": {
+          "id": "Dampak biologis dan ekologis global dari bertemunya Dunia Lama dan Dunia Baru pasca-1492 dikenal oleh para sejarawan sebagai...",
+          "en": "The trans-oceanic biological and ecological exchange of crops, livestock, populations, and pathogens post-1492 is known as..."
+        },
+        "options": [
+          {
+            "id": "Pertukaran Kolumbian (The Columbian Exchange)",
+            "en": "The Columbian Exchange"
+          },
+          {
+            "id": "Revolusi Hijau Atlantik",
+            "en": "Atlantic Green Revolution"
+          },
+          {
+            "id": "Perjanjian Tordesillas",
+            "en": "Treaty of Tordesillas"
+          },
+          {
+            "id": "Merkantilisme Karibia",
+            "en": "Caribbean Mercantilism"
+          }
+        ],
+        "correctAnswerIndex": 0,
+        "explanation": {
+          "id": "Pertukaran Kolumbian menyebarkan jagung, kentang, dan cabai ke Eurasia, sembari membawa gandum, kuda, serta epidemi mematikan ke benua Amerika.",
+          "en": "The Columbian Exchange introduced maize, potatoes, and chilies to Eurasia, while bringing wheat, horses, and lethal epidemics to the Americas."
+        }
+      },
+      {
+        "id": "q3-columbus",
+        "question": {
+          "id": "Nama pulau di Kepulauan Bahama tempat Christopher Columbus pertama kali mendarat pada tanggal 12 Oktober 1492 adalah...",
+          "en": "The name of the Bahamian island where Christopher Columbus first made landfall on October 12, 1492 was..."
+        },
+        "options": [
+          {
+            "id": "San Salvador (Guanahani)",
+            "en": "San Salvador (Guanahani)"
+          },
+          {
+            "id": "Hispaniola",
+            "en": "Hispaniola"
+          },
+          {
+            "id": "Kuba",
+            "en": "Cuba"
+          },
+          {
+            "id": "Puerto Riko",
+            "en": "Puerto Rico"
+          }
+        ],
+        "correctAnswerIndex": 0,
+        "explanation": {
+          "id": "Columbus mendarat di pulau Guanahani milik suku Taíno dan menamainya San Salvador ('Juruselamat Suci').",
+          "en": "Columbus landed on the Taíno island of Guanahani and christened it San Salvador ('Holy Savior')."
         }
       }
     ]
@@ -1277,31 +1397,91 @@ export const QUIZZES: Record<string, QuizData> = {
       {
         "id": "q1-industri",
         "question": {
-          "id": "Penemuan mesin apa yang paling mendorong lahirnya Revolusi Industri?",
-          "en": "The invention of which machine primarily drove the Industrial Revolution?"
+          "id": "Penemu asal Skotlandia yang menyempurnakan mesin uap dengan kondensor terpisah pada 1769 sehingga menggerakkan pabrik-pabrik mekanis adalah...",
+          "en": "The Scottish inventor who perfected the separate condenser steam engine in 1769 to power mechanized factory production was..."
         },
         "options": [
           {
-            "id": "Mesin Cetak",
-            "en": "Printing Press"
+            "id": "Thomas Newcomen",
+            "en": "Thomas Newcomen"
           },
           {
-            "id": "Mesin Uap",
-            "en": "Steam Engine"
+            "id": "James Watt",
+            "en": "James Watt"
           },
           {
-            "id": "Mesin Tenun",
-            "en": "Loom"
+            "id": "Richard Arkwright",
+            "en": "Richard Arkwright"
           },
           {
-            "id": "Mesin Telegraf",
-            "en": "Telegraph"
+            "id": "George Stephenson",
+            "en": "George Stephenson"
           }
         ],
         "correctAnswerIndex": 1,
         "explanation": {
-          "id": "Mesin uap (terutama yang dikembangkan James Watt) memungkinkan mekanisasi pabrik dan transportasi.",
-          "en": "The steam engine (especially James Watt's design) enabled the mechanization of factories and transportation."
+          "id": "Mesin uap efisien karya James Watt melepaskan industri manufaktur dari ketergantungan tenaga kincir air dan hewan ternak.",
+          "en": "James Watt's efficient steam engine liberated industrial manufacturing from reliance on watermills and draft animal power."
+        }
+      },
+      {
+        "id": "q2-industri",
+        "question": {
+          "id": "Sektor manufaktur apakah yang pertama kali mengalami otomatisasi mesin massal di Inggris pada abad ke-18?",
+          "en": "Which manufacturing sector was the first to undergo mass machine automation in 18th-century Britain?"
+        },
+        "options": [
+          {
+            "id": "Industri Tekstil dan Pemintalan Katun",
+            "en": "Textile and Cotton Spinning Industry"
+          },
+          {
+            "id": "Industri Otomotif",
+            "en": "Automotive Industry"
+          },
+          {
+            "id": "Industri Kimia Petrokimia",
+            "en": "Petrochemical Industry"
+          },
+          {
+            "id": "Industri Galangan Kapal Baja",
+            "en": "Steel Shipbuilding Industry"
+          }
+        ],
+        "correctAnswerIndex": 0,
+        "explanation": {
+          "id": "Inovasi seperti Spinning Jenny karya James Hargreaves dan Water Frame karya Arkwright merevolusi produksi kain katun secara eksponensial.",
+          "en": "Innovations like James Hargreaves' Spinning Jenny and Arkwright's Water Frame exponentially accelerated cotton cloth production."
+        }
+      },
+      {
+        "id": "q3-industri",
+        "question": {
+          "id": "Transformasi sosial-demografis terbesar akibat Revolusi Industri terhadap persebaran populasi manusia adalah...",
+          "en": "The greatest socio-demographic transformation triggered by the Industrial Revolution regarding population distribution was..."
+        },
+        "options": [
+          {
+            "id": "Urbanisasi massal dari desa pertanian ke kota-kota pusat pabrik",
+            "en": "Mass urbanization from rural farmsteads to factory cities"
+          },
+          {
+            "id": "Kembalinya masyarakat ke pola hidup nomaden",
+            "en": "A return to nomadic hunter-gatherer lifestyles"
+          },
+          {
+            "id": "Penurunan populasi perkotaan hingga nol",
+            "en": "Decline of urban population to near zero"
+          },
+          {
+            "id": "Penghapusan seluruh sistem perdagangan uang",
+            "en": "Abolition of monetary market currency"
+          }
+        ],
+        "correctAnswerIndex": 0,
+        "explanation": {
+          "id": "Jutaan petani pindah ke kota-kota industri seperti Manchester dan Birmingham, melahirkan kelas pekerja buruh pabrik (*proletariat*).",
+          "en": "Millions of agricultural laborers migrated to industrial hubs like Manchester and Birmingham, forging the industrial working class (*proletariat*)."
         }
       }
     ]
@@ -1309,15 +1489,15 @@ export const QUIZZES: Record<string, QuizData> = {
   "revolusi-prancis": {
     "articleSlug": "revolusi-prancis",
     "title": {
-      "id": "Kuis: Revolusi Prancis",
-      "en": "Quiz: French Revolution"
+      "id": "Kuis: Revolusi Prancis 1789",
+      "en": "Quiz: French Revolution 1789"
     },
     "questions": [
       {
         "id": "q1-prancis",
         "question": {
-          "id": "Peristiwa apa pada tanggal 14 Juli 1789 yang menandai dimulainya revolusi secara terang-terangan?",
-          "en": "What event on July 14, 1789 marked the beginning of open revolution?"
+          "id": "Peristiwa simbolis pada 14 Juli 1789 yang menandai meletusnya Revolusi Prancis dan kini dirayakan sebagai Hari Nasional Prancis adalah...",
+          "en": "The symbolic event on July 14, 1789 marking the outbreak of the French Revolution and celebrated as French National Day is..."
         },
         "options": [
           {
@@ -1325,52 +1505,82 @@ export const QUIZZES: Record<string, QuizData> = {
             "en": "Execution of King Louis XVI"
           },
           {
-            "id": "Penyerbuan Penjara Bastille",
-            "en": "Storming of the Bastille"
+            "id": "Penyerbuan Penjara Benteng Bastille",
+            "en": "Storming of the Bastille Fortress"
           },
           {
-            "id": "Deklarasi Hak Asasi Manusia",
-            "en": "Declaration of the Rights of Man"
+            "id": "Kudeta 18 Brumaire",
+            "en": "Coup of 18 Brumaire"
           },
           {
-            "id": "Kudeta Napoleon",
-            "en": "Napoleon's Coup"
+            "id": "Sumpah Lapangan Tenis",
+            "en": "Tennis Court Oath"
           }
         ],
         "correctAnswerIndex": 1,
         "explanation": {
-          "id": "Penyerbuan Bastille adalah momen simbolis runtuhnya tirani kerajaan dan kini dirayakan sebagai hari nasional Prancis.",
-          "en": "The storming of the Bastille was a symbolic moment of the collapse of royal tyranny and is now celebrated as France's national day."
+          "id": "Rakyat Paris menyerbu benteng Bastille untuk merebut amunisi mesiu dan meruntuhkan simbol tirani monarki absolut Rezim Lama (*Ancien Régime*).",
+          "en": "Parisians stormed the Bastille fortress to seize gunpowder and tear down the primary symbol of Ancien Régime royal absolutism."
         }
       },
       {
         "id": "q2-prancis",
         "question": {
-          "id": "Siapa golongan (Estate) yang menanggung beban pajak paling berat sebelum revolusi?",
-          "en": "Which Estate bore the heaviest tax burden before the revolution?"
+          "id": "Deklarasi bersejarah yang disahkan Majelis Konstituante Nasional pada Agustus 1789 yang menetapkan kesetaraan hak semua manusia di muka hukum adalah...",
+          "en": "The landmark charter enacted by the National Constituent Assembly in August 1789 establishing equality of all citizens before the law was..."
         },
         "options": [
           {
-            "id": "Golongan Pertama (Klerus/Agamawan)",
-            "en": "First Estate (Clergy)"
+            "id": "Deklarasi Hak Asasi Manusia dan Warga Negara (Déclaration des droits de l'homme)",
+            "en": "Declaration of the Rights of Man and of the Citizen"
           },
           {
-            "id": "Golongan Kedua (Bangsawan)",
-            "en": "Second Estate (Nobility)"
+            "id": "Magna Carta",
+            "en": "Magna Carta"
           },
           {
-            "id": "Golongan Ketiga (Rakyat Jelata)",
-            "en": "Third Estate (Commoners)"
+            "id": "Deklarasi Kemerdekaan Amerika",
+            "en": "American Declaration of Independence"
           },
           {
-            "id": "Keluarga Kerajaan",
-            "en": "The Royal Family"
+            "id": "Pakta Perdamaian Westphalia",
+            "en": "Peace of Westphalia"
           }
         ],
-        "correctAnswerIndex": 2,
+        "correctAnswerIndex": 0,
         "explanation": {
-          "id": "Golongan Ketiga (rakyat jelata, petani, kaum borjuis) menanggung hampir seluruh pajak negara, sementara golongan elit dibebaskan.",
-          "en": "The Third Estate (commoners, peasants, bourgeoisie) paid almost all state taxes, while the elite classes were exempt."
+          "id": "Deklarasi ini menegaskan bahwa manusia dilahirkan merdeka dan memiliki kesetaraan hak atas kebebasan, properti, keamanan, dan perlawanan terhadap penindasan.",
+          "en": "The Declaration declared that all human beings are born free and remain equal in rights to liberty, property, security, and resistance to oppression."
+        }
+      },
+      {
+        "id": "q3-prancis",
+        "question": {
+          "id": "Tiga nilai semboyan revolusioner yang menjadi pilar abadi perjuangan Republik Prancis di seluruh dunia adalah...",
+          "en": "The three revolutionary ideals forming the enduring motto of the French Republic worldwide are..."
+        },
+        "options": [
+          {
+            "id": "Liberté, Égalité, Fraternité (Kebebasan, Kesetaraan, Persaudaraan)",
+            "en": "Liberté, Égalité, Fraternité (Liberty, Equality, Fraternity)"
+          },
+          {
+            "id": "Gold, Glory, Gospel",
+            "en": "Gold, Glory, Gospel"
+          },
+          {
+            "id": "Veni, Vidi, Vici",
+            "en": "Veni, Vidi, Vici"
+          },
+          {
+            "id": "Senatus Populusque Romanus",
+            "en": "Senatus Populusque Romanus"
+          }
+        ],
+        "correctAnswerIndex": 0,
+        "explanation": {
+          "id": "Semboyan Liberté, Égalité, Fraternité mengilhami penghapusan hak-hak istimewa feodal dan menjadi fondasi nilai-nilai demokrasi modern global.",
+          "en": "The motto Liberté, Égalité, Fraternité inspired the abolition of feudal privileges and anchored modern global democratic principles."
         }
       }
     ]
@@ -1383,33 +1593,93 @@ export const QUIZZES: Record<string, QuizData> = {
     },
     "questions": [
       {
-        "id": "q1-kekaisaran-inca",
+        "id": "q1-inca",
         "question": {
-          "id": "Apakah fakta terpenting tentang Kekaisaran Inca?",
-          "en": "What is the most important fact about Inca Empire?"
+          "id": "Siapakah kaisar (Sapa Inca) visioner yang mengubah kerajaan kecil Cusco menjadi imperium raksasa Tawantinsuyu dan membangun Machu Picchu?",
+          "en": "Which visionary emperor (Sapa Inca) transformed the small Kingdom of Cusco into the vast Tawantinsuyu empire and constructed Machu Picchu?"
         },
         "options": [
           {
-            "id": "Satu",
-            "en": "One"
+            "id": "Atahualpa",
+            "en": "Atahualpa"
           },
           {
-            "id": "Dua",
-            "en": "Two"
+            "id": "Pachacuti Inca Yupanqui",
+            "en": "Pachacuti Inca Yupanqui"
           },
           {
-            "id": "Fakta Utama",
-            "en": "Main Fact"
+            "id": "Huascar",
+            "en": "Huascar"
           },
           {
-            "id": "Empat",
-            "en": "Four"
+            "id": "Manco Capac",
+            "en": "Manco Capac"
           }
         ],
-        "correctAnswerIndex": 2,
+        "correctAnswerIndex": 1,
         "explanation": {
-          "id": "Fakta utama sangat penting.",
-          "en": "The main fact is very important."
+          "id": "Pachacuti (sang 'Pengguncang Bumi') menata ulang kota Cusco dalam bentuk puma, menaklukkan lembah Andes, dan mendirikan Machu Picchu sebagai kediaman peristirahatan agung.",
+          "en": "Pachacuti ('He who shakes the Earth') reorganized Cusco in the shape of a puma, conquered the Andean valleys, and founded Machu Picchu as an imperial estate."
+        }
+      },
+      {
+        "id": "q2-inca",
+        "question": {
+          "id": "Jaringan jalan raya monumental sepanjang lebih dari 40.000 kilometer yang melintasi lereng terjal Andes dan jembatan tali gantung disebut...",
+          "en": "The monumental 40,000-kilometer paved highway network traversing steep Andean peaks and suspension rope bridges was called..."
+        },
+        "options": [
+          {
+            "id": "Qhapaq Ñan (Jalan Utama Inca)",
+            "en": "Qhapaq Ñan (The Great Inca Road)"
+          },
+          {
+            "id": "Via Appia Andes",
+            "en": "Andean Via Appia"
+          },
+          {
+            "id": "Jalur Sutra Selatan",
+            "en": "Southern Silk Road"
+          },
+          {
+            "id": "Camino Real Mesoamerika",
+            "en": "Mesoamerican Camino Real"
+          }
+        ],
+        "correctAnswerIndex": 0,
+        "explanation": {
+          "id": "Qhapaq Ñan menghubungkan empat penjuru wilayah Tawantinsuyu, dilintasi oleh pelari kurir kilat (Chasqui) yang mampu mengantarkan pesan ribuan kilometer.",
+          "en": "Qhapaq Ñan connected all four quarters of Tawantinsuyu, traversed by relay runners (Chasquis) who delivered messages across thousands of kilometers."
+        }
+      },
+      {
+        "id": "q3-inca",
+        "question": {
+          "id": "Sistem pencatatan data statistik, sensus penduduk, dan akuntansi pajak berupa untaian tali wol bersimpul warna-warni pada peradaban Inca adalah...",
+          "en": "The data recording, population census, and tax accounting system utilizing knotted colored woolen cords in Inca civilization was..."
+        },
+        "options": [
+          {
+            "id": "Khipu (Quipu)",
+            "en": "Khipu (Quipu)"
+          },
+          {
+            "id": "Cuneiform Andes",
+            "en": "Andean Cuneiform"
+          },
+          {
+            "id": "Glif Batu",
+            "en": "Stone Glyphs"
+          },
+          {
+            "id": "Abakus Tembaga",
+            "en": "Copper Abacus"
+          }
+        ],
+        "correctAnswerIndex": 0,
+        "explanation": {
+          "id": "Tanpa aksara alfabetis, para ahli Khipukamayuq membaca variasi simpul, ketebalan tali, dan warna benang Khipu untuk mengelola perbendaharaan kekaisaran.",
+          "en": "Lacking an alphabetic script, Khipu masters (Khipukamayuq) read knot configurations, cord positions, and colors to manage imperial administration."
         }
       }
     ]

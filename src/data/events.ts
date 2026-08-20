@@ -271,7 +271,29 @@ export const HISTORICAL_EVENTS: HistoricalEvent[] = ([
     },
     image: "https://images.unsplash.com/photo-1542385317-0c7f2129c5fc?q=80&w=800&auto=format&fit=crop",
     confidence: "verified",
-    references: [],
+    references: [
+      {
+            author: "Jacob Burckhardt",
+            title: "The Civilization of the Renaissance in Italy",
+            publisher: "Penguin Classics",
+            year: 1990,
+            type: "book"
+      },
+      {
+            author: "Paul Johnson",
+            title: "The Renaissance: A Short History",
+            publisher: "Modern Library",
+            year: 2002,
+            type: "book"
+      },
+      {
+            author: "Jerry Brotton",
+            title: "The Renaissance: A Very Short Introduction",
+            publisher: "Oxford University Press",
+            year: 2006,
+            type: "book"
+      }
+],
     tags: ["seni", "budaya", "eropa"],
   },
   {
@@ -291,7 +313,29 @@ export const HISTORICAL_EVENTS: HistoricalEvent[] = ([
     },
     image: "https://images.unsplash.com/photo-1500673922987-e212871f15f5?q=80&w=800&auto=format&fit=crop",
     confidence: "verified",
-    references: [],
+    references: [
+      {
+            author: "Alfred W. Crosby",
+            title: "The Columbian Exchange: Biological and Cultural Consequences of 1492",
+            publisher: "Praeger",
+            year: 2003,
+            type: "book"
+      },
+      {
+            author: "Felipe Fernández-Armesto",
+            title: "Columbus",
+            publisher: "Oxford University Press",
+            year: 1991,
+            type: "book"
+      },
+      {
+            author: "Samuel Eliot Morison",
+            title: "Admiral of the Ocean Sea: A Life of Christopher Columbus",
+            publisher: "Little, Brown and Company",
+            year: 1942,
+            type: "book"
+      }
+],
     tags: ["eksplorasi", "amerika"],
   },
   {
@@ -311,7 +355,29 @@ export const HISTORICAL_EVENTS: HistoricalEvent[] = ([
     },
     image: "https://images.unsplash.com/photo-1565881478148-5c4e9dce23be?q=80&w=800&auto=format&fit=crop",
     confidence: "verified",
-    references: [],
+    references: [
+      {
+            author: "Eric Hobsbawm",
+            title: "The Age of Revolution: 1789–1848",
+            publisher: "Vintage",
+            year: 1996,
+            type: "book"
+      },
+      {
+            author: "Robert C. Allen",
+            title: "The British Industrial Revolution in Global Perspective",
+            publisher: "Cambridge University Press",
+            year: 2009,
+            type: "book"
+      },
+      {
+            author: "E. J. Hobsbawm",
+            title: "Industry and Empire: The Birth of the Industrial Revolution",
+            publisher: "The New Press",
+            year: 1999,
+            type: "book"
+      }
+],
     tags: ["teknologi", "ekonomi", "eropa"],
   },
   {
@@ -333,12 +399,27 @@ export const HISTORICAL_EVENTS: HistoricalEvent[] = ([
     confidence: "verified",
     references: [
       {
-        author: "William Doyle",
-        title: "The Oxford History of the French Revolution",
-        publisher: "Oxford University Press",
-        year: 2002,
+            author: "William Doyle",
+            title: "The Oxford History of the French Revolution",
+            publisher: "Oxford University Press",
+            year: 2002,
+            type: "book"
+      },
+      {
+            author: "Simon Schama",
+            title: "Citizens: A Chronicle of the French Revolution",
+            publisher: "Vintage",
+            year: 1990,
+            type: "book"
+      },
+      {
+            author: "François Furet",
+            title: "Interpreting the French Revolution",
+            publisher: "Cambridge University Press",
+            year: 1981,
+            type: "book"
       }
-    ],
+],
     tags: ["politik", "revolusi", "eropa"],
   },
   {
@@ -569,7 +650,29 @@ export const HISTORICAL_EVENTS: HistoricalEvent[] = ([
     location: { name: { id: "Cusco, Peru", en: "Cusco, Peru" }, lat: -13.5226, lng: -71.9673 },
     image: "https://images.unsplash.com/photo-1526392060635-9d6019884377?q=80&w=800&auto=format&fit=crop",
     confidence: "verified",
-    references: [],
+    references: [
+      {
+            author: "Terence N. D'Altroy",
+            title: "The Incas",
+            publisher: "Wiley-Blackwell",
+            year: 2014,
+            type: "book"
+      },
+      {
+            author: "Brian S. Bauer",
+            title: "The Development of the Inca State",
+            publisher: "University of Texas Press",
+            year: 1992,
+            type: "book"
+      },
+      {
+            author: "John Hemming",
+            title: "The Conquest of the Incas",
+            publisher: "Mariner Books",
+            year: 2003,
+            type: "book"
+      }
+],
     tags: ["amerika","arsitektur"]
   },
   {
