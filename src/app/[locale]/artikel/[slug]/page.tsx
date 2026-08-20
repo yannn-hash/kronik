@@ -74,9 +74,9 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
           {event.title[validLocale]}
         </h1>
 
+        {/* event.image has been disabled
         {event.image && (
           <div className="mb-8 w-full overflow-hidden rounded-2xl aspect-video bg-muted relative border border-border shadow-md">
-            {/* eslint-disable-next-line @next/next/no-img-element */}
             <img 
               src={event.image} 
               alt={event.title[validLocale]} 
@@ -89,6 +89,7 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
             </div>
           </div>
         )}
+        */}
         
         <p className="text-xl text-muted-foreground leading-relaxed border-l-4 border-primary pl-4">
           {event.summary[validLocale]}

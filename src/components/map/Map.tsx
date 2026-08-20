@@ -79,9 +79,9 @@ function EventMarker({ event, isActive, locale }: { event: HistoricalEvent, isAc
     >
       <Popup className="rounded-xl overflow-hidden border-0 shadow-xl">
         <div className="flex flex-col -m-[13px] max-w-[280px]">
+          {/* event.image has been disabled
           {event.image && (
             <div className="w-full h-36 relative overflow-hidden rounded-t-xl mb-3 bg-slate-200">
-              {/* eslint-disable-next-line @next/next/no-img-element */}
               <img 
                 src={event.image} 
                 alt={event.title[locale]}
@@ -94,6 +94,7 @@ function EventMarker({ event, isActive, locale }: { event: HistoricalEvent, isAc
               </div>
             </div>
           )}
+          */}
           <div className={`px-4 pb-4 ${!event.image ? 'pt-4' : ''}`}>
             <h3 className="font-bold text-base mb-1 text-slate-900 leading-tight">{event.title[locale]}</h3>
             <p className="text-sm text-slate-600 mb-3 leading-snug">{event.summary[locale]}</p>
