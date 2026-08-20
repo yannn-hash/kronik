@@ -1692,33 +1692,93 @@ export const QUIZZES: Record<string, QuizData> = {
     },
     "questions": [
       {
-        "id": "q1-perang-dunia-1",
+        "id": "q1-ww1",
         "question": {
-          "id": "Apakah fakta terpenting tentang Perang Dunia I?",
-          "en": "What is the most important fact about World War I?"
+          "id": "Peristiwa pembunuhan di Sarajevo pada 28 Juni 1914 yang menjadi pemicu langsung meletusnya Perang Dunia I adalah...",
+          "en": "The assassination event in Sarajevo on June 28, 1914 that served as the immediate trigger for World War I was..."
         },
         "options": [
           {
-            "id": "Satu",
-            "en": "One"
+            "id": "Pembunuhan Tsar Nikolas II",
+            "en": "Assassination of Tsar Nicholas II"
           },
           {
-            "id": "Dua",
-            "en": "Two"
+            "id": "Pembunuhan Archduke Franz Ferdinand oleh Gavrilo Princip",
+            "en": "Assassination of Archduke Franz Ferdinand by Gavrilo Princip"
           },
           {
-            "id": "Fakta Utama",
-            "en": "Main Fact"
+            "id": "Pembunuhan Kaiser Wilhelm II",
+            "en": "Assassination of Kaiser Wilhelm II"
           },
           {
-            "id": "Empat",
-            "en": "Four"
+            "id": "Pembunuhan Perdana Menteri Clemenceau",
+            "en": "Assassination of Prime Minister Clemenceau"
           }
         ],
-        "correctAnswerIndex": 2,
+        "correctAnswerIndex": 1,
         "explanation": {
-          "id": "Fakta utama sangat penting.",
-          "en": "The main fact is very important."
+          "id": "Pembunuhan putra mahkota Austria-Hongaria oleh nasionalis Slavia memicu krisis diplomatik Juli yang mengaktifkan sistem aliansi militer Eropa.",
+          "en": "The assassination of the Austro-Hungarian heir by a Slavic nationalist triggered the July Crisis, activating Europe's interlocking alliance network."
+        }
+      },
+      {
+        "id": "q2-ww1",
+        "question": {
+          "id": "Bentuk pertempuran defensif statis berkawat duri dan gas beracun yang mendominasi Front Barat di Prancis dan Belgia dikenal sebagai...",
+          "en": "The static, barbed-wire and poison-gas defensive warfare that defined the Western Front in France and Belgium was known as..."
+        },
+        "options": [
+          {
+            "id": "Perang Parit (Trench Warfare)",
+            "en": "Trench Warfare"
+          },
+          {
+            "id": "Perang Kilat (Blitzkrieg)",
+            "en": "Blitzkrieg"
+          },
+          {
+            "id": "Perang Gerilya Hutan",
+            "en": "Jungle Guerrilla Warfare"
+          },
+          {
+            "id": "Perang Dingin",
+            "en": "The Cold War"
+          }
+        ],
+        "correctAnswerIndex": 0,
+        "explanation": {
+          "id": "Perang Parit mengubah pertempuran darat menjadi kebuntuan defensif yang mematikan jutaan prajurit akibat senapan mesin, artileri berat, dan gas klorin.",
+          "en": "Trench warfare produced lethal defensive stalemates where millions died from machine-gun fire, heavy artillery bombardments, and poison gas."
+        }
+      },
+      {
+        "id": "q3-ww1",
+        "question": {
+          "id": "Perjanjian damai tahun 1919 yang membebankan reparasi perang berat dan pasal kesalahan perang (*War Guilt Clause*) kepada Jerman adalah...",
+          "en": "The 1919 peace treaty imposing crushing financial reparations and the War Guilt Clause upon Germany was the..."
+        },
+        "options": [
+          {
+            "id": "Perjanjian Versailles",
+            "en": "Treaty of Versailles"
+          },
+          {
+            "id": "Perjanjian Tordesillas",
+            "en": "Treaty of Tordesillas"
+          },
+          {
+            "id": "Pakta Warsawa",
+            "en": "Warsaw Pact"
+          },
+          {
+            "id": "Perjanjian Westphalia",
+            "en": "Peace of Westphalia"
+          }
+        ],
+        "correctAnswerIndex": 0,
+        "explanation": {
+          "id": "Perjanjian Versailles mereduksi wilayah Jerman, melucuti militernya, dan menciptakan kepahitan nasional yang kelak dimanfaatkan Adolf Hitler untuk menyulut Perang Dunia II.",
+          "en": "The Treaty of Versailles stripped German territories, disarmed its military, and created national humiliation that Hitler later exploited to ignite WWII."
         }
       }
     ]
@@ -1731,33 +1791,93 @@ export const QUIZZES: Record<string, QuizData> = {
     },
     "questions": [
       {
-        "id": "q1-perang-dunia-2",
+        "id": "q1-ww2",
         "question": {
-          "id": "Apakah fakta terpenting tentang Perang Dunia II?",
-          "en": "What is the most important fact about World War II?"
+          "id": "Invasi militer manakah pada 1 September 1939 yang memicu deklarasi perang Inggris dan Prancis serta menandai dimulainya Perang Dunia II di Eropa?",
+          "en": "Which military invasion on September 1, 1939 triggered declarations of war by Britain and France, inaugurating World War II in Europe?"
         },
         "options": [
           {
-            "id": "Satu",
-            "en": "One"
+            "id": "Invasi Jerman ke Polandia",
+            "en": "German Invasion of Poland"
           },
           {
-            "id": "Dua",
-            "en": "Two"
+            "id": "Invasi Italia ke Etiopia",
+            "en": "Italian Invasion of Ethiopia"
           },
           {
-            "id": "Fakta Utama",
-            "en": "Main Fact"
+            "id": "Serangan ke Pearl Harbor",
+            "en": "Attack on Pearl Harbor"
           },
           {
-            "id": "Empat",
-            "en": "Four"
+            "id": "Invasi Uni Soviet ke Finlandia",
+            "en": "Soviet Invasion of Finland"
           }
         ],
-        "correctAnswerIndex": 2,
+        "correctAnswerIndex": 0,
         "explanation": {
-          "id": "Fakta utama sangat penting.",
-          "en": "The main fact is very important."
+          "id": "Taktik perang kilat (*Blitzkrieg*) Jerman Nazi ke Polandia memaksa Sekutu Barat mendeklarasikan perang terbuka melawan Reich Ketiga.",
+          "en": "Nazi Germany's Blitzkrieg conquest of Poland compelled Britain and France to declare total war against the Third Reich."
+        }
+      },
+      {
+        "id": "q2-ww2",
+        "question": {
+          "id": "Operasi pendaratan amfibi terbesar dalam sejarah yang dilancarkan tentara Sekutu di pesisir Normandia, Prancis pada 6 Juni 1944 dikenal sebagai...",
+          "en": "The largest amphibious assault in military history launched by Allied forces across the beaches of Normandy, France on June 6, 1944 is known as..."
+        },
+        "options": [
+          {
+            "id": "D-Day (Operasi Overlord)",
+            "en": "D-Day (Operation Overlord)"
+          },
+          {
+            "id": "Operasi Barbarossa",
+            "en": "Operation Barbarossa"
+          },
+          {
+            "id": "Pertempuran Midway",
+            "en": "Battle of Midway"
+          },
+          {
+            "id": "Operasi Market Garden",
+            "en": "Operation Market Garden"
+          }
+        ],
+        "correctAnswerIndex": 0,
+        "explanation": {
+          "id": "D-Day berhasil membuka Front Barat kedua di Eropa, membebaskan Paris, dan mempercepat kehancuran total kekuasaan Nazi Jerman.",
+          "en": "D-Day opened the crucial Western Front in Europe, liberating Paris and accelerating the complete collapse of Nazi Germany."
+        }
+      },
+      {
+        "id": "q3-ww2",
+        "question": {
+          "id": "Senjata pemusnah massal revolusioner apakah yang dijatuhkan Amerika Serikat di Hiroshima dan Nagasaki pada Agustus 1945 yang mengakhiri Perang Pasifik?",
+          "en": "Which revolutionary weapon of mass destruction dropped by the United States on Hiroshima and Nagasaki in August 1945 terminated the Pacific War?"
+        },
+        "options": [
+          {
+            "id": "Bom Atom Fisi Nuklir (Atomic Bomb)",
+            "en": "Nuclear Fission Atomic Bomb"
+          },
+          {
+            "id": "Rudal Balistik V-2",
+            "en": "V-2 Ballistic Missile"
+          },
+          {
+            "id": "Bom Gas Saraf Kimia",
+            "en": "Chemical Nerve Gas Bomb"
+          },
+          {
+            "id": "Bom Torpedo Termal",
+            "en": "Thermal Torpedo Bomb"
+          }
+        ],
+        "correctAnswerIndex": 0,
+        "explanation": {
+          "id": "Proyek Manhattan melahirkan senjata atom pertama yang menewaskan ratusan ribu jiwa di Hiroshima dan Nagasaki, memaksa Kaisar Hirohito menyerah tanpa syarat.",
+          "en": "The Manhattan Project produced the atomic weapons that devastated Hiroshima and Nagasaki, compelling Emperor Hirohito's unconditional surrender."
         }
       }
     ]
@@ -1765,38 +1885,98 @@ export const QUIZZES: Record<string, QuizData> = {
   "kemerdekaan-indonesia": {
     "articleSlug": "kemerdekaan-indonesia",
     "title": {
-      "id": "Kuis: Proklamasi 1945",
-      "en": "Quiz: 1945 Proclamation"
+      "id": "Kuis: Proklamasi Kemerdekaan Indonesia",
+      "en": "Quiz: Indonesian Independence Proclamation"
     },
     "questions": [
       {
         "id": "q1-indo",
         "question": {
-          "id": "Peristiwa global apa yang memberikan celah (kekosongan kekuasaan) bagi Indonesia untuk merdeka?",
-          "en": "What global event provided a power vacuum for Indonesia to declare independence?"
+          "id": "Di manakah naskah otentik Proklamasi Kemerdekaan Indonesia dibacakan oleh Soekarno dan Hatta pada hari Jumat, 17 Agustus 1945?",
+          "en": "Where was the authentic text of the Indonesian Declaration of Independence proclaimed by Sukarno and Hatta on Friday, August 17, 1945?"
         },
         "options": [
           {
-            "id": "Runtuhnya Tembok Berlin",
-            "en": "Fall of the Berlin Wall"
+            "id": "Jalan Pegangsaan Timur No. 56, Jakarta",
+            "en": "Jalan Pegangsaan Timur No. 56, Jakarta"
           },
           {
-            "id": "Kekalahan Belanda oleh Jerman",
-            "en": "Defeat of the Dutch by Germany"
+            "id": "Lapangan Ikada, Jakarta",
+            "en": "Ikada Square, Jakarta"
           },
           {
-            "id": "Menyerahnya Jepang pada Sekutu",
-            "en": "Japan's surrender to the Allies"
+            "id": "Gedung BPUPKI (Gedung Pancasila)",
+            "en": "BPUPKI Building (Pancasila Building)"
           },
           {
-            "id": "Berdirinya PBB",
-            "en": "Establishment of the UN"
+            "id": "Rumah Laksamana Maeda",
+            "en": "Admiral Maeda's Residence"
           }
         ],
-        "correctAnswerIndex": 2,
+        "correctAnswerIndex": 0,
         "explanation": {
-          "id": "Menyerahnya Jepang di Perang Dunia II membuka kekosongan kekuasaan yang segera dimanfaatkan oleh para pemuda dan tokoh bangsa.",
-          "en": "Japan's surrender in WWII created a power vacuum quickly utilized by Indonesian youth and national figures."
+          "id": "Proklamasi dibacakan di halaman kediaman Bung Karno di Jalan Pegangsaan Timur 56 tepat pukul 10.00 pagi, disertai pengibaran Bendera Pusaka Merah Putih.",
+          "en": "The proclamation was read at Bung Karno's residence at Pegangsaan Timur 56 at 10:00 AM, accompanied by raising the sacred Red and White flag."
+        }
+      },
+      {
+        "id": "q2-indo",
+        "question": {
+          "id": "Peristiwa pengungsian darurat Soekarno dan Hatta oleh para pemuda pejuang untuk mendesak proklamasi independen tanpa janji Jepang dikenal sebagai...",
+          "en": "The historic youth-led action of escorting Sukarno and Hatta outside Jakarta to demand an immediate proclamation without Japanese interference was..."
+        },
+        "options": [
+          {
+            "id": "Peristiwa Rengasdengklok",
+            "en": "The Rengasdengklok Incident"
+          },
+          {
+            "id": "Bandung Lautan Api",
+            "en": "Bandung Sea of Fire"
+          },
+          {
+            "id": "Pertempuran 10 November Surabaya",
+            "en": "Battle of Surabaya (November 10)"
+          },
+          {
+            "id": "Serangan Umum 1 Maret",
+            "en": "General Offensive of March 1"
+          }
+        ],
+        "correctAnswerIndex": 0,
+        "explanation": {
+          "id": "Pemuda pejuang (seperti Chaerul Saleh, Wikana, Sukarni) mengamankan dwi-tunggal ke Rengasdengklok pada 16 Agustus 1945 agar proklamasi murni lahir dari kehendak rakyat Indonesia.",
+          "en": "Youth leaders escorted Sukarno and Hatta to Rengasdengklok on August 16, 1945 to ensure independence was forged purely by Indonesian sovereign will."
+        }
+      },
+      {
+        "id": "q3-indo",
+        "question": {
+          "id": "Siapakah tokoh pejuang pemuda yang mengetik naskah proklamasi kemerdekaan yang telah dirumuskan di rumah Laksamana Maeda?",
+          "en": "Which prominent youth patriot typed the final text of the Independence Proclamation drafted at Admiral Maeda's residence?"
+        },
+        "options": [
+          {
+            "id": "Sayuti Melik",
+            "en": "Sayuti Melik"
+          },
+          {
+            "id": "B.M. Diah",
+            "en": "B.M. Diah"
+          },
+          {
+            "id": "Achmad Soebardjo",
+            "en": "Achmad Soebardjo"
+          },
+          {
+            "id": "Sutan Sjahrir",
+            "en": "Sutan Sjahrir"
+          }
+        ],
+        "correctAnswerIndex": 0,
+        "explanation": {
+          "id": "Sayuti Melik mengetik naskah proklamasi dengan sedikit koreksi redaksional, didampingi oleh B.M. Diah, sebelum ditandatangani oleh Soekarno dan Hatta.",
+          "en": "Sayuti Melik typed the final proclamation text with minor editorial refinements, witnessed by B.M. Diah, before Sukarno and Hatta signed it."
         }
       }
     ]
@@ -1804,38 +1984,98 @@ export const QUIZZES: Record<string, QuizData> = {
   "pendaratan-bulan": {
     "articleSlug": "pendaratan-bulan",
     "title": {
-      "id": "Kuis: Pendaratan Bulan",
-      "en": "Quiz: Moon Landing"
+      "id": "Kuis: Pendaratan Bulan Apollo 11",
+      "en": "Quiz: Apollo 11 Moon Landing"
     },
     "questions": [
       {
         "id": "q1-bulan",
         "question": {
-          "id": "Apakah misi pendaratan manusia pertama di bulan?",
-          "en": "What was the first manned moon landing mission?"
+          "id": "Siapakah manusia pertama dalam sejarah yang menjejakkan kaki di permukaan bulan pada tanggal 20 Juli 1969?",
+          "en": "Who was the first human in history to set foot on the lunar surface on July 20, 1969?"
         },
         "options": [
           {
-            "id": "Apollo 8",
-            "en": "Apollo 8"
+            "id": "Buzz Aldrin",
+            "en": "Buzz Aldrin"
           },
           {
-            "id": "Apollo 11",
-            "en": "Apollo 11"
+            "id": "Neil Armstrong",
+            "en": "Neil Armstrong"
           },
           {
-            "id": "Apollo 13",
-            "en": "Apollo 13"
+            "id": "Michael Collins",
+            "en": "Michael Collins"
           },
           {
-            "id": "Sputnik 1",
-            "en": "Sputnik 1"
+            "id": "Yuri Gagarin",
+            "en": "Yuri Gagarin"
           }
         ],
         "correctAnswerIndex": 1,
         "explanation": {
-          "id": "Misi Apollo 11 berhasil mendaratkan manusia pertama di permukaan bulan pada 20 Juli 1969.",
-          "en": "Apollo 11 mission landed the first humans on the Moon on July 20, 1969."
+          "id": "Komandan misi Apollo 11 Neil Armstrong melangkah keluar dari modul Eagle ke kawah Mare Tranquillitatis dan mengucapkan kalimat 'One small step for a man, one giant leap for mankind'.",
+          "en": "Apollo 11 Commander Neil Armstrong stepped from the Eagle onto Mare Tranquillitatis, uttering 'That's one small step for [a] man, one giant leap for mankind'."
+        }
+      },
+      {
+        "id": "q2-bulan",
+        "question": {
+          "id": "Nama modul pendarat bulan (Lunar Module) yang membawa astronot turun ke permukaan bulan adalah...",
+          "en": "The name of the Lunar Module that carried the astronauts down to the lunar surface was..."
+        },
+        "options": [
+          {
+            "id": "Eagle",
+            "en": "Eagle"
+          },
+          {
+            "id": "Columbia",
+            "en": "Columbia"
+          },
+          {
+            "id": "Vostok 1",
+            "en": "Vostok 1"
+          },
+          {
+            "id": "Challenger",
+            "en": "Challenger"
+          }
+        ],
+        "correctAnswerIndex": 0,
+        "explanation": {
+          "id": "Modul pendarat Eagle mendarat di bulan, sementara Michael Collins tetap mengorbit di dalam Modul Komando Columbia.",
+          "en": "The Lunar Module Eagle landed on the Moon, while Michael Collins remained in lunar orbit piloting the Command Module Columbia."
+        }
+      },
+      {
+        "id": "q3-bulan",
+        "question": {
+          "id": "Roket peluncur tiga tingkat raksasa setinggi 111 meter berkekuatan 3,4 juta kg dorongan yang membawa misi Apollo 11 ke luar angkasa adalah...",
+          "en": "The colossal 111-meter-tall three-stage launch vehicle with 3.4 million kg of thrust that propelled Apollo 11 into space was..."
+        },
+        "options": [
+          {
+            "id": "Saturn V",
+            "en": "Saturn V"
+          },
+          {
+            "id": "Falcon Heavy",
+            "en": "Falcon Heavy"
+          },
+          {
+            "id": "Soyuz R-7",
+            "en": "Soyuz R-7"
+          },
+          {
+            "id": "Atlas V",
+            "en": "Atlas V"
+          }
+        ],
+        "correctAnswerIndex": 0,
+        "explanation": {
+          "id": "Saturn V dirancang oleh Wernher von Braun dan tim insinyur NASA, tetap menjadi roket peluncur operasional terkuat yang pernah terbang dalam sejarah.",
+          "en": "The Saturn V rocket, engineered by Wernher von Braun and NASA teams, remains the most powerful successful launch vehicle in spaceflight history."
         }
       }
     ]
@@ -1843,38 +2083,98 @@ export const QUIZZES: Record<string, QuizData> = {
   "runtuhnya-tembok-berlin": {
     "articleSlug": "runtuhnya-tembok-berlin",
     "title": {
-      "id": "Kuis: Tembok Berlin",
-      "en": "Quiz: Berlin Wall"
+      "id": "Kuis: Runtuhnya Tembok Berlin",
+      "en": "Quiz: Fall of the Berlin Wall"
     },
     "questions": [
       {
         "id": "q1-berlin",
         "question": {
-          "id": "Runtuhnya Tembok Berlin secara simbolis menandai berakhirnya era apa?",
-          "en": "The fall of the Berlin Wall symbolically marked the end of which era?"
+          "id": "Pada tanggal dan tahun berapakah Tembok Berlin secara dramatis dibuka dan diruntuhkan oleh warga Jerman setelah 28 tahun membelah kota?",
+          "en": "On which date and year was the Berlin Wall dramatically opened and torn down by citizens after 28 years of dividing the city?"
         },
         "options": [
           {
-            "id": "Perang Dunia I",
-            "en": "World War I"
+            "id": "9 November 1989",
+            "en": "November 9, 1989"
           },
           {
-            "id": "Revolusi Industri",
-            "en": "Industrial Revolution"
+            "id": "17 Agustus 1985",
+            "en": "August 17, 1985"
           },
           {
-            "id": "Perang Dingin",
-            "en": "The Cold War"
+            "id": "4 Juli 1991",
+            "en": "July 4, 1991"
           },
           {
-            "id": "Zaman Renaisans",
-            "en": "The Renaissance"
+            "id": "25 Desember 1991",
+            "en": "December 25, 1991"
           }
         ],
-        "correctAnswerIndex": 2,
+        "correctAnswerIndex": 0,
         "explanation": {
-          "id": "Peristiwa ini menjadi simbol berakhirnya segregasi ideologi antara Blok Barat dan Blok Timur selama Perang Dingin.",
-          "en": "This event became the symbol of the end of ideological segregation between the Western and Eastern Blocs during the Cold War."
+          "id": "Pada malam 9 November 1989, puluhan ribu warga Berlin Timur dan Barat membanjiri pos pemeriksaan perbatasan Bornholmer Straße dan merayakan runtuhnya tembok beton.",
+          "en": "On the night of November 9, 1989, tens of thousands of East and West Berliners flooded the Bornholmer Straße crossing, celebrating the fall of the concrete barrier."
+        }
+      },
+      {
+        "id": "q2-berlin",
+        "question": {
+          "id": "Program reformasi keterbukaan politik (*Glasnost*) dan restrukturisasi ekonomi (*Perestroika*) di Uni Soviet diprakarsai oleh pemimpin...",
+          "en": "The reform policies of political openness (*Glasnost*) and economic restructuring (*Perestroika*) in the USSR were initiated by Soviet leader..."
+        },
+        "options": [
+          {
+            "id": "Mikhail Gorbachev",
+            "en": "Mikhail Gorbachev"
+          },
+          {
+            "id": "Nikita Khrushchev",
+            "en": "Nikita Khrushchev"
+          },
+          {
+            "id": "Leonid Brezhnev",
+            "en": "Leonid Brezhnev"
+          },
+          {
+            "id": "Vladimir Putin",
+            "en": "Vladimir Putin"
+          }
+        ],
+        "correctAnswerIndex": 0,
+        "explanation": {
+          "id": "Kebijakan non-intervensi militer Gorbachev terhadap negara-negara satelit Eropa Timur membuka jalan bagi revolusi damai 1989.",
+          "en": "Gorbachev's policy of non-military intervention in Eastern European satellite states cleared the way for the peaceful revolutions of 1989."
+        }
+      },
+      {
+        "id": "q3-berlin",
+        "question": {
+          "id": "Garis pembatas geopolitik dan militer yang memisahkan Blok Barat kapitalis dan Blok Timur komunis selama Perang Dingin di Eropa dinamai oleh Winston Churchill sebagai...",
+          "en": "The geopolitical and ideological barrier separating the capitalist West and the communist East across Cold War Europe was famously christened by Winston Churchill as the..."
+        },
+        "options": [
+          {
+            "id": "Tirai Besi (The Iron Curtain)",
+            "en": "The Iron Curtain"
+          },
+          {
+            "id": "Garis Maginot",
+            "en": "The Maginot Line"
+          },
+          {
+            "id": "Garis Khatulistiwa",
+            "en": "The Equator Line"
+          },
+          {
+            "id": "Batas 38 Derajat",
+            "en": "The 38th Parallel"
+          }
+        ],
+        "correctAnswerIndex": 0,
+        "explanation": {
+          "id": "Pidato 'Tirai Besi' Winston Churchill pada 1946 melukiskan pemisahan total benua Eropa di bawah hegemoni Soviet hingga runtuhnya Tembok Berlin pada 1989.",
+          "en": "Churchill's 1946 'Iron Curtain' speech depicted the ideological partitioning of Europe under Soviet hegemony until the Wall fell in 1989."
         }
       }
     ]

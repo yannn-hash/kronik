@@ -439,7 +439,29 @@ export const HISTORICAL_EVENTS: HistoricalEvent[] = ([
     },
     image: "https://images.unsplash.com/photo-1589370724817-48f029052dae?q=80&w=800&auto=format&fit=crop",
     confidence: "verified",
-    references: [],
+    references: [
+      {
+            author: "M.C. Ricklefs",
+            title: "A History of Modern Indonesia since c. 1200 (4th Edition)",
+            publisher: "Stanford University Press",
+            year: 2008,
+            type: "book"
+      },
+      {
+            author: "Benedict Anderson",
+            title: "Java in a Time of Revolution: Occupation and Resistance, 1944–1946",
+            publisher: "Cornell University Press",
+            year: 1972,
+            type: "book"
+      },
+      {
+            author: "George McTurnan Kahin",
+            title: "Nationalism and Revolution in Indonesia",
+            publisher: "Cornell University Press",
+            year: 2003,
+            type: "book"
+      }
+],
     tags: ["kemerdekaan", "asia", "politik"],
   },
   {
@@ -459,7 +481,29 @@ export const HISTORICAL_EVENTS: HistoricalEvent[] = ([
     },
     image: "https://images.unsplash.com/photo-1599940824399-b87987207ea9?q=80&w=800&auto=format&fit=crop",
     confidence: "verified",
-    references: [],
+    references: [
+      {
+            author: "Mary Elise Sarotte",
+            title: "The Collapse: The Accidental Opening of the Berlin Wall",
+            publisher: "Basic Books",
+            year: 2014,
+            type: "book"
+      },
+      {
+            author: "Victor Sebestyen",
+            title: "Revolution 1989: The Fall of the Soviet Empire",
+            publisher: "Pantheon Books",
+            year: 2009,
+            type: "book"
+      },
+      {
+            author: "Frederick Taylor",
+            title: "The Berlin Wall: A World Divided, 1961–1989",
+            publisher: "HarperCollins",
+            year: 2006,
+            type: "book"
+      }
+],
     tags: ["politik", "perang-dingin", "eropa"],
   }
 ,
@@ -720,7 +764,29 @@ export const HISTORICAL_EVENTS: HistoricalEvent[] = ([
     location: { name: { id: "Sarajevo, Bosnia", en: "Sarajevo, Bosnia" }, lat: 43.8563, lng: 18.4131 },
     image: "https://images.unsplash.com/photo-1582236372557-81765c3bb203?q=80&w=800&auto=format&fit=crop",
     confidence: "verified",
-    references: [],
+    references: [
+      {
+            author: "Margaret MacMillan",
+            title: "The War That Ended Peace: The Road to 1914",
+            publisher: "Random House",
+            year: 2013,
+            type: "book"
+      },
+      {
+            author: "Christopher Clark",
+            title: "The Sleepwalkers: How Europe Went to War in 1914",
+            publisher: "Harper",
+            year: 2013,
+            type: "book"
+      },
+      {
+            author: "Hew Strachan",
+            title: "The First World War",
+            publisher: "Viking",
+            year: 2003,
+            type: "book"
+      }
+],
     tags: ["perang","eropa","politik"]
   },
   {
@@ -733,7 +799,29 @@ export const HISTORICAL_EVENTS: HistoricalEvent[] = ([
     location: { name: { id: "Berlin, Jerman", en: "Berlin, Germany" }, lat: 52.52, lng: 13.405 },
     image: "https://images.unsplash.com/photo-1503525287515-585eeeb33fcb?q=80&w=800&auto=format&fit=crop",
     confidence: "verified",
-    references: [],
+    references: [
+      {
+            author: "Antony Beevor",
+            title: "The Second World War",
+            publisher: "Little, Brown and Company",
+            year: 2012,
+            type: "book"
+      },
+      {
+            author: "Richard Overy",
+            title: "Why the Allies Won",
+            publisher: "W. W. Norton & Company",
+            year: 1996,
+            type: "book"
+      },
+      {
+            author: "Max Hastings",
+            title: "Inferno: The World at War, 1939–1945",
+            publisher: "Knopf",
+            year: 2011,
+            type: "book"
+      }
+],
     tags: ["perang","global"]
   },
   {
@@ -746,7 +834,30 @@ export const HISTORICAL_EVENTS: HistoricalEvent[] = ([
     location: { name: { id: "Bulan (Peluncuran: Florida, AS)", en: "Moon (Launch: Florida, USA)" }, lat: 28.5721, lng: -80.648 },
     image: "https://images.unsplash.com/photo-1541185933-ef5d8ed016c2?q=80&w=800&auto=format&fit=crop",
     confidence: "verified",
-    references: [],
+    references: [
+      {
+            author: "James R. Hansen",
+            title: "First Man: The Life of Neil A. Armstrong",
+            publisher: "Simon & Schuster",
+            year: 2005,
+            type: "book"
+      },
+      {
+            author: "Andrew Chaikin",
+            title: "A Man on the Moon: The Voyages of the Apollo Astronauts",
+            publisher: "Penguin Books",
+            year: 2007,
+            type: "book"
+      },
+      {
+            author: "NASA History Division",
+            title: "Apollo 11 Mission Report",
+            publisher: "National Aeronautics and Space Administration",
+            year: 1969,
+            type: "archive",
+            url: "https://history.nasa.gov/alsj/a11/a11.html"
+      }
+],
     tags: ["sains","teknologi","eksplorasi"]
   }
 ] as HistoricalEvent[]).sort((a, b) => a.year - b.year);
