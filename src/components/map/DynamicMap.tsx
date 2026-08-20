@@ -17,8 +17,17 @@ const Map = dynamic(() => import("./Map"), {
 interface DynamicMapProps {
   events: HistoricalEvent[];
   activeEventId?: string | null;
+  showCivilizations?: boolean;
+  selectedEra?: string | null;
 }
 
-export function DynamicMap({ events, activeEventId }: DynamicMapProps) {
-  return <Map events={events} activeEventId={activeEventId} />;
+export function DynamicMap({ events, activeEventId, showCivilizations, selectedEra }: DynamicMapProps) {
+  return (
+    <Map 
+      events={events} 
+      activeEventId={activeEventId} 
+      showCivilizations={showCivilizations}
+      selectedEra={selectedEra}
+    />
+  );
 }

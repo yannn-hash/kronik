@@ -1,14 +1,15 @@
 "use client";
 
-import { MapContainer, TileLayer, Marker, Popup, useMap } from "react-leaflet";
+import { MapContainer, TileLayer, Marker, Popup, Polygon, Tooltip, useMap } from "react-leaflet";
 import { useEffect, useRef } from "react";
 import L from "leaflet";
-import { type HistoricalEvent } from "@/types/history";
+import { type HistoricalEvent, type Civilization } from "@/types/history";
 import { useLocale } from "next-intl";
 import { Link } from "@/i18n/routing";
 import { ERAS } from "@/data/eras";
 import { TAG_TRANSLATIONS } from "@/data/tags";
-import { ArrowRight } from "lucide-react";
+import { CIVILIZATIONS } from "@/data/civilizations";
+import { ArrowRight, Landmark } from "lucide-react";
 
 const createCustomIcon = (color: string) => {
   return L.divIcon({
@@ -43,8 +44,6 @@ function MapUpdater({ events, activeEventId }: { events: HistoricalEvent[], acti
     if (activeEventId) {
       const activeEvent = events.find(e => e.id === activeEventId);
       if (activeEvent) {
-        // Add a slight offset to latitude (e.g., +4 degrees at zoom 5) 
-        // so the marker appears lower on the screen, making room for the popup above it.
         map.flyTo([activeEvent.location.lat + 6, activeEvent.location.lng], 5, { duration: 1.5 });
       }
     } else {
@@ -60,6 +59,65 @@ function MapUpdater({ events, activeEventId }: { events: HistoricalEvent[], acti
   }, [events, activeEventId, map]);
   
   return null;
+}
+
+function CivilizationOverlay({ civ, locale }: { civ: Civilization, locale: "id" | "en" }) {
+  return (
+    <Polygon
+      positions={civ.boundaries}
+      pathOptions={{
+        color: civ.color,
+        fillColor: civ.color,
+        fillOpacity: 0.18,
+        weight: 2,
+        dashArray: "5, 5",
+      }}
+      eventHandlers={{
+        mouseover: (e) => {
+          const layer = e.target;
+          layer.setStyle({
+            fillOpacity: 0.35,
+            weight: 3,
+            dashArray: "",
+          });
+        },
+        mouseout: (e) => {
+          const layer = e.target;
+          layer.setStyle({
+            fillOpacity: 0.18,
+            weight: 2,
+            dashArray: "5, 5",
+          });
+        },
+      }}
+    >
+      <Tooltip sticky className="rounded-lg shadow-lg border-0 bg-card/95 backdrop-blur-md p-2">
+        <div className="text-xs font-sans">
+          <p className="font-bold text-foreground flex items-center gap-1.5">
+            <span className="w-2.5 h-2.5 rounded-full inline-block" style={{ backgroundColor: civ.color }}></span>
+            {civ.name[locale]}
+          </p>
+          <p className="text-[11px] text-muted-foreground mt-0.5 font-medium">{civ.yearPeak[locale]}</p>
+        </div>
+      </Tooltip>
+      <Popup className="rounded-xl overflow-hidden border-0 shadow-xl">
+        <div className="flex flex-col -m-[13px] max-w-[280px] p-4">
+          <div className="flex items-center gap-2 mb-1.5">
+            <span className="w-3 h-3 rounded-full shrink-0" style={{ backgroundColor: civ.color }}></span>
+            <h3 className="font-bold text-sm text-slate-900 leading-tight">{civ.name[locale]}</h3>
+          </div>
+          <p className="text-xs text-amber-700 font-semibold mb-2 bg-amber-50 px-2 py-0.5 rounded border border-amber-200 inline-block">
+            {civ.yearPeak[locale]}
+          </p>
+          <p className="text-xs text-slate-600 mb-3 leading-relaxed">{civ.summary[locale]}</p>
+          <div className="flex items-center gap-1.5 text-xs text-slate-700 border-t border-slate-200 pt-2 font-medium">
+            <Landmark className="h-3.5 w-3.5 text-primary shrink-0" />
+            <span>{locale === "id" ? "Ibu Kota: " : "Capital: "}<strong>{civ.capital.name[locale]}</strong></span>
+          </div>
+        </div>
+      </Popup>
+    </Polygon>
+  );
 }
 
 function EventMarker({ event, isActive, locale }: { event: HistoricalEvent, isActive: boolean, locale: "id"|"en" }) {
@@ -79,22 +137,6 @@ function EventMarker({ event, isActive, locale }: { event: HistoricalEvent, isAc
     >
       <Popup className="rounded-xl overflow-hidden border-0 shadow-xl">
         <div className="flex flex-col -m-[13px] max-w-[280px]">
-          {/* event.image has been disabled
-          {event.image && (
-            <div className="w-full h-36 relative overflow-hidden rounded-t-xl mb-3 bg-slate-200">
-              <img 
-                src={event.image} 
-                alt={event.title[locale]}
-                className="w-full h-full object-cover sepia-[0.35] brightness-95 contrast-110"
-              />
-              <div className="absolute bottom-0 left-0 right-0 bg-black/60 px-2 py-1">
-                <p className="text-[9px] text-white/90 text-center italic">
-                  {locale === 'id' ? 'Ilustrasi oleh AI' : 'Illustration by AI'}
-                </p>
-              </div>
-            </div>
-          )}
-          */}
           <div className={`px-4 pb-4 ${!event.image ? 'pt-4' : ''}`}>
             <h3 className="font-bold text-base mb-1 text-slate-900 leading-tight">{event.title[locale]}</h3>
             <p className="text-sm text-slate-600 mb-3 leading-snug">{event.summary[locale]}</p>
@@ -126,10 +168,18 @@ function EventMarker({ event, isActive, locale }: { event: HistoricalEvent, isAc
 interface MapProps {
   events: HistoricalEvent[];
   activeEventId?: string | null;
+  showCivilizations?: boolean;
+  selectedEra?: string | null;
 }
 
-export default function Map({ events, activeEventId }: MapProps) {
+export default function Map({ events, activeEventId, showCivilizations = true, selectedEra }: MapProps) {
   const locale = useLocale() as "id" | "en";
+
+  const visibleCivilizations = showCivilizations
+    ? selectedEra
+      ? CIVILIZATIONS.filter(civ => civ.era === selectedEra)
+      : CIVILIZATIONS
+    : [];
 
   return (
     <div className="h-full w-full relative z-0">
@@ -146,6 +196,13 @@ export default function Map({ events, activeEventId }: MapProps) {
           url="https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png"
           attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>'
         />
+
+        {/* Civilization Polygons Layer */}
+        {visibleCivilizations.map(civ => (
+          <CivilizationOverlay key={civ.id} civ={civ} locale={locale} />
+        ))}
+
+        {/* Historical Events Markers */}
         {events.map((event) => (
           <EventMarker 
             key={event.id}

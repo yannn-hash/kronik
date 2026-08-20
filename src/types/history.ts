@@ -74,3 +74,18 @@ export interface QuizData {
   title: { id: string; en: string };
   questions: QuizQuestion[];
 }
+
+export interface Civilization {
+  id: string;
+  name: { id: string; en: string };
+  era: Era;
+  yearPeak: { id: string; en: string };
+  color: string;
+  capital: {
+    name: { id: string; en: string };
+    lat: number;
+    lng: number;
+  };
+  summary: { id: string; en: string };
+  boundaries: [number, number][][]; // Array of [lat, lng] rings for Leaflet Polygon
+}
