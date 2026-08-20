@@ -5,6 +5,7 @@ import { References } from "@/components/article/References";
 import { RelatedArticles } from "@/components/article/RelatedArticles";
 import { Link } from "@/i18n/routing";
 import { TextToSpeech } from "@/components/article/TextToSpeech";
+import { QuizWrapper } from "@/components/article/QuizWrapper";
 import { ArrowLeft, Calendar, MapPin } from "lucide-react";
 
 interface ArticlePageProps {
@@ -101,7 +102,7 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
 
       {/* MDX Content */}
       <article className="prose prose-sm sm:prose-base lg:prose-lg mx-auto mt-8 max-w-[65ch] dark:prose-invert prose-headings:font-bold prose-a:text-primary hover:prose-a:text-primary/80 prose-img:rounded-xl">
-        <MDXContent />
+        <MDXContent components={{ QuizWrapper }} />
       </article>
 
       {/* References */}

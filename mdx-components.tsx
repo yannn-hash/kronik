@@ -1,7 +1,9 @@
 import type { MDXComponents } from "mdx/types";
+import { QuizWrapper } from "@/components/article/QuizWrapper";
 
 export function useMDXComponents(components: MDXComponents): MDXComponents {
   return {
+    QuizWrapper,
     h1: ({ children }) => (
       <h1 className="mt-8 text-3xl font-bold tracking-tight text-foreground">
         {children}
