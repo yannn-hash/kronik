@@ -2178,5 +2178,1787 @@ export const QUIZZES: Record<string, QuizData> = {
         }
       }
     ]
-  }
+  },
+  "gobekli-tepe": {
+    "articleSlug": "gobekli-tepe",
+    "title": {
+        "id": "Kuis: Megalitikum Göbekli Tepe",
+        "en": "Quiz: Göbekli Tepe Megalith"
+    },
+    "questions": [
+        {
+            "id": "gt-1",
+            "question": {
+                "id": "Apa temuan paling revolusioner di Göbekli Tepe yang mengubah pandangan arkeologi tentang asal-usul peradaban?",
+                "en": "What was the most revolutionary discovery at Göbekli Tepe that transformed archaeological views on the origins of civilization?"
+            },
+            "options": [
+                {
+                    "id": "Bukti bahwa tempat ibadah megalitikum didirikan sebelum munculnya pertanian menetap",
+                    "en": "Evidence that megalithic temples were built prior to sedentary agriculture"
+                },
+                {
+                    "id": "Penemuan roda pedati dan sistem tulisan tertua di dunia",
+                    "en": "Discovery of the earliest wheeled chariots and writing systems"
+                },
+                {
+                    "id": "Istana kerajaan pertama dengan benteng pertahanan batu raksasa",
+                    "en": "The first royal palace with massive stone fortifications"
+                },
+                {
+                    "id": "Tambang emas dan pusat percetakan koin kuno",
+                    "en": "Ancient gold mines and coinage minting facilities"
+                }
+            ],
+            "correctAnswerIndex": 0,
+            "explanation": {
+                "id": "Göbekli Tepe membuktikan bahwa dorongan spiritual dan pembangunan tempat ibadah megalitikum mendahului revolusi pertanian, bukan akibat darinya.",
+                "en": "Göbekli Tepe proved that spiritual impulses and monumental temple construction preceded the agricultural revolution, rather than resulting from it."
+            }
+        },
+        {
+            "id": "gt-2",
+            "question": {
+                "id": "Bentuk khas pilar batu kapur megalitikum yang mendominasi lingkaran kuil Göbekli Tepe adalah...",
+                "en": "The characteristic shape of the megalithic limestone pillars dominating Göbekli Tepe's enclosures is..."
+            },
+            "options": [
+                {
+                    "id": "Pilar berbentuk huruf T dengan relief hewan liar dan tangan manusia",
+                    "en": "T-shaped pillars carved with reliefs of wild animals and human hands"
+                },
+                {
+                    "id": "Pilar bundar silinder berornamen bunga lotus",
+                    "en": "Cylindrical round pillars with lotus ornaments"
+                },
+                {
+                    "id": "Pilar piramidal bertingkat tanpa relief",
+                    "en": "Stepped pyramidal pillars without reliefs"
+                },
+                {
+                    "id": "Obelisk lancip dengan aksara hieroglif",
+                    "en": "Pointed obelisks inscribed with hieroglyphs"
+                }
+            ],
+            "correctAnswerIndex": 0,
+            "explanation": {
+                "id": "Pilar-pilar batu kapur berbentuk huruf T setinggi hingga 5,5 meter melambangkan figur manusia stilistik yang dihiasi relief rubah, singa, babi hutan, dan ular.",
+                "en": "T-shaped limestone pillars standing up to 5.5 meters tall represent stylized anthropomorphic figures carved with foxes, lions, boars, and serpents."
+            }
+        },
+        {
+            "id": "gt-3",
+            "question": {
+                "id": "Siapakah arkeolog Jerman yang memimpin ekskavasi sistematis di Göbekli Tepe sejak tahun 1995?",
+                "en": "Who was the German archaeologist who led systematic excavations at Göbekli Tepe starting in 1995?"
+            },
+            "options": [
+                {
+                    "id": "Klaus Schmidt",
+                    "en": "Klaus Schmidt"
+                },
+                {
+                    "id": "Heinrich Schliemann",
+                    "en": "Heinrich Schliemann"
+                },
+                {
+                    "id": "Howard Carter",
+                    "en": "Howard Carter"
+                },
+                {
+                    "id": "Arthur Evans",
+                    "en": "Arthur Evans"
+                }
+            ],
+            "correctAnswerIndex": 0,
+            "explanation": {
+                "id": "Profesor Klaus Schmidt dari German Archaeological Institute (DAI) memimpin ekskavasi dan mengungkap signifikansi global situs Göbekli Tepe.",
+                "en": "Professor Klaus Schmidt of the German Archaeological Institute (DAI) led excavations and revealed the global significance of Göbekli Tepe."
+            }
+        }
+    ]
+},
+  "catalhoyuk": {
+    "articleSlug": "catalhoyuk",
+    "title": {
+        "id": "Kuis: Proto-Kota Çatalhöyük",
+        "en": "Quiz: Çatalhöyük Proto-City"
+    },
+    "questions": [
+        {
+            "id": "ch-1",
+            "question": {
+                "id": "Bagaimanakah sistem tata ruang dan mobilitas warga proto-kota Neolitikum Çatalhöyük?",
+                "en": "How was the spatial organization and urban mobility structured in the Neolithic proto-city of Çatalhöyük?"
+            },
+            "options": [
+                {
+                    "id": "Rumah-rumah bata lumpur saling menempel tanpa jalan darat, diakses lewat tangga atap",
+                    "en": "Mudbrick houses clustered contiguously without streets, accessed via rooftop ladders"
+                },
+                {
+                    "id": "Kota terbagi oleh jalan arteri lebar berbentuk kisi-kisi (grid)",
+                    "en": "A city divided by wide arterial grid-plan avenues"
+                },
+                {
+                    "id": "Rumah-rumah panggung di atas danau buatan dengan jembatan kayu",
+                    "en": "Stilt houses over artificial canals connected by wooden bridges"
+                },
+                {
+                    "id": "Kompleks perumahan yang dikelilingi benteng parit air konsentris",
+                    "en": "Residential compounds encircled by concentric moated bastions"
+                }
+            ],
+            "correctAnswerIndex": 0,
+            "explanation": {
+                "id": "Di Çatalhöyük, atap rumah berfungsi sebagai jalan umum dan ruang aktivitas sosial harian, di mana penghuni masuk menggunakan tangga kayu melalui lubang atap.",
+                "en": "At Çatalhöyük, flat rooftops served as communal walkways and daily social hubs, with residents entering via wooden ladders through rooftop smoke holes."
+            }
+        },
+        {
+            "id": "ch-2",
+            "question": {
+                "id": "Di manakah warga Çatalhöyük biasanya memakamkan anggota keluarga yang telah meninggal?",
+                "en": "Where did the inhabitants of Çatalhöyük typically bury their deceased family members?"
+            },
+            "options": [
+                {
+                    "id": "Di bawah lantai tanah liat dan platform tempat tidur di dalam rumah",
+                    "en": "Beneath the clay floors and sleeping platforms inside their domestic houses"
+                },
+                {
+                    "id": "Di nekropolis terpisah di luar batas kota",
+                    "en": "In isolated extramural necropolises outside the settlement"
+                },
+                {
+                    "id": "Di atas menara pemakaman terbuka untuk dekomposisi burung pemangsa",
+                    "en": "Atop exposed sky-burial towers for scavenger birds"
+                },
+                {
+                    "id": "Dilarung ke sungai terdekat dalam guci keramik",
+                    "en": "Sent drifting down adjacent rivers in ceramic burial urns"
+                }
+            ],
+            "correctAnswerIndex": 0,
+            "explanation": {
+                "id": "Masyarakat Çatalhöyük menguburkan jenazah di bawah lantai rumah mereka sendiri, menunjukkan ikatan spiritual leluhur yang sangat erat dengan ruang domestik.",
+                "en": "The people of Çatalhöyük interred their dead beneath house floors, demonstrating deep ancestral spiritual ties to domestic spaces."
+            }
+        },
+        {
+            "id": "ch-3",
+            "question": {
+                "id": "Komoditas mineral vulkanik apa yang menjadi andalan perdagangan jarak jauh masyarakat Çatalhöyük?",
+                "en": "Which volcanic mineral commodity formed the backbone of Çatalhöyük's extensive long-distance trade?"
+            },
+            "options": [
+                {
+                    "id": "Obsidian dari Gunung Hasan",
+                    "en": "Obsidian from Mount Hasan"
+                },
+                {
+                    "id": "Batu giok hijau dari Pegunungan Zagros",
+                    "en": "Green jade from the Zagros Mountains"
+                },
+                {
+                    "id": "Bijih tembaga murni dari Siprus",
+                    "en": "Pure copper ore from Cyprus"
+                },
+                {
+                    "id": "Batu lapis lazuli dari Badakhshan",
+                    "en": "Lapis lazuli from Badakhshan"
+                }
+            ],
+            "correctAnswerIndex": 0,
+            "explanation": {
+                "id": "Obsidian hitam mengilap dari gunung berapi terdekat seperti Gunung Hasan diekstraksi dan dipoles menjadi cermin serta bilah tajam berharga tinggi.",
+                "en": "Glossy black obsidian from nearby volcanoes like Mount Hasan was knapped into highly valued mirrors, blades, and trade goods."
+            }
+        }
+    ]
+},
+  "peradaban-caral-supe": {
+    "articleSlug": "peradaban-caral-supe",
+    "title": {
+        "id": "Kuis: Kota Suci Caral-Supe",
+        "en": "Quiz: Sacred City of Caral-Supe"
+    },
+    "questions": [
+        {
+            "id": "cs-1",
+            "question": {
+                "id": "Mengapa Peradaban Caral-Supe di Peru dinilai sangat unik dalam sejarah peradaban dunia?",
+                "en": "Why is the Caral-Supe civilization of Peru considered uniquely remarkable in world history?"
+            },
+            "options": [
+                {
+                    "id": "Membangun kota piramida monumental tertua di Amerika secara damai tanpa senjata atau benteng perang",
+                    "en": "Constructed the Americas' oldest monumental pyramid cities peacefully without weapons or battlements"
+                },
+                {
+                    "id": "Mengembangkan sistem penulisan alfabet fonetik pertama di Pasifik",
+                    "en": "Developed the first phonetic alphabetic script in the Pacific"
+                },
+                {
+                    "id": "Menjadi kekaisaran kavaleri berkuda pertama di benua Amerika",
+                    "en": "Became the first equestrian cavalry empire in the Americas"
+                },
+                {
+                    "id": "Menguasai teknik peleburan besi dan baja canggih",
+                    "en": "Mastered advanced blast-furnace iron and steel metallurgy"
+                }
+            ],
+            "correctAnswerIndex": 0,
+            "explanation": {
+                "id": "Ekskavasi di Caral tidak menemukan benteng pertahanan, senjata perang, atau sisa korban pembantaian, menunjukkan peradaban berbasis perdagangan dan seni musik.",
+                "en": "Excavations at Caral yielded no military fortifications, weapons, or battle casualties, indicating a society driven by trade, agriculture, and music."
+            }
+        },
+        {
+            "id": "cs-2",
+            "question": {
+                "id": "Instrumen pencatat data angka dari tali bersimpul yang ditemukan di Caral dikenal dengan nama...",
+                "en": "The knotted cord recording device for numerical data found at Caral is known as a..."
+            },
+            "options": [
+                {
+                    "id": "Quipu (Khipu)",
+                    "en": "Quipu (Khipu)"
+                },
+                {
+                    "id": "Cuneiform",
+                    "en": "Cuneiform"
+                },
+                {
+                    "id": "Hieroglif Maya",
+                    "en": "Maya hieroglyphs"
+                },
+                {
+                    "id": "Abakus",
+                    "en": "Abacus"
+                }
+            ],
+            "correctAnswerIndex": 0,
+            "explanation": {
+                "id": "Quipu tertua di dunia yang ditemukan di Caral membuktikan bahwa sistem pencatatan tali bersimpul telah digunakan di Andes sejak 3000 SM.",
+                "en": "The oldest quipu discovered at Caral proves that knotted-string recording systems were utilized in the Andes as early as 3000 BCE."
+            }
+        },
+        {
+            "id": "cs-3",
+            "question": {
+                "id": "Alat musik tiup apa yang ditemukan dalam jumlah puluhan di kompleks plaza melingkar Caral?",
+                "en": "Which wind musical instruments were discovered in large quantities within Caral's sunken circular plaza?"
+            },
+            "options": [
+                {
+                    "id": "Seruling berbahan tulang burung pelikan dan kondor",
+                    "en": "Flutes crafted from pelican and condor bones"
+                },
+                {
+                    "id": "Terompet perunggu",
+                    "en": "Cast bronze trumpets"
+                },
+                {
+                    "id": "Gamelan batu litofon",
+                    "en": "Lithophone stone chimes"
+                },
+                {
+                    "id": "Suling bambu ganda",
+                    "en": "Double bamboo panpipes"
+                }
+            ],
+            "correctAnswerIndex": 0,
+            "explanation": {
+                "id": "Sebanyak 32 seruling berukir indah dari tulang sayap burung pelikan dan kondor ditemukan terkubur di plaza upacara Caral.",
+                "en": "32 intricately carved flutes made from pelican and condor wing bones were excavated from the ceremonial sunken plaza of Caral."
+            }
+        }
+    ]
+},
+  "piramida-djoser": {
+    "articleSlug": "piramida-djoser",
+    "title": {
+        "id": "Kuis: Piramida Bertingkat Djoser",
+        "en": "Quiz: Step Pyramid of Djoser"
+    },
+    "questions": [
+        {
+            "id": "pd-1",
+            "question": {
+                "id": "Siapakah arsitek jenius sekaligus penasihat utama Firaun Djoser yang merancang Piramida Bertingkat Saqqara?",
+                "en": "Who was the polymath architect and high chancellor to Pharaoh Djoser who designed the Step Pyramid at Saqqara?"
+            },
+            "options": [
+                {
+                    "id": "Imhotep",
+                    "en": "Imhotep"
+                },
+                {
+                    "id": "Hemiunu",
+                    "en": "Hemiunu"
+                },
+                {
+                    "id": "Senenmut",
+                    "en": "Senenmut"
+                },
+                {
+                    "id": "Manetho",
+                    "en": "Manetho"
+                }
+            ],
+            "correctAnswerIndex": 0,
+            "explanation": {
+                "id": "Imhotep merevolusi arsitektur makam mastaba tradisional dengan menumpuk enam tingkat batu potong menjadi piramida monumental setinggi 62 meter.",
+                "en": "Imhotep revolutionized tomb architecture by stacking six stone mastaba tiers into a 62-meter monumental step pyramid."
+            }
+        },
+        {
+            "id": "pd-2",
+            "question": {
+                "id": "Piramida Bertingkat Djoser didirikan pada masa dinasti ke berapa dalam Kerajaan Lama Mesir?",
+                "en": "During which dynasty of Old Kingdom Egypt was the Step Pyramid of Djoser constructed?"
+            },
+            "options": [
+                {
+                    "id": "Dinasti Ketiga (Third Dynasty)",
+                    "en": "Third Dynasty"
+                },
+                {
+                    "id": "Dinasti Pertama (First Dynasty)",
+                    "en": "First Dynasty"
+                },
+                {
+                    "id": "Dinasti Keempat (Fourth Dynasty)",
+                    "en": "Fourth Dynasty"
+                },
+                {
+                    "id": "Dinasti Kedelapan Belas (Eighteenth Dynasty)",
+                    "en": "Eighteenth Dynasty"
+                }
+            ],
+            "correctAnswerIndex": 0,
+            "explanation": {
+                "id": "Firaun Djoser memerintah pada Dinasti Ketiga Mesir Kuno (sekitar 2670 SM), menandai dimulainya era pembangunan piramida batu monumental.",
+                "en": "Pharaoh Djoser ruled during Ancient Egypt's Third Dynasty (c. 2670 BCE), marking the dawn of monumental stone pyramid engineering."
+            }
+        },
+        {
+            "id": "pd-3",
+            "question": {
+                "id": "Apa inovasi struktural utama Piramida Djoser dibandingkan makam-makam penguasa Mesir sebelumnya?",
+                "en": "What was the principal architectural innovation of Djoser's Pyramid compared to earlier Egyptian royal tombs?"
+            },
+            "options": [
+                {
+                    "id": "Penggunaan batu kapur potong (ashlar masonry) secara menyeluruh menggantikan bata lumpur",
+                    "en": "Complete transition to cut-stone ashlar masonry replacing sun-dried mudbricks"
+                },
+                {
+                    "id": "Ruang makam bawah air yang dialiri sungai Nil",
+                    "en": "Subterranean flooded chambers fed by the Nile"
+                },
+                {
+                    "id": "Kubah beton melingkar tanpa tiang penyangga",
+                    "en": "Unreinforced concrete dome ceilings"
+                },
+                {
+                    "id": "Menara pylon kayu berlapis perunggu",
+                    "en": "Bronze-clad wooden pylon towers"
+                }
+            ],
+            "correctAnswerIndex": 0,
+            "explanation": {
+                "id": "Piramida Djoser adalah struktur batu potong terencana tertua di dunia, menandai transisi penting dari bata lumpur yang rapuh ke batu kapur permanen.",
+                "en": "Djoser's Pyramid was the world's first colossal stone-cut building, transforming tomb construction from fragile mudbrick to enduring limestone."
+            }
+        }
+    ]
+},
+  "stonehenge": {
+    "articleSlug": "stonehenge",
+    "title": {
+        "id": "Kuis: Monumen Stonehenge",
+        "en": "Quiz: Stonehenge Monument"
+    },
+    "questions": [
+        {
+            "id": "sh-1",
+            "question": {
+                "id": "Kesejajaran astronomis utama yang dirancang pada sumbu poros monumen Stonehenge adalah menghadap...",
+                "en": "The primary astronomical alignment encoded into Stonehenge's axis aligns with..."
+            },
+            "options": [
+                {
+                    "id": "Terbitnya matahari pada solstis musim panas dan terbenamnya matahari pada solstis musim dingin",
+                    "en": "Sunrise at the summer solstice and sunset at the winter solstice"
+                },
+                {
+                    "id": "Fase bulan purnama pertama setiap musim semi",
+                    "en": "The first full moon of the vernal equinox"
+                },
+                {
+                    "id": "Posisi konstelasi bintang Orion di titik kulminasi",
+                    "en": "The meridian culmination of the constellation Orion"
+                },
+                {
+                    "id": "Gerhana matahari total siklus Saros",
+                    "en": "Total solar eclipses along the Saros cycle"
+                }
+            ],
+            "correctAnswerIndex": 0,
+            "explanation": {
+                "id": "Sumbu utama Stonehenge sejajar sempurna dengan arah terbit matahari pada titik balik musim panas (midsummer sunrise) dan terbenam matahari musim dingin.",
+                "en": "Stonehenge's central avenue aligns precisely with the sunrise on the summer solstice and the sunset on the winter solstice."
+            }
+        },
+        {
+            "id": "sh-2",
+            "question": {
+                "id": "Batu 'Bluestone' yang menyusun lingkaran dalam Stonehenge didatangkan dari wilayah mana yang berjarak lebih dari 200 km?",
+                "en": "From which region over 200 kilometers away were the inner 'Bluestones' of Stonehenge quarried?"
+            },
+            "options": [
+                {
+                    "id": "Bukit Preseli di Wales barat daya",
+                    "en": "Preseli Hills in southwest Wales"
+                },
+                {
+                    "id": "Dataran Tinggi Skotlandia",
+                    "en": "Scottish Highlands"
+                },
+                {
+                    "id": "Tebing Putih Dover",
+                    "en": "White Cliffs of Dover"
+                },
+                {
+                    "id": "Tambang granit Cornwall",
+                    "en": "Cornish granite quarries"
+                }
+            ],
+            "correctAnswerIndex": 0,
+            "explanation": {
+                "id": "Analisis geologis membuktikan bahwa batu-batu bluestone seberat 2-4 ton diangkut dari Bukit Preseli di Pembrokeshire, Wales.",
+                "en": "Geological analysis confirms that the 2 to 4-ton bluestones were transported over 200 km from the Preseli Hills in Pembrokeshire, Wales."
+            }
+        },
+        {
+            "id": "sh-3",
+            "question": {
+                "id": "Teknik sambungan pertukangan kayu apa yang diadopsi para pembangun Stonehenge untuk mengunci batu lintel horisontal?",
+                "en": "Which woodworking joint technique was uniquely adapted in stone by the builders of Stonehenge to secure lintels?"
+            },
+            "options": [
+                {
+                    "id": "Sambungan lubang dan purus (mortise and tenon) serta lidah alur",
+                    "en": "Mortise and tenon joints combined with tongue and groove locking"
+                },
+                {
+                    "id": "Perekat aspal bitumen vulkanik",
+                    "en": "Volcanic bitumen mortar"
+                },
+                {
+                    "id": "Klem besi cor panas",
+                    "en": "Hot-poured iron clamps"
+                },
+                {
+                    "id": "Pasak tali rami berlapis damar",
+                    "en": "Resin-soaked hemp lashing"
+                }
+            ],
+            "correctAnswerIndex": 0,
+            "explanation": {
+                "id": "Batu-batu sarsen Stonehenge dipahat dengan tonjolan purus (tenon) yang masuk pas ke dalam lubang (mortise) pada batu lintel atasnya.",
+                "en": "The upright sarsen stones feature carved tenon knobs fitting snugly into matching hollowed mortises in the horizontal lintels."
+            }
+        }
+    ]
+},
+  "kodeks-hammurabi": {
+    "articleSlug": "kodeks-hammurabi",
+    "title": {
+        "id": "Kuis: Kodeks Hukum Hammurabi",
+        "en": "Quiz: Code of Hammurabi"
+    },
+    "questions": [
+        {
+            "id": "kh-1",
+            "question": {
+                "id": "Prinsip pembalasan setimpal yang mendasari banyak pasal pidana dalam Kodeks Hammurabi dikenal dalam istilah hukum sebagai...",
+                "en": "The principle of proportional retribution underlying many penal laws in Hammurabi's Code is legally termed..."
+            },
+            "options": [
+                {
+                    "id": "Lex Talionis ('Mata ganti mata, gigi ganti gigi')",
+                    "en": "Lex Talionis ('An eye for an eye, a tooth for a tooth')"
+                },
+                {
+                    "id": "Habeas Corpus",
+                    "en": "Habeas Corpus"
+                },
+                {
+                    "id": "Presumption of Innocence",
+                    "en": "Presumption of Innocence"
+                },
+                {
+                    "id": "Pacta Sunt Servanda",
+                    "en": "Pacta Sunt Servanda"
+                }
+            ],
+            "correctAnswerIndex": 0,
+            "explanation": {
+                "id": "Doktrin Lex Talionis menetapkan bahwa hukuman fisik harus setimpal dengan kerugian yang ditimbulkan oleh pelaku kejahatan.",
+                "en": "The doctrine of Lex Talionis dictates that punishment must mirror the specific harm or bodily injury inflicted by the offender."
+            }
+        },
+        {
+            "id": "kh-2",
+            "question": {
+                "id": "Siapakah dewa keadilan Babilonia yang digambarkan menyerahkan tongkat kekuasaan dan tali ukur hukum kepada Raja Hammurabi pada bagian atas prasasti?",
+                "en": "Which Babylonian god of justice is depicted handing the rod of sovereignty and measuring ring to King Hammurabi atop the stele?"
+            },
+            "options": [
+                {
+                    "id": "Dewa Shamash (Dewa Matahari dan Keadilan)",
+                    "en": "Shamash (God of Sun and Justice)"
+                },
+                {
+                    "id": "Dewa Marduk",
+                    "en": "Marduk"
+                },
+                {
+                    "id": "Dewa Enlil",
+                    "en": "Enlil"
+                },
+                {
+                    "id": "Dewa Ishtar",
+                    "en": "Ishtar"
+                }
+            ],
+            "correctAnswerIndex": 0,
+            "explanation": {
+                "id": "Dewa Matahari Shamash digambarkan bertahta di puncak stela basal hitam sedang menganugerahkan otoritas hukum kepada Hammurabi.",
+                "en": "The Solar deity Shamash is depicted seated atop the diorite stele investing Hammurabi with the royal insignia of divine justice."
+            }
+        },
+        {
+            "id": "kh-3",
+            "question": {
+                "id": "Di manakah prasasti stela batu basal hitam Kodeks Hammurabi ditemukan kembali oleh para arkeolog Prancis pada tahun 1901?",
+                "en": "Where was the black diorite stele of Hammurabi's Code rediscovered by French archaeologists in 1901?"
+            },
+            "options": [
+                {
+                    "id": "Susa (Iran kuno / Elam)",
+                    "en": "Susa (Ancient Elam / Iran)"
+                },
+                {
+                    "id": "Reruntuhan Babilonia",
+                    "en": "Ruins of Babylon"
+                },
+                {
+                    "id": "Niniwe",
+                    "en": "Nineveh"
+                },
+                {
+                    "id": "Persepolis",
+                    "en": "Persepolis"
+                }
+            ],
+            "correctAnswerIndex": 0,
+            "explanation": {
+                "id": "Stela ini dijarah oleh bangsa Elam dari Babilonia pada abad ke-12 SM dan ditemukan kembali di situs kuno Susa oleh ekspedisi Jacques de Morgan.",
+                "en": "The stele was looted from Babylon by the Elamites in the 12th century BCE and unearthed at Susa by Jacques de Morgan's French team."
+            }
+        }
+    ]
+},
+  "letusan-thera-santorini": {
+    "articleSlug": "letusan-thera-santorini",
+    "title": {
+        "id": "Kuis: Letusan Thera Santorini",
+        "en": "Quiz: Eruption of Thera"
+    },
+    "questions": [
+        {
+            "id": "lt-1",
+            "question": {
+                "id": "Peradaban maritim Zaman Perunggu manakah di Kepulauan Kreta yang mengalami kemunduran drastis akibat letusan Thera?",
+                "en": "Which Bronze Age maritime civilization on the island of Crete suffered catastrophic decline following the Thera eruption?"
+            },
+            "options": [
+                {
+                    "id": "Peradaban Minoa (Minoan)",
+                    "en": "Minoan Civilization"
+                },
+                {
+                    "id": "Peradaban Mikene (Mycenaean)",
+                    "en": "Mycenaean Civilization"
+                },
+                {
+                    "id": "Peradaban Etruska",
+                    "en": "Etruscan Civilization"
+                },
+                {
+                    "id": "Peradaban Het",
+                    "en": "Hittite Civilization"
+                }
+            ],
+            "correctAnswerIndex": 0,
+            "explanation": {
+                "id": "Tsunami raksasa, hujan abu vulkanik tebal, dan kehancuran armada kapal perang Minoa melumpuhkan hegemoni maritim peradaban istana Kreta.",
+                "en": "Devastating tsunamis, dense tephra fall, and fleet destruction crippled the maritime power and agricultural economy of the Minoan palatial culture."
+            }
+        },
+        {
+            "id": "lt-2",
+            "question": {
+                "id": "Kota pelabuhan Zaman Perunggu berlukisan dinding (fresco) indah di pulau Santorini yang terkubur abu mirip Pompeii adalah...",
+                "en": "The Bronze Age port city with exquisite frescoes on Santorini preserved beneath volcanic ash akin to Pompeii is..."
+            },
+            "options": [
+                {
+                    "id": "Akrotiri",
+                    "en": "Akrotiri"
+                },
+                {
+                    "id": "Knossos",
+                    "en": "Knossos"
+                },
+                {
+                    "id": "Phaistos",
+                    "en": "Phaistos"
+                },
+                {
+                    "id": "Mallia",
+                    "en": "Mallia"
+                }
+            ],
+            "correctAnswerIndex": 0,
+            "explanation": {
+                "id": "Situs Akrotiri menyajikan bangunan bertingkat, sistem drainase canggih, dan fresko berwarna-warni yang diawetkan sempurna di bawah lapisan tebal tuf vulkanik.",
+                "en": "Akrotiri features multi-story houses, indoor plumbing, and vibrant frescoes preserved intact beneath thick layers of volcanic pumice."
+            }
+        },
+        {
+            "id": "lt-3",
+            "question": {
+                "id": "Legenda filsafat Plato tentang benua yang tenggelam dalam sehari semalam kerap dikaitkan oleh para sejarawan modern dengan letusan Thera, yaitu legenda...",
+                "en": "Which philosophical legend by Plato describing a land vanishing in a single day and night is frequently linked to the Thera catastrophe?"
+            },
+            "options": [
+                {
+                    "id": "Atlantis",
+                    "en": "Atlantis"
+                },
+                {
+                    "id": "El Dorado",
+                    "en": "El Dorado"
+                },
+                {
+                    "id": "Lemuria",
+                    "en": "Lemuria"
+                },
+                {
+                    "id": "Hiperborea",
+                    "en": "Hyperborea"
+                }
+            ],
+            "correctAnswerIndex": 0,
+            "explanation": {
+                "id": "Kisah kehancuran peradaban maritim maju Minoa di Thera dalam bencana alam kataklismik diyakini menjadi inspirasi inti dari narasi dialog Plato tentang Atlantis.",
+                "en": "The sudden destruction of the sophisticated Minoan thalassocracy at Thera is widely considered the historical core behind Plato's Atlantis dialogue."
+            }
+        }
+    ]
+},
+  "perang-troya": {
+    "articleSlug": "perang-troya",
+    "title": {
+        "id": "Kuis: Perang Troya",
+        "en": "Quiz: The Trojan War"
+    },
+    "questions": [
+        {
+            "id": "pt-1",
+            "question": {
+                "id": "Mahakarya epos sastra Yunani Kuno gubahan Homer yang mengabadikan kisah kemarahan Achilles dalam Perang Troya adalah...",
+                "en": "Which Ancient Greek epic poem attributed to Homer immortalizes the wrath of Achilles during the Trojan War?"
+            },
+            "options": [
+                {
+                    "id": "Iliad (Iliada)",
+                    "en": "Iliad"
+                },
+                {
+                    "id": "Aeneid",
+                    "en": "Aeneid"
+                },
+                {
+                    "id": "Teogonia",
+                    "en": "Theogony"
+                },
+                {
+                    "id": "Mahabharata",
+                    "en": "Mahabharata"
+                }
+            ],
+            "correctAnswerIndex": 0,
+            "explanation": {
+                "id": "Iliad menceritakan peristiwa pada tahun kesepuluh pengepungan kota Troya (Ilion), berpusat pada konflik Achilles dan Raja Agamemnon.",
+                "en": "The Iliad chronicles the tenth year of the siege of Troy (Ilion), focusing on the feud between Achilles and King Agamemnon."
+            }
+        },
+        {
+            "id": "pt-2",
+            "question": {
+                "id": "Siapakah arkeolog perintis yang mengekskavasi bukit Hisarlik di Turki pada tahun 1870-an untuk membuktikan kebenaran historis kota Troya?",
+                "en": "Who was the pioneering archaeologist who excavated the Hisarlik tell in Turkey in the 1870s to uncover the historic city of Troy?"
+            },
+            "options": [
+                {
+                    "id": "Heinrich Schliemann",
+                    "en": "Heinrich Schliemann"
+                },
+                {
+                    "id": "Howard Carter",
+                    "en": "Howard Carter"
+                },
+                {
+                    "id": "Leonard Woolley",
+                    "en": "Leonard Woolley"
+                },
+                {
+                    "id": "Arthur Evans",
+                    "en": "Arthur Evans"
+                }
+            ],
+            "correctAnswerIndex": 0,
+            "explanation": {
+                "id": "Heinrich Schliemann mengidentifikasi lapisan pemukiman berbenteng di bukit Hisarlik, membuktikan bahwa kota Troya dalam karya Homer memiliki landasan arkeologis nyata.",
+                "en": "Heinrich Schliemann uncovered the multi-layered citadel at Hisarlik, confirming the physical historical basis of Homeric Troy."
+            }
+        },
+        {
+            "id": "pt-3",
+            "question": {
+                "id": "Taktik tipu muslihat legendaris apa yang dirancang oleh Odysseus untuk menembus tembok kota Troya?",
+                "en": "Which legendary stratagem of deception did Odysseus devise to breach the impenetrable walls of Troy?"
+            },
+            "options": [
+                {
+                    "id": "Kuda Kayu Troya (Trojan Horse)",
+                    "en": "The Trojan Wooden Horse"
+                },
+                {
+                    "id": "Terowongan bawah tanah rahasia",
+                    "en": "Secret subterranean mining sapping"
+                },
+                {
+                    "id": "Ketapel api Yunani",
+                    "en": "Greek fire catapult bombardment"
+                },
+                {
+                    "id": "Pengepungan blokade laut total",
+                    "en": "Total naval blockade starvation"
+                }
+            ],
+            "correctAnswerIndex": 0,
+            "explanation": {
+                "id": "Kuda kayu raksasa yang menyembunyikan prajurit Yunani terpilih di dalamnya dihadiahkan sebagai persembahan damai, lalu prajurit keluar membuka gerbang pada malam hari.",
+                "en": "A hollow giant wooden horse concealing elite Greek warriors was left behind as an offering; the troops slipped out at night to open Troy's gates."
+            }
+        }
+    ]
+},
+  "peradaban-olmek": {
+    "articleSlug": "peradaban-olmek",
+    "title": {
+        "id": "Kuis: Peradaban Olmek",
+        "en": "Quiz: Olmec Civilization"
+    },
+    "questions": [
+        {
+            "id": "ol-1",
+            "question": {
+                "id": "Karya seni patung monolitik paling terkenal yang menjadi ciri khas Peradaban Olmek di San Lorenzo dan La Venta adalah...",
+                "en": "The most iconic monolithic stone sculpture characteristic of the Olmec Civilization at San Lorenzo and La Venta is..."
+            },
+            "options": [
+                {
+                    "id": "Kepala batu basal kolosal berhelm pelindung",
+                    "en": "Colossal basalt stone heads wearing protective helmets"
+                },
+                {
+                    "id": "Patung elang emas bertatahkan batu giok",
+                    "en": "Golden eagle statues inlaid with jade"
+                },
+                {
+                    "id": "Pilar totem kayu raksasa",
+                    "en": "Giant wooden totem poles"
+                },
+                {
+                    "id": "Piramida kaca kristal",
+                    "en": "Crystal glass pyramidal stelae"
+                }
+            ],
+            "correctAnswerIndex": 0,
+            "explanation": {
+                "id": "Sebanyak 17 patung kepala batu kolosal seberat hingga 40 ton dipahat oleh pemahat Olmek untuk mengabadikan para penguasa mereka.",
+                "en": "17 colossal basalt portrait heads weighing up to 40 tons were sculpted by Olmec artists to commemorate their individual rulers."
+            }
+        },
+        {
+            "id": "ol-2",
+            "question": {
+                "id": "Mengapa Peradaban Olmek kerap dijuluki sebagai 'Cultura Madre' (Peradaban Ibu) di kawasan Mesoamerika?",
+                "en": "Why is the Olmec Civilization widely designated as the 'Cultura Madre' (Mother Culture) of Mesoamerica?"
+            },
+            "options": [
+                {
+                    "id": "Karena merintis tata kota piramida, kalender ritual, tulisan hieroglif awal, dan permainan bola yang diadopsi Maya dan Aztec",
+                    "en": "Because they pioneered pyramid layouts, ritual calendars, proto-glyphs, and the ritual ballgame later inherited by Maya and Aztecs"
+                },
+                {
+                    "id": "Karena menaklukkan seluruh benua Amerika Utara",
+                    "en": "Because they conquered the entirety of North America"
+                },
+                {
+                    "id": "Karena memperkenalkan pertanian gandum dan beras ke Pasifik",
+                    "en": "Because they introduced wheat and rice agriculture to the Pacific"
+                },
+                {
+                    "id": "Karena merupakan peradaban maritim pengarung samudra Atlantik",
+                    "en": "Because they were an oceanic trans-Atlantic maritime empire"
+                }
+            ],
+            "correctAnswerIndex": 0,
+            "explanation": {
+                "id": "Fondasi keagamaan, arsitektur piramida tanah, kultus jaguar, dan ritual permainan bola Olmek menjadi cetak biru peradaban Mesoamerika berikutnya.",
+                "en": "Olmec religious cosmology, earthen platform pyramids, the were-jaguar cult, and the ritual ballgame served as the blueprint for subsequent Mesoamerican polities."
+            }
+        },
+        {
+            "id": "ol-3",
+            "question": {
+                "id": "Batu mineral mulia berwarna hijau apa yang paling disucikan dan dipahat dengan teknik tinggi oleh seniman Olmek?",
+                "en": "Which precious green mineral was most venerated and expertly sculpted into ceremonial celts and figurines by Olmec lapidaries?"
+            },
+            "options": [
+                {
+                    "id": "Batu giok (Jadeit)",
+                    "en": "Jadeite jade"
+                },
+                {
+                    "id": "Batu zamrud Kolombia",
+                    "en": "Colombian emerald"
+                },
+                {
+                    "id": "Batu malasit",
+                    "en": "Malachite"
+                },
+                {
+                    "id": "Batu pirus (Turquoise)",
+                    "en": "Turquoise"
+                }
+            ],
+            "correctAnswerIndex": 0,
+            "explanation": {
+                "id": "Jadeit biru-hijau dari Lembah Sungai Motagua dipandang sebagai lambang kesuburan tanaman jagung dan air kehidupan oleh para penguasa Olmek.",
+                "en": "Blue-green jadeite imported from the Motagua River valley symbolized maize sprouting, fertile water, and elite vitality to Olmec rulers."
+            }
+        }
+    ]
+},
+  "kerajaan-kush-meroe": {
+    "articleSlug": "kerajaan-kush-meroe",
+    "title": {
+        "id": "Kuis: Kerajaan Kush & Meroë",
+        "en": "Quiz: Kingdom of Kush & Meroë"
+    },
+    "questions": [
+        {
+            "id": "ku-1",
+            "question": {
+                "id": "Keberhasilan militer terbesar Kerajaan Kush pada abad ke-8 SM di bawah pimpinan Raja Piye adalah...",
+                "en": "What was the greatest military triumph of the Kingdom of Kush in the 8th century BCE under King Piye?"
+            },
+            "options": [
+                {
+                    "id": "Menaklukkan seluruh wilayah Mesir dan mendirikan Dinasti ke-25 Firaun Hitam",
+                    "en": "Conquering all of Egypt and establishing the 25th 'Black Pharaoh' Dynasty"
+                },
+                {
+                    "id": "Menghancurkan armada laut Romawi di Mediterania",
+                    "en": "Annihilating Roman naval armadas in the Mediterranean"
+                },
+                {
+                    "id": "Merebut Yerusalem dari bangsa Babilonia",
+                    "en": "Capturing Jerusalem from the Babylonians"
+                },
+                {
+                    "id": "Menguasai tambang perak di Semenanjung Iberia",
+                    "en": "Dominating silver mines in the Iberian Peninsula"
+                }
+            ],
+            "correctAnswerIndex": 0,
+            "explanation": {
+                "id": "Raja Piye dan penerusnya memerintah Mesir dan Nubia dari Delta Nil hingga Sudan sebagai Dinasti ke-25 Mesir Kuno selama hampir seabad.",
+                "en": "King Piye and his royal successors ruled Egypt and Nubia from the Nile Delta to Sudan as the 25th Dynasty for nearly a century."
+            }
+        },
+        {
+            "id": "ku-2",
+            "question": {
+                "id": "Ciri khas arsitektur pemakaman para bangsawan Kush di nekropolis Meroë adalah...",
+                "en": "The distinctive architectural hallmark of royal Kushite tombs at the Meroë necropolis is..."
+            },
+            "options": [
+                {
+                    "id": "Ratusan piramida batu pasir berlereng curam dengan kuil kapel di depannya",
+                    "en": "Hundreds of steep-angled sandstone pyramids fronted by offering chapels"
+                },
+                {
+                    "id": "Katakombe bawah tanah berbentuk labirin tanpa tugu atas",
+                    "en": "Subterranean labyrinth catacombs without surface markers"
+                },
+                {
+                    "id": "Dolmen megalitikum bundar berlapis emas",
+                    "en": "Circular megalithic dolmens covered in gold leaf"
+                },
+                {
+                    "id": "Makam tebing batu bertiang gaya Korintus",
+                    "en": "Corinthian rock-cut cliff facades"
+                }
+            ],
+            "correctAnswerIndex": 0,
+            "explanation": {
+                "id": "Sudan memiliki lebih dari 200 piramida Nubia curam di Meroë dan Napata, menjadikannya wilayah dengan jumlah piramida terbanyak di dunia.",
+                "en": "Sudan contains over 200 steep-sided Nubian pyramids across Meroë and Napata, giving it more pyramids than Egypt."
+            }
+        },
+        {
+            "id": "ku-3",
+            "question": {
+                "id": "Gelar ratu pejuang berdaulat (Queen Mother) di Kerajaan Kush Meroë yang memimpin perlawanan melawan Kekaisaran Romawi adalah...",
+                "en": "The title of sovereign warrior queens (Queen Mothers) in Kushite Meroë who led armed resistance against Rome is..."
+            },
+            "options": [
+                {
+                    "id": "Kandake (Candace)",
+                    "en": "Kandake (Candace)"
+                },
+                {
+                    "id": "Firaun Wanita",
+                    "en": "Female Pharaoh"
+                },
+                {
+                    "id": "Basileia",
+                    "en": "Basileia"
+                },
+                {
+                    "id": "Empress Dowager",
+                    "en": "Empress Dowager"
+                }
+            ],
+            "correctAnswerIndex": 0,
+            "explanation": {
+                "id": "Gelar Kandake disandang oleh para ratu perkasa Meroë seperti Amanirenas yang berhasil menegosiasikan traktat damai menguntungkan dengan Kaisar Romawi Augustus.",
+                "en": "The title Kandake belonged to formidable queens such as Amanirenas, who negotiated favorable peace treaties with Roman Emperor Augustus."
+            }
+        }
+    ]
+},
+  "dinasti-zhou-mandat-langit": {
+    "articleSlug": "dinasti-zhou-mandat-langit",
+    "title": {
+        "id": "Kuis: Dinasti Zhou & Mandat Langit",
+        "en": "Quiz: Zhou Dynasty & Mandate of Heaven"
+    },
+    "questions": [
+        {
+            "id": "dz-1",
+            "question": {
+                "id": "Konsep filsafat politik 'Mandat Langit' (Tianming) yang dirumuskan Dinasti Zhou menyatakan bahwa...",
+                "en": "The political philosophy concept of the 'Mandate of Heaven' (Tianming) formulated by the Zhou Dynasty posited that..."
+            },
+            "options": [
+                {
+                    "id": "Kekuasaan kaisar sah hanya jika memerintah secara adil dan bermoral; tirani mencabut legitimasi takhta",
+                    "en": "Imperial rule is legitimate only if the ruler is just and moral; tyranny forfeits divine sanction"
+                },
+                {
+                    "id": "Kaisar adalah keturunan darah dewa yang mutlak dan tak boleh digulingkan dalam kondisi apa pun",
+                    "en": "The monarch is of absolute divine blood and cannot be deposed under any circumstances"
+                },
+                {
+                    "id": "Semua keputusan politik harus ditentukan melalui undian orakel tulang kura-kura",
+                    "en": "All state policies must be dictated by turtle oracle shell lotteries"
+                },
+                {
+                    "id": "Rakyat jelata memiliki hak untuk memilih kaisar melalui pemilihan umum tahunan",
+                    "en": "Commoners hold the democratic right to elect the emperor annually"
+                }
+            ],
+            "correctAnswerIndex": 0,
+            "explanation": {
+                "id": "Mandat Langit memberikan legitimasi moral untuk menggulingkan dinasti yang korup atau tiran bila terjadi bencana alam dan kekacauan sosial.",
+                "en": "The Mandate of Heaven granted moral legitimacy for overthrowing corrupt or tyrannical dynasties when disasters and misrule signaled divine disapproval."
+            }
+        },
+        {
+            "id": "dz-2",
+            "question": {
+                "id": "Pertempuran penentu di mana Raja Wu dari Zhou mengalahkan Dinasti Shang pada tahun 1046 SM adalah...",
+                "en": "The decisive battle in which King Wu of Zhou defeated the Shang Dynasty in 1046 BCE was the..."
+            },
+            "options": [
+                {
+                    "id": "Pertempuran Muye",
+                    "en": "Battle of Muye"
+                },
+                {
+                    "id": "Pertempuran Changping",
+                    "en": "Battle of Changping"
+                },
+                {
+                    "id": "Pertempuran Tebing Merah",
+                    "en": "Battle of Red Cliffs"
+                },
+                {
+                    "id": "Pertempuran Guandu",
+                    "en": "Battle of Guandu"
+                }
+            ],
+            "correctAnswerIndex": 0,
+            "explanation": {
+                "id": "Pada Pertempuran Muye, pasukan koalisi Raja Wu mengalahkan tentara Raja Zhou dari Shang yang jumlahnya lebih besar karena banyak prajurit Shang membelot.",
+                "en": "At the Battle of Muye, King Wu's coalition crushed the larger army of Shang's King Zhou after Shang troops defected."
+            }
+        },
+        {
+            "id": "dz-3",
+            "question": {
+                "id": "Dua aliran pemikiran filsafat Tiongkok terbesar yang lahir pada paruh kedua Dinasti Zhou (Zaman Musim Semi dan Gugur) adalah...",
+                "en": "Two of the greatest schools of Chinese philosophy that emerged during the latter half of the Zhou Dynasty were..."
+            },
+            "options": [
+                {
+                    "id": "Konfusianisme (Konghucu) dan Taoisme (Laozi)",
+                    "en": "Confucianism (Confucius) and Daoism (Laozi)"
+                },
+                {
+                    "id": "Buddhisme dan Jainisme",
+                    "en": "Buddhism and Jainism"
+                },
+                {
+                    "id": "Stoisisme dan Epikureanisme",
+                    "en": "Stoicism and Epicureanism"
+                },
+                {
+                    "id": "Zoroastrianisme dan Manikeisme",
+                    "en": "Zoroastrianism and Manichaeism"
+                }
+            ],
+            "correctAnswerIndex": 0,
+            "explanation": {
+                "id": "Era Seratus Aliran Pemikiran pada akhir Dinasti Zhou melahirkan ajaran Kong Hu Cu (Etika & Tata Negara) dan Lao Zi (Harmoni Alam/Dao).",
+                "en": "The Hundred Schools of Thought during the late Zhou era produced Confucius (ethical statecraft) and Laozi (natural harmony/Dao)."
+            }
+        }
+    ]
+},
+  "kebangkitan-fenisia-kartago": {
+    "articleSlug": "kebangkitan-fenisia-kartago",
+    "title": {
+        "id": "Kuis: Bangsa Fenisia & Kartago",
+        "en": "Quiz: Phoenicians & Carthage"
+    },
+    "questions": [
+        {
+            "id": "fk-1",
+            "question": {
+                "id": "Warisan intelektual paling revolusioner bangsa pelaut Fenisia yang menjadi cikal bakal aksara Latin, Yunani, dan Arab adalah...",
+                "en": "The most revolutionary intellectual legacy of the Phoenician seafarers that formed the ancestor of Latin, Greek, and Arabic scripts was..."
+            },
+            "options": [
+                {
+                    "id": "Alfabet Fonetik 22 konsonan (Phoenician Alphabet)",
+                    "en": "22-consonant Phonetic Alphabet"
+                },
+                {
+                    "id": "Aksara paku kuneiform tanah liat",
+                    "en": "Clay cuneiform wedge script"
+                },
+                {
+                    "id": "Sistem angka heksagesimal",
+                    "en": "Sexagesimal base-60 numbering"
+                },
+                {
+                    "id": "Hieroglif piktografik",
+                    "en": "Pictographic hieroglyphs"
+                }
+            ],
+            "correctAnswerIndex": 0,
+            "explanation": {
+                "id": "Alfabet Fenisia menyederhanakan ribuan simbol rumit menjadi 22 huruf fonetik bunyi konsonan yang mudah dipelajari para pedagang di pelabuhan Mediterania.",
+                "en": "The Phoenician alphabet condensed complex scribal scripts into 22 phonetic consonant letters easily learned by Mediterranean traders."
+            }
+        },
+        {
+            "id": "fk-2",
+            "question": {
+                "id": "Komoditas pewarna tekstil langka dan mewah yang diproduksi bangsa Fenisia dari siput laut Murex adalah...",
+                "en": "The rare luxury textile dye commodity manufactured by Phoenicians from marine Murex snails was..."
+            },
+            "options": [
+                {
+                    "id": "Pewarna Ungu Tyre (Tyrian Purple)",
+                    "en": "Tyrian Royal Purple"
+                },
+                {
+                    "id": "Pewarna Indigo Biru",
+                    "en": "Indigo Blue"
+                },
+                {
+                    "id": "Pewarna Merah Kirmizi Cochineal",
+                    "en": "Cochineal Crimson"
+                },
+                {
+                    "id": "Pewarna Emas Ochre",
+                    "en": "Gold Ochre"
+                }
+            ],
+            "correctAnswerIndex": 0,
+            "explanation": {
+                "id": "Ungu Tyre dari kota Tirus diproduksi dari ribuan sekresi siput Murex dan menjadi simbol kemewahan eksklusif para kaisar dan raja kuno.",
+                "en": "Tyrian Purple from Tyre required thousands of crushed Murex snails, becoming the ultimate status symbol of royal authority across antiquity."
+            }
+        },
+        {
+            "id": "fk-3",
+            "question": {
+                "id": "Siapakah ratu legendaris asal Tirus yang menurut tradisi sejarah mendirikan kota koloni Kartago di pesisir Tunisia pada 814 SM?",
+                "en": "Who was the legendary princess from Tyre who, according to historical tradition, founded the colony of Carthage in 814 BCE?"
+            },
+            "options": [
+                {
+                    "id": "Ratu Elissa / Dido",
+                    "en": "Queen Elissa / Dido"
+                },
+                {
+                    "id": "Ratu Jezebel",
+                    "en": "Queen Jezebel"
+                },
+                {
+                    "id": "Ratu Zenobia",
+                    "en": "Queen Zenobia"
+                },
+                {
+                    "id": "Ratu Cleopatra VII",
+                    "en": "Queen Cleopatra VII"
+                }
+            ],
+            "correctAnswerIndex": 0,
+            "explanation": {
+                "id": "Putri Elissa (Dido) melarikan diri dari tirani saudaranya di Tirus dan mendirikan pelabuhan Qart-Hadasht (Kartago / 'Kota Baru') di Afrika Utara.",
+                "en": "Princess Elissa (Dido) fled her tyrannical brother in Tyre to found the trading port of Qart-Hadasht ('New City' / Carthage) in North Africa."
+            }
+        }
+    ]
+},
+  "kerajaan-urartu-van": {
+    "articleSlug": "kerajaan-urartu-van",
+    "title": {
+        "id": "Kuis: Kerajaan Urartu & Benteng Van",
+        "en": "Quiz: Kingdom of Urartu & Van"
+    },
+    "questions": [
+        {
+            "id": "uv-1",
+            "question": {
+                "id": "Keunggulan teknologi hidrolika Kerajaan Urartu yang dibangun oleh Raja Menua dan masih berfungsi hingga era modern adalah...",
+                "en": "The hydraulic engineering marvel of the Kingdom of Urartu constructed by King Menua that remains operational in modern times is..."
+            },
+            "options": [
+                {
+                    "id": "Kanal Air Semiramis / Menua sepanjang 56 km",
+                    "en": "56-kilometer Menua (Semiramis) Aqueduct Canal"
+                },
+                {
+                    "id": "Bendungan Marib",
+                    "en": "Marib Dam"
+                },
+                {
+                    "id": "Saluran Akuaduk Pont du Gard",
+                    "en": "Pont du Gard Aqueduct"
+                },
+                {
+                    "id": "Qanat Bawah Tanah Isfahan",
+                    "en": "Isfahan Underground Qanat"
+                }
+            ],
+            "correctAnswerIndex": 0,
+            "explanation": {
+                "id": "Kanal batu Menua mengalirkan air tawar pegunungan melintasi tebing terjal ke ibu kota Tushpa (Van) dan dipuji sebagai mahakarya hidrolika kuno.",
+                "en": "The stone-walled Menua Canal channeled freshwater across steep mountain cliffs to capital Tushpa (Van), an enduring marvel of ancient hydrology."
+            }
+        },
+        {
+            "id": "uv-2",
+            "question": {
+                "id": "Komoditas kerajinan tangan logam apa yang membuat para pandai besi Urartu sangat disegani di seluruh Timur Dekat kuno?",
+                "en": "Which metallurgy commodity made Urartian blacksmiths and bronzeworkers renowned throughout the ancient Near East?"
+            },
+            "options": [
+                {
+                    "id": "Kuali perunggu berornamen kepala banteng bersayap dan helm perang besi",
+                    "en": "Cast bronze cauldrons with winged-bull attachments and iron helmets"
+                },
+                {
+                    "id": "Koin emas cetak mesin",
+                    "en": "Milled gold coinage"
+                },
+                {
+                    "id": "Pedang baja Damaskus",
+                    "en": "Damascus steel rapiers"
+                },
+                {
+                    "id": "Cermin perak berukir",
+                    "en": "Engraved silver mirrors"
+                }
+            ],
+            "correctAnswerIndex": 0,
+            "explanation": {
+                "id": "Karya seni kuali perunggu bertelinga makhluk mitologi buatan Urartu diekspor hingga ke makam para bangsawan Etruska di Italia dan kuil Yunani.",
+                "en": "Urartian bronze cauldrons featuring winged siren and bull protomes were luxury prestige imports found in Etruscan tombs and Greek sanctuaries."
+            }
+        },
+        {
+            "id": "uv-3",
+            "question": {
+                "id": "Dewa tertinggi dalam panteon keagamaan Kerajaan Urartu yang dipuja di kuil-kuil batu berbenteng adalah Dewa...",
+                "en": "The supreme patron deity of the Urartian pantheon venerated in stone citadel temples was..."
+            },
+            "options": [
+                {
+                    "id": "Dewa Haldi",
+                    "en": "Haldi"
+                },
+                {
+                    "id": "Dewa Ahura Mazda",
+                    "en": "Ahura Mazda"
+                },
+                {
+                    "id": "Dewa Baal",
+                    "en": "Baal"
+                },
+                {
+                    "id": "Dewa Osiris",
+                    "en": "Osiris"
+                }
+            ],
+            "correctAnswerIndex": 0,
+            "explanation": {
+                "id": "Dewa Haldi adalah dewa perang pelindung raja-raja Urartu; kampanye militer selalu dipersembahkan atas nama tombak suci Haldi.",
+                "en": "Haldi was the supreme warrior deity protecting Urartian kings, to whom military victories and fortress temples were dedicated."
+            }
+        }
+    ]
+},
+  "kerajaan-phrygia-midas": {
+    "articleSlug": "kerajaan-phrygia-midas",
+    "title": {
+        "id": "Kuis: Kerajaan Phrygia & Raja Midas",
+        "en": "Quiz: Phrygia & King Midas"
+    },
+    "questions": [
+        {
+            "id": "pm-1",
+            "question": {
+                "id": "Struktur makam tumulus raksasa 'Tumulus MM' di Gordion yang diekskavasi para arkeolog diyakini sebagai tempat peristirahatan...",
+                "en": "The monumental tumulus earthen mound 'Tumulus MM' excavated at Gordion is historically associated with..."
+            },
+            "options": [
+                {
+                    "id": "Raja Gordias atau Raja Midas dari Phrygia",
+                    "en": "King Gordias or King Midas of Phrygia"
+                },
+                {
+                    "id": "Kaisar Kroisos dari Lydia",
+                    "en": "King Croesus of Lydia"
+                },
+                {
+                    "id": "Raja Priam dari Troya",
+                    "en": "King Priam of Troy"
+                },
+                {
+                    "id": "Raja Sargon II dari Asiria",
+                    "en": "King Sargon II of Assyria"
+                }
+            ],
+            "correctAnswerIndex": 0,
+            "explanation": {
+                "id": "Bilik makam kayu pinus utuh di kedalaman bukit tumulus setinggi 53 meter menyimpan perabot kayu bertatah dan bejana perunggu pesta pemakaman kerajaan.",
+                "en": "An intact log chamber deep inside the 53-meter artificial mound contained exquisite inlaid wooden furniture and royal bronze banqueting vessels."
+            }
+        },
+        {
+            "id": "pm-2",
+            "question": {
+                "id": "Legenda 'Simpul Gordia' (Gordian Knot) yang terkenal akhirnya dipotong dengan pedang oleh penakluk besar dunia...",
+                "en": "The famous legend of the intractable 'Gordian Knot' at Gordion was famously sliced through by..."
+            },
+            "options": [
+                {
+                    "id": "Aleksander Agung (Alexander the Great)",
+                    "en": "Alexander the Great"
+                },
+                {
+                    "id": "Julius Caesar",
+                    "en": "Julius Caesar"
+                },
+                {
+                    "id": "Koresh Agung",
+                    "en": "Cyrus the Great"
+                },
+                {
+                    "id": "Hannibal Barca",
+                    "en": "Hannibal Barca"
+                }
+            ],
+            "correctAnswerIndex": 0,
+            "explanation": {
+                "id": "Ramalan kuno menyatakan barangsiapa mampu mengurai simpul kereta perang Gordias akan menjadi penguasa Asia; Aleksander membelahnya dengan pedang pada 333 SM.",
+                "en": "The oracle foretold that whoever unraveled the knot of Gordias's chariot would rule Asia; Alexander severed it with his sword in 333 BCE."
+            }
+        },
+        {
+            "id": "pm-3",
+            "question": {
+                "id": "Aksesori peniti pakaian perunggu berpegas yang disempurnakan oleh perajin Phrygia dan diekspor ke Yunani kuno disebut...",
+                "en": "The bronze spring-catch garment safety pin perfected by Phrygian artisans and widely traded across ancient Greece is known as a..."
+            },
+            "options": [
+                {
+                    "id": "Fibula",
+                    "en": "Fibula"
+                },
+                {
+                    "id": "Torc",
+                    "en": "Torc"
+                },
+                {
+                    "id": "Kameo",
+                    "en": "Cameo"
+                },
+                {
+                    "id": "Skarab",
+                    "en": "Scarab"
+                }
+            ],
+            "correctAnswerIndex": 0,
+            "explanation": {
+                "id": "Ratusan peniti pakaian bermotif lengkung geometris (fibula) ditemukan di Gordion, mencerminkan kemahiran teknik pegas logam bangsa Phrygia.",
+                "en": "Hundreds of bronze safety fibulae with double-shield geometry were excavated at Gordion, reflecting Phrygian precision wire-spring metallurgy."
+            }
+        }
+    ]
+},
+  "perpustakaan-ashurbanipal": {
+    "articleSlug": "perpustakaan-ashurbanipal",
+    "title": {
+        "id": "Kuis: Perpustakaan Ashurbanipal",
+        "en": "Quiz: Library of Ashurbanipal"
+    },
+    "questions": [
+        {
+            "id": "pa-1",
+            "question": {
+                "id": "Naskah sastra epik tertua di dunia yang ditemukan dalam bentuk lempengan kuneiform di Perpustakaan Ashurbanipal adalah...",
+                "en": "The world's oldest epic literary masterpiece recovered on cuneiform clay tablets from Ashurbanipal's Library is the..."
+            },
+            "options": [
+                {
+                    "id": "Epik Gilgamesh (Epic of Gilgamesh)",
+                    "en": "Epic of Gilgamesh"
+                },
+                {
+                    "id": "Ramayana",
+                    "en": "Ramayana"
+                },
+                {
+                    "id": "Iliad",
+                    "en": "Iliad"
+                },
+                {
+                    "id": "Mahabharata",
+                    "en": "Mahabharata"
+                }
+            ],
+            "correctAnswerIndex": 0,
+            "explanation": {
+                "id": "Dua belas lempengan tanah liat di Niniwe memuat versi standar terlengkap kisah pencarian keabadian Raja Uruk, Gilgamesh, dan kisah Air Bah.",
+                "en": "Twelve clay tablets found at Nineveh preserve the standard Babylonian version of King Gilgamesh's quest for immortality and the Great Flood."
+            }
+        },
+        {
+            "id": "pa-2",
+            "question": {
+                "id": "Apa keunikan Raja Asiria Ashurbanipal dibandingkan raja-raja militer Mesopotamia lainnya?",
+                "en": "What was unique about the Assyrian King Ashurbanipal compared to other Mesopotamian military monarchs?"
+            },
+            "options": [
+                {
+                    "id": "Ia bangga bisa membaca dan menulis aksara kuneiform Sumeria dan Akkadia yang rumit",
+                    "en": "He took pride in his scholarly literacy in complex Sumerian and Akkadian cuneiform scripts"
+                },
+                {
+                    "id": "Ia menolak memiliki tentara dan hanya mengandalkan diplomasi",
+                    "en": "He refused standing armies, relying solely on pacifist diplomacy"
+                },
+                {
+                    "id": "Ia menghapuskan seluruh sistem perpajakan di kerajaannya",
+                    "en": "He abolished all state taxation throughout his realm"
+                },
+                {
+                    "id": "Ia hidup sebagai biarawan pertapa di gurun",
+                    "en": "He lived as an ascetic desert monk"
+                }
+            ],
+            "correctAnswerIndex": 0,
+            "explanation": {
+                "id": "Ashurbanipal secara eksplisit menulis bahwa ia menguasai seni menulis kuneiform, memecahkan tabel matematika, dan membaca lempengan batu kuno pra-banjir.",
+                "en": "Ashurbanipal explicitly proclaimed his mastery of cuneiform writing, mathematical problem solving, and deciphering pre-flood stone inscriptions."
+            }
+        },
+        {
+            "id": "pa-3",
+            "question": {
+                "id": "Bagaimanakah kebakaran dahsyat yang menghancurkan kota Niniwe pada 612 SM secara paradoks justru menyelamatkan naskah perpustakaan?",
+                "en": "How did the catastrophic conflagration that destroyed Nineveh in 612 BCE paradoxically preserve the library's contents?"
+            },
+            "options": [
+                {
+                    "id": "Api membakar dan memanggang lempengan tanah liat mentah menjadi keramik keras yang tahan ribuan tahun",
+                    "en": "The intense fire baked the sun-dried clay tablets into hard ceramic, preserving them for millennia"
+                },
+                {
+                    "id": "Lempengan tertutup kubah es yang mencair",
+                    "en": "Melting ice domes sealed the chambers"
+                },
+                {
+                    "id": "Asap tebal mengusir rayap pemakan kertas papirus",
+                    "en": "Dense smoke repelled papyrus-eating termites"
+                },
+                {
+                    "id": "Lempengan emas tidak dapat terbakar",
+                    "en": "Gold leaf tablets were impervious to fire"
+                }
+            ],
+            "correctAnswerIndex": 0,
+            "explanation": {
+                "id": "Panas api yang meruntuhkan istana Niniwe memanggang lempengan tanah liat mentah menjadi batu bata keramik keras yang terlindung di bawah puing reruntuhan.",
+                "en": "The intense fire that consumed the palace baked the unbaked clay tablets into durable ceramic bricks, preserving them under rubble."
+            }
+        }
+    ]
+},
+  "babilonia-baru-ishtar": {
+    "articleSlug": "babilonia-baru-ishtar",
+    "title": {
+        "id": "Kuis: Gerbang Ishtar Babilonia",
+        "en": "Quiz: Ishtar Gate of Babylon"
+    },
+    "questions": [
+        {
+            "id": "bi-1",
+            "question": {
+                "id": "Raja Babilonia Baru yang memimpin pembangunan akbar Gerbang Ishtar, Ziggurat Etemenanki, dan Taman Gantung adalah...",
+                "en": "The Neo-Babylonian monarch who commissioned the Ishtar Gate, Etemenanki Ziggurat, and Hanging Gardens was..."
+            },
+            "options": [
+                {
+                    "id": "Raja Nebukadnezar II",
+                    "en": "King Nebuchadnezzar II"
+                },
+                {
+                    "id": "Raja Hammurabi",
+                    "en": "King Hammurabi"
+                },
+                {
+                    "id": "Raja Nabonidus",
+                    "en": "King Nabonidus"
+                },
+                {
+                    "id": "Raja Sargon Agung",
+                    "en": "King Sargon the Great"
+                }
+            ],
+            "correctAnswerIndex": 0,
+            "explanation": {
+                "id": "Raja Nebukadnezar II (memerintah 605–562 SM) mengubah Babilonia menjadi metropolis termegah di dunia kuno yang dikelilingi tembok ganda tak tertembus.",
+                "en": "King Nebuchadnezzar II (reigned 605–562 BCE) transformed Babylon into the ancient world's grandest metropolis encircled by double defensive walls."
+            }
+        },
+        {
+            "id": "bi-2",
+            "question": {
+                "id": "Warna khas glasir bata bakar yang mendominasi fasad Gerbang Ishtar dan Jalan Prosesi Babilonia adalah...",
+                "en": "The distinctive glazed brick color dominating the facade of the Ishtar Gate and the Processional Way was..."
+            },
+            "options": [
+                {
+                    "id": "Biru lapis lazuli terang dengan relief naga Mušḫuššu dan banteng emas",
+                    "en": "Vibrant lapis-lazuli blue with golden Mušḫuššu dragons and aurochs reliefs"
+                },
+                {
+                    "id": "Merah darah polos",
+                    "en": "Plain crimson red"
+                },
+                {
+                    "id": "Putih marmer gading",
+                    "en": "Ivory white marble"
+                },
+                {
+                    "id": "Hitam legam berkilau",
+                    "en": "Glossy jet black"
+                }
+            ],
+            "correctAnswerIndex": 0,
+            "explanation": {
+                "id": "Bata glasir biru kobalt cerah dihiasi relief hewan mitologis naga bertanduk (sirrush/Mušḫuššu) persembahan dewa Marduk dan banteng dewa Adad.",
+                "en": "Brilliant cobalt-blue glazed bricks were embellished with relief sculptures of dragon-serpents (Mušḫuššu) and aurochs bulls."
+            }
+        },
+        {
+            "id": "bi-3",
+            "question": {
+                "id": "Di museum manakah rekonstruksi Gerbang Ishtar berukuran aslinya kini dipamerkan kepada publik dunia?",
+                "en": "In which museum is the full-scale reconstruction of the Ishtar Gate currently exhibited to the global public?"
+            },
+            "options": [
+                {
+                    "id": "Pergamon Museum di Berlin, Jerman",
+                    "en": "Pergamon Museum in Berlin, Germany"
+                },
+                {
+                    "id": "Museum Louvre di Paris",
+                    "en": "Louvre Museum in Paris"
+                },
+                {
+                    "id": "British Museum di London",
+                    "en": "British Museum in London"
+                },
+                {
+                    "id": "Metropolitan Museum of Art di New York",
+                    "en": "Metropolitan Museum of Art in New York"
+                }
+            ],
+            "correctAnswerIndex": 0,
+            "explanation": {
+                "id": "Arkeolog Robert Koldewey mengekskavasi ribuan fragmen bata glasir dari Babilonia dan merekonstruksinya secara megah di Museum Pergamon, Berlin.",
+                "en": "German archaeologist Robert Koldewey excavated thousands of glazed brick fragments from Babylon, meticulously reconstructing the gate in Berlin's Pergamon Museum."
+            }
+        }
+    ]
+},
+  "makam-koresh-agung": {
+    "articleSlug": "makam-koresh-agung",
+    "title": {
+        "id": "Kuis: Makam Koresh Agung",
+        "en": "Quiz: Tomb of Cyrus the Great"
+    },
+    "questions": [
+        {
+            "id": "ka-1",
+            "question": {
+                "id": "Artefak tanah liat silindris terkenal dari Koresh Agung yang kerap disebut sebagai deklarasi hak asasi manusia pertama di dunia adalah...",
+                "en": "The famous clay cylinder artifact of Cyrus the Great often celebrated as an early declaration of human rights is the..."
+            },
+            "options": [
+                {
+                    "id": "Silinder Koresh (Cyrus Cylinder)",
+                    "en": "Cyrus Cylinder"
+                },
+                {
+                    "id": "Prasasti Behistun",
+                    "en": "Behistun Inscription"
+                },
+                {
+                    "id": "Batu Rosetta",
+                    "en": "Rosetta Stone"
+                },
+                {
+                    "id": "Prasasti Tel Dan",
+                    "en": "Tel Dan Stele"
+                }
+            ],
+            "correctAnswerIndex": 0,
+            "explanation": {
+                "id": "Silinder Koresh mendeklarasikan pemulihan tempat ibadah, kebebasan beragama bagi bangsa taklukan, dan pemulangan bangsa Yahudi dari pembuangan Babilonia.",
+                "en": "The Cyrus Cylinder proclaimed the restoration of sanctuaries, religious freedom for conquered peoples, and the repatriation of exiled Jews from Babylon."
+            }
+        },
+        {
+            "id": "ka-2",
+            "question": {
+                "id": "Bentuk arsitektur makam Koresh Agung di Pasargadae memiliki ciri unik berupa...",
+                "en": "The architectural form of the Tomb of Cyrus the Great at Pasargadae features the unique design of a..."
+            },
+            "options": [
+                {
+                    "id": "Bilik makam batu kapur putih beratap pelana di atas podium enam tingkat undakan",
+                    "en": "Gabled white limestone tomb chamber set atop a six-tiered plinth platform"
+                },
+                {
+                    "id": "Piramida kaca di tengah danau gurun",
+                    "en": "Glass pyramid in the center of a desert oasis"
+                },
+                {
+                    "id": "Kubah emas bulat gaya Bizantium",
+                    "en": "Byzantine-style golden dome"
+                },
+                {
+                    "id": "Makam tebing tersembunyi tanpa pintu masuk",
+                    "en": "Concealed rock-cut shaft without portals"
+                }
+            ],
+            "correctAnswerIndex": 0,
+            "explanation": {
+                "id": "Makam Pasargadae dibangun dari blok batu putih monolitik tanpa adukan semen, menggabungkan gaya arsitektur ziggurat Elam dan atap rumah kayu Ionia.",
+                "en": "The tomb at Pasargadae is built from white limestone ashlar blocks without mortar, combining a stepped plinth with a gabled Hellenic roof chamber."
+            }
+        },
+        {
+            "id": "ka-3",
+            "question": {
+                "id": "Ketika menaklukkan Persia, siapakah panglima besar yang mendatangi makam Koresh Agung dan memerintahkan pemugaran penghormatan?",
+                "en": "When conquering Persia, which great commander visited the Tomb of Cyrus and ordered its restoration out of deep reverence?"
+            },
+            "options": [
+                {
+                    "id": "Aleksander Agung (Alexander the Great)",
+                    "en": "Alexander the Great"
+                },
+                {
+                    "id": "Julius Caesar",
+                    "en": "Julius Caesar"
+                },
+                {
+                    "id": "Kaisar Trajan",
+                    "en": "Emperor Trajan"
+                },
+                {
+                    "id": "Genghis Khan",
+                    "en": "Genghis Khan"
+                }
+            ],
+            "correctAnswerIndex": 0,
+            "explanation": {
+                "id": "Aleksander Agung sangat mengagumi Koresh Agung; ia menghukum mati para perampok makam dan memerintahkan perbaikan makam Pasargadae.",
+                "en": "Alexander the Great held Cyrus in the highest esteem, executing desecrators and ordering the immediate restoration of Cyrus's Pasargadae tomb."
+            }
+        }
+    ]
+},
+  "peradaban-norte-chico": {
+    "articleSlug": "peradaban-norte-chico",
+    "title": {
+        "id": "Kuis: Peradaban Norte Chico",
+        "en": "Quiz: Norte Chico Civilization"
+    },
+    "questions": [
+        {
+            "id": "nc-1",
+            "question": {
+                "id": "Teknik konstruksi tahan gempa inovatif yang digunakan masyarakat Norte Chico untuk membangun piramida teras adalah...",
+                "en": "The innovative earthquake-resistant construction technique used by the Norte Chico people to build platform pyramids was..."
+            },
+            "options": [
+                {
+                    "id": "Shicra (kantung jaring anyaman alang-alang berisi batu kali)",
+                    "en": "Shicras (woven reed mesh bags filled with unworked river rocks)"
+                },
+                {
+                    "id": "Besi tulangan cor beton",
+                    "en": "Rebar reinforced concrete pour"
+                },
+                {
+                    "id": "Pasak kayu jati tahan lembap",
+                    "en": "Moisture-cured teak wood dowels"
+                },
+                {
+                    "id": "Blok es glasial yang dibekukan",
+                    "en": "Frozen glacial ice masonry blocks"
+                }
+            ],
+            "correctAnswerIndex": 0,
+            "explanation": {
+                "id": "Kantung shicra yang diisi batu kali memberikan fleksibilitas struktural dinamis yang meredam gelombang gempa bumi tektonik di pesisir Peru.",
+                "en": "Shicra mesh bags filled with stone provided flexible structural shock absorption, dissipating seismic waves during coastal Peruvian earthquakes."
+            }
+        },
+        {
+            "id": "nc-2",
+            "question": {
+                "id": "Simbiosis ekonomi utama yang memicu kemakmuran pesat peradaban Norte Chico adalah pertukaran antara...",
+                "en": "The core economic symbiosis that propelled the prosperity of Norte Chico was the exchange between..."
+            },
+            "options": [
+                {
+                    "id": "Nelayan pesisir (ikan teri/sarden) dengan petani pedalaman lembah (kapas untuk jaring ikan)",
+                    "en": "Coastal fishermen (anchovies/sardines) and inland valley farmers (cotton for fishing nets)"
+                },
+                {
+                    "id": "Penambang emas Andes dengan pedagang laut Karibia",
+                    "en": "Andean gold miners and Caribbean oceanic traders"
+                },
+                {
+                    "id": "Pemburu bison padang rumput dengan petani gandum",
+                    "en": "Grassland bison hunters and wheat farmers"
+                },
+                {
+                    "id": "Peternak alpaka dengan pengrajin perunggu pesisir",
+                    "en": "Highland alpaca herders and coastal bronze smiths"
+                }
+            ],
+            "correctAnswerIndex": 0,
+            "explanation": {
+                "id": "Lembah pedalaman menanam kapas untuk bahan jaring nelayan, sementara nelayan pesisir memasok protein laut berlimpah bagi pekerja kota piramida.",
+                "en": "Inland valleys grew industrial cotton for durable fishing nets, while coastal fishing villages supplied abundant marine protein to urban laborers."
+            }
+        },
+        {
+            "id": "nc-3",
+            "question": {
+                "id": "Ciri unik permukiman perkotaan monumental Norte Chico dibandingkan peradaban kuno dunia lainnya pada 2800 SM adalah...",
+                "en": "A unique feature of Norte Chico's urban monumental centers compared to other global civilizations around 2800 BCE was..."
+            },
+            "options": [
+                {
+                    "id": "Berkembang pesat pada fase pra-keramik (tanpa pembuatan tembikar bakar)",
+                    "en": "Flourishing entirely in the Preceramic phase (without fired pottery ceramics)"
+                },
+                {
+                    "id": "Ketiadaan sistem pertanian tanaman pangan",
+                    "en": "Complete absence of agricultural food production"
+                },
+                {
+                    "id": "Penggunaan kendaraan beroda besi di jalan beraspal",
+                    "en": "Use of wheeled iron chariots on paved roadways"
+                },
+                {
+                    "id": "Sistem monarki absolut dengan kasta budak bersenjata",
+                    "en": "Absolutist monarchies maintaining armed slave castes"
+                }
+            ],
+            "correctAnswerIndex": 0,
+            "explanation": {
+                "id": "Norte Chico membuktikan bahwa arsitektur monumental perkotaan berskala masif dapat berkembang mendahului penemuan teknologi tembikar keramik.",
+                "en": "Norte Chico proved that complex monumental urbanism could emerge prior to the invention of fired ceramic pottery."
+            }
+        }
+    ]
+},
 };
