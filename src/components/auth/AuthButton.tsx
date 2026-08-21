@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react";
 import { createPortal } from "react-dom";
 import { createClient } from "@/lib/supabase/client";
+import { getAbsoluteURL } from "@/lib/url";
 import { LogIn, LogOut, Loader2 } from "lucide-react";
 import type { User } from "@supabase/supabase-js";
 
@@ -30,7 +31,7 @@ export function AuthButton({ locale }: { locale: "id" | "en" }) {
     await supabase.auth.signInWithOAuth({
       provider: provider,
       options: {
-        redirectTo: `${window.location.origin}/auth/callback`,
+        redirectTo: getAbsoluteURL("/auth/callback"),
       },
     });
   };

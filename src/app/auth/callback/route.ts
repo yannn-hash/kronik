@@ -1,12 +1,14 @@
 import { NextResponse } from 'next/server'
 import { createServerClient } from '@supabase/ssr'
 import { cookies } from 'next/headers'
+import { getSiteURL } from '@/lib/url'
 
 export async function GET(request: Request) {
-  const { searchParams, origin } = new URL(request.url)
+  const { searchParams } = new URL(request.url)
   const code = searchParams.get('code')
   // if "next" is in param, use it as the redirect URL
   const next = searchParams.get('next') ?? '/'
+  const baseURL = getSiteURL()
 
   if (code) {
     const cookieStore = await cookies()
@@ -34,10 +36,13 @@ export async function GET(request: Request) {
     const { error } = await supabase.auth.exchangeCodeForSession(code)
     
     if (!error) {
-      return NextResponse.redirect(`${origin}${next}`)
+      const redirectURL = next.startsWith('http')
+        ? next
+        : `${baseURL}${next.startsWith('/') ? next : `/${next}`}`
+      return NextResponse.redirect(redirectURL)
     }
   }
 
   // return the user to an error page with instructions
-  return NextResponse.redirect(`${origin}/?error=auth_callback_failed`)
+  return NextResponse.redirect(`${baseURL}/?error=auth_callback_failed`)
 }
