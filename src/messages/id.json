@@ -103,5 +103,10 @@
     "title": "Terjadi Kesalahan Sejarah!",
     "description": "Sepertinya ada paradoks waktu atau gangguan pada sistem kami saat mencoba memuat halaman ini.",
     "retry": "Coba Lagi"
+  },
+  "banner": {
+    "previewTitle": "Pre-Production Preview Environment:",
+    "previewDesc": "Perubahan ini sedang diuji sebelum dirilis ke produksi.",
+    "closeTitle": "Tutup pemberitahuan preview"
   }
 }

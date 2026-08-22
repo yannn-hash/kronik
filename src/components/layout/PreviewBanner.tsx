@@ -2,18 +2,18 @@
 
 import { useEffect, useState } from "react";
 import { AlertCircle, X, GitBranch } from "lucide-react";
+import { useTranslations } from "next-intl";
 
 export function PreviewBanner() {
   const [isVisible, setIsVisible] = useState(false);
   const [branchName, setBranchName] = useState<string | null>(null);
+  const t = useTranslations("banner");
 
   useEffect(() => {
     // Check if we are running in a Vercel Preview deployment
-    const isVercelPreview =
-      process.env.NEXT_PUBLIC_VERCEL_ENV === "preview" ||
-      (typeof window !== "undefined" &&
-        window.location.hostname.includes("vercel.app") &&
-        !window.location.hostname.startsWith("kronik.")); // Exclude main production vercel domain if any
+    // We only rely on NEXT_PUBLIC_VERCEL_ENV === "preview" 
+    // to prevent false positives in production when domain is .vercel.app
+    const isVercelPreview = process.env.NEXT_PUBLIC_VERCEL_ENV === "preview";
 
     if (isVercelPreview) {
       setIsVisible(true);
@@ -31,7 +31,7 @@ export function PreviewBanner() {
       <div className="mx-auto flex max-w-6xl items-center gap-2 font-medium">
         <AlertCircle className="h-4 w-4 shrink-0" />
         <span>
-          <strong>Pre-Production Preview Environment:</strong> Perubahan ini sedang diuji sebelum dirilis ke produksi.
+          <strong>{t("previewTitle")}</strong> {t("previewDesc")}
         </span>
         {branchName && (
           <span className="hidden sm:inline-flex items-center gap-1 rounded-md bg-amber-500/20 px-2 py-0.5 font-mono text-xs">
@@ -43,7 +43,7 @@ export function PreviewBanner() {
       <button
         onClick={() => setIsVisible(false)}
         className="rounded p-1 hover:bg-amber-500/20 transition-colors"
-        aria-label="Tutup pemberitahuan preview"
+        aria-label={t("closeTitle")}
       >
         <X className="h-4 w-4" />
       </button>

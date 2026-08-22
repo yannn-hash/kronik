@@ -103,5 +103,10 @@
     "title": "A Historical Paradox Occurred!",
     "description": "There seems to be a time anomaly or system glitch while trying to load this page.",
     "retry": "Try Again"
+  },
+  "banner": {
+    "previewTitle": "Pre-Production Preview Environment:",
+    "previewDesc": "These changes are being tested before production release.",
+    "closeTitle": "Close preview notice"
   }
 }
