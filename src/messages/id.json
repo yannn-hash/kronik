@@ -94,7 +94,14 @@
     "readMore": "Baca Selengkapnya",
     "back": "Kembali",
     "loading": "Memuat...",
+    "loadingHistory": "Memuat menembus lorong waktu...",
+    "loadingMap": "Memuat Peta...",
     "error": "Terjadi kesalahan",
     "notFound": "Halaman tidak ditemukan"
+  },
+  "errorPage": {
+    "title": "Terjadi Kesalahan Sejarah!",
+    "description": "Sepertinya ada paradoks waktu atau gangguan pada sistem kami saat mencoba memuat halaman ini.",
+    "retry": "Coba Lagi"
   }
 }

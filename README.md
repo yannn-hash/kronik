@@ -37,6 +37,10 @@ Kronik adalah platform edukatif interaktif yang bertujuan untuk membuat pembelaj
 Karena proyek ini 100% *open source*, kontribusi dari komunitas sangat dinantikan! Mulai dari penambahan artikel sejarah baru (dalam format MDX), perbaikan *typo*, hingga peningkatan fitur.
 Silakan buat *Pull Request* atau ajukan *Issue* di repositori ini.
 
+## Lingkungan Deployment 🌐
+- **Production (`master`):** Menyajikan versi rilis resmi untuk publik.
+- **Pre-Production Preview (`staging`):** Lingkungan uji coba otomatis (Vercel Preview) untuk pengujian fitur sebelum digabungkan ke produksi.
+
 ## Lisensi 📄
 - **Kode Sumber (Source Code):** Dilindungi di bawah [MIT License](LICENSE).
 - **Konten Artikel & Data:** Didistribusikan di bawah [Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)](https://creativecommons.org/licenses/by-sa/4.0/).

@@ -3961,4 +3961,796 @@ export const QUIZZES: Record<string, QuizData> = {
         }
     ]
 },
+  "pertempuran-marathon": {
+    "articleSlug": "pertempuran-marathon",
+    "title": {
+        "id": "Kuis Pertempuran Marathon",
+        "en": "Battle of Marathon Quiz"
+    },
+    "questions": [
+        {
+            "id": "marathon-1",
+            "question": {
+                "id": "Taktik militer apakah yang diterapkan oleh jenderal Athena Miltiades untuk mengalahkan pasukan Persia di Marathon?",
+                "en": "What military tactic was employed by the Athenian general Miltiades to defeat Persian forces at Marathon?"
+            },
+            "options": [
+                {
+                    "id": "Memperkuat kedua sayap pasukan phalanx dan sengaja menipiskan bagian tengah formasi",
+                    "en": "Strengthening both wings of the phalanx while intentionally thinning the center formation"
+                },
+                {
+                    "id": "Melakukan serangan kavaleri mendadak dari arah perbukitan berbatu",
+                    "en": "Launching a surprise cavalry charge from rocky hills"
+                },
+                {
+                    "id": "Bertahan di balik benteng pertahanan kayu hingga bantuan Sparta tiba",
+                    "en": "Defending behind wooden barricades until Spartan reinforcements arrived"
+                },
+                {
+                    "id": "Menyerang armada kapal Persia menggunakan kapal perang trireme",
+                    "en": "Attacking Persian fleet transports using trireme warships"
+                }
+            ],
+            "correctAnswerIndex": 0,
+            "explanation": {
+                "id": "Miltiades memperkuat kedua sayap pasukannya agar dapat melakukan manuver pengepungan ganda (double envelopment) saat pasukan tengah Persia menekan.",
+                "en": "Miltiades reinforced both wings to execute a double envelopment maneuver as Persian center troops advanced."
+            }
+        },
+        {
+            "id": "marathon-2",
+            "question": {
+                "id": "Siapakah kurir legendaris Athena yang dikisahkan berlari ke Sparta lalu kembali ke Athena untuk mengabarkan kemenangan sebelum wafat?",
+                "en": "Who was the legendary Athenian herald recounted to have run to Sparta and back before announcing victory and collapsing?"
+            },
+            "options": [
+                {
+                    "id": "Pheidippides",
+                    "en": "Pheidippides"
+                },
+                {
+                    "id": "Themistocles",
+                    "en": "Themistocles"
+                },
+                {
+                    "id": "Leonidas",
+                    "en": "Leonidas"
+                },
+                {
+                    "id": "Pausanias",
+                    "en": "Pausanias"
+                }
+            ],
+            "correctAnswerIndex": 0,
+            "explanation": {
+                "id": "Legenda lari Pheidippides dari dataran Marathon menuju Athena menjadi inspirasi perlombaan lari maraton modern sepanjang 42,195 km.",
+                "en": "The legend of Pheidippides running from the plain of Marathon to Athens inspired the modern 42.195 km marathon race."
+            }
+        },
+        {
+            "id": "marathon-3",
+            "question": {
+                "id": "Mengapa kemenangan di Marathon sangat krusial bagi sejarah peradaban Barat?",
+                "en": "Why was the victory at Marathon so pivotal for Western civilizational history?"
+            },
+            "options": [
+                {
+                    "id": "Membuktikan eksperimen demokrasi muda Athena mampu bertahan dari hegemoni kekaisaran otoriter Persia",
+                    "en": "Proved that Athens' nascent democratic experiment could withstand authoritarian Persian hegemony"
+                },
+                {
+                    "id": "Menyebabkan keruntuhan instan seluruh dinasti Akhemeniyah di Persia",
+                    "en": "Caused the immediate collapse of the entire Achaemenid dynasty in Persia"
+                },
+                {
+                    "id": "Menghapuskan perbudakan di seluruh kepulauan Laut Aegea",
+                    "en": "Abolished slavery across all Aegean Sea archipelagos"
+                },
+                {
+                    "id": "Menjadikan Sparta sebagai penguasa tunggal atas seluruh daratan Yunani",
+                    "en": "Established Sparta as the sole sovereign master over mainland Greece"
+                }
+            ],
+            "correctAnswerIndex": 0,
+            "explanation": {
+                "id": "Kemenangan di Marathon memberikan rasa percaya diri luar biasa bagi peradaban Yunani klasik untuk mengembangkan filsafat, seni, dan demokrasi.",
+                "en": "The victory gave Classical Greece profound self-confidence to foster golden-age philosophy, drama, and democracy."
+            }
+        }
+    ]
+},
+  "pertempuran-thermopylae": {
+    "articleSlug": "pertempuran-thermopylae",
+    "title": {
+        "id": "Kuis Pertempuran Thermopylae",
+        "en": "Battle of Thermopylae Quiz"
+    },
+    "questions": [
+        {
+            "id": "thermopylae-1",
+            "question": {
+                "id": "Siapakah raja Sparta yang memimpin 300 pengawal kerajaan serta pasukan sekutu Yunani bertahan di celah sempit Thermopylae pada 480 SM?",
+                "en": "Which Spartan king led 300 royal bodyguards and Greek allied troops to hold the narrow pass of Thermopylae in 480 BCE?"
+            },
+            "options": [
+                {
+                    "id": "Raja Leonidas I",
+                    "en": "King Leonidas I"
+                },
+                {
+                    "id": "Raja Agis II",
+                    "en": "King Agis II"
+                },
+                {
+                    "id": "Raja Archidamus II",
+                    "en": "King Archidamus II"
+                },
+                {
+                    "id": "Raja Cleomenes I",
+                    "en": "King Cleomenes I"
+                }
+            ],
+            "correctAnswerIndex": 0,
+            "explanation": {
+                "id": "Raja Leonidas I bersama 300 pasukan elit Sparta dan ratusan pejuang Thespia memilih bertahan sampai titik darah penghabisan di Thermopylae.",
+                "en": "King Leonidas I along with 300 elite Spartan hoplites and Thespian allies chose to fight to the death at Thermopylae."
+            }
+        },
+        {
+            "id": "thermopylae-2",
+            "question": {
+                "id": "Siapakah penduduk lokal yang mengkhianati posisi Yunani dengan menunjukkan jalan setapak rahasia Anopaia kepada pasukan Persia?",
+                "en": "Who was the local traitor that revealed the secret mountain path of Anopaia to the Persian army?"
+            },
+            "options": [
+                {
+                    "id": "Ephialtes dari Trachis",
+                    "en": "Ephialtes of Trachis"
+                },
+                {
+                    "id": "Alcibiades",
+                    "en": "Alcibiades"
+                },
+                {
+                    "id": "Hippias",
+                    "en": "Hippias"
+                },
+                {
+                    "id": "Demaratus",
+                    "en": "Demaratus"
+                }
+            ],
+            "correctAnswerIndex": 0,
+            "explanation": {
+                "id": "Ephialtes memandu pasukan elit Persia (Immortals) melintasi jalur pegunungan Anopaia untuk mengepung pasukan Leonidas dari belakang.",
+                "en": "Ephialtes guided the Persian Immortals through the Anopaia mountain path to surround Leonidas's rear guard."
+            }
+        },
+        {
+            "id": "thermopylae-3",
+            "question": {
+                "id": "Apa dampak strategis utama dari pengorbanan pasukan Yunani di Thermopylae?",
+                "en": "What was the primary strategic impact of the Greek sacrifice at Thermopylae?"
+            },
+            "options": [
+                {
+                    "id": "Mengulur waktu berharga bagi Athena untuk mengevakuasi penduduk dan mempersiapkan kemenangan armada laut di Salamis",
+                    "en": "Bought precious time for Athens to evacuate citizens and prepare decisive naval victory at Salamis"
+                },
+                {
+                    "id": "Menghancurkan seluruh suplai logistik darat pasukan Xerxes I",
+                    "en": "Completely destroyed the terrestrial supply logistics of Xerxes I's army"
+                },
+                {
+                    "id": "Memaksa Persia langsung menandatangani perjanjian damai tanpa syarat",
+                    "en": "Forced Persia to immediately sign an unconditional peace treaty"
+                },
+                {
+                    "id": "Mencegah pembakaran kuil-kuil di bukit Akropolis Athena",
+                    "en": "Prevented the burning of temples on the Athenian Acropolis hill"
+                }
+            ],
+            "correctAnswerIndex": 0,
+            "explanation": {
+                "id": "Meskipun kalah secara taktis di celah sempit, pengorbanan tersebut mengulur waktu bagi Themistocles menyusun armada laut Yunani yang memukul mundur Persia di Salamis.",
+                "en": "Though a tactical defeat, the heroic stand bought vital time for Themistocles to coordinate the Greek naval victory at Salamis."
+            }
+        }
+    ]
+},
+  "ekspedisi-aleksander-agung": {
+    "articleSlug": "ekspedisi-aleksander-agung",
+    "title": {
+        "id": "Kuis Ekspedisi Aleksander Agung",
+        "en": "Conquests of Alexander the Great Quiz"
+    },
+    "questions": [
+        {
+            "id": "alexander-1",
+            "question": {
+                "id": "Pertempuran manakah pada 331 SM yang secara definitif menghancurkan kekuatan utama Darius III dan membuka jalan bagi Aleksander menguasai Babel dan Persepolis?",
+                "en": "Which 331 BCE battle decisively shattered Darius III's imperial forces, opening Mesopotamia and Persepolis to Alexander?"
+            },
+            "options": [
+                {
+                    "id": "Pertempuran Gaugamela",
+                    "en": "Battle of Gaugamela"
+                },
+                {
+                    "id": "Pertempuran Granicus",
+                    "en": "Battle of the Granicus"
+                },
+                {
+                    "id": "Pertempuran Issus",
+                    "en": "Battle of Issus"
+                },
+                {
+                    "id": "Pertempuran Sungai Hydaspes",
+                    "en": "Battle of the Hydaspes River"
+                }
+            ],
+            "correctAnswerIndex": 0,
+            "explanation": {
+                "id": "Di Gaugamela, Aleksander menggunakan formasi kavaleri Companion bersudut baji untuk menerobos langsung ke posisi kereta perang Darius III.",
+                "en": "At Gaugamela, Alexander utilized a wedge-shaped Companion cavalry strike directly targeting Darius III's command chariot."
+            }
+        },
+        {
+            "id": "alexander-2",
+            "question": {
+                "id": "Apakah dampak kultural jangka panjang terbesar dari penaklukan lintas benua Aleksander Agung?",
+                "en": "What was the greatest long-term cultural legacy of Alexander the Great's transcontinental conquests?"
+            },
+            "options": [
+                {
+                    "id": "Terciptanya era Helenisme yang memadukan kebudayaan Yunani dengan tradisi Persia, Mesir, dan India",
+                    "en": "Creation of the Hellenistic Era, fusing Greek culture with Persian, Egyptian, and Indian traditions"
+                },
+                {
+                    "id": "Standardisasi mata uang perak tunggal yang bertahan selama seribu tahun",
+                    "en": "Standardization of a single silver currency system lasting a thousand years"
+                },
+                {
+                    "id": "Penghapusan seluruh aksara hieroglif di Lembah Nil",
+                    "en": "Complete elimination of hieroglyphic scripts across the Nile Valley"
+                },
+                {
+                    "id": "Penyatuan permanen seluruh benua Asia di bawah satu sistem hukum Makedonia",
+                    "en": "Permanent unification of Asia under a single Macedonian legal code"
+                }
+            ],
+            "correctAnswerIndex": 0,
+            "explanation": {
+                "id": "Ekspedisi Aleksander menyebarkan bahasa Yunani (Koine Greek), seni, arsitektur, dan sains ke seluruh wilayah Timur Tengah hingga Asia Tengah.",
+                "en": "Alexander's campaigns spread Koine Greek language, urban planning, art, and philosophy throughout the Near East and Central Asia."
+            }
+        },
+        {
+            "id": "alexander-3",
+            "question": {
+                "id": "Mengapa Aleksander Agung akhirnya menghentikan ekspansinya ke arah timur di tepi Sungai Hyphasis (Beas) di India?",
+                "en": "Why did Alexander the Great finally halt his eastward conquests at the banks of the Hyphasis (Beas) River in India?"
+            },
+            "options": [
+                {
+                    "id": "Pemberontakan dan kelelahan mental pasukannya yang menolak maju lebih jauh ke pedalaman India",
+                    "en": "Mutiny and psychological exhaustion of his veteran troops refusing to march further into India"
+                },
+                {
+                    "id": "Kekalahan telak kavaleri Makedonia melawan pasukan gajah Dinasti Nanda",
+                    "en": "A crushing tactical defeat of Macedonian cavalry by Nanda war elephants"
+                },
+                {
+                    "id": "Wafatnya kuda kesayangannya, Bucephalus, di medan perang",
+                    "en": "The death of his beloved warhorse, Bucephalus, on the battlefield"
+                },
+                {
+                    "id": "Datangnya utusan dari Roma yang menuntut penyerahan diri wilayah barat",
+                    "en": "The arrival of Roman envoys demanding submission of Western territories"
+                }
+            ],
+            "correctAnswerIndex": 0,
+            "explanation": {
+                "id": "Setelah menempuh lebih dari 20.000 kilometer selama 8 tahun, prajurit Aleksander melakukan aksi mogok damai di Sungai Hyphasis karena rindu tanah air dan kelelahan luar biasa.",
+                "en": "After marching over 20,000 km across 8 grueling years, Alexander's soldiers staged a peaceful mutiny at the Hyphasis River due to sheer exhaustion."
+            }
+        }
+    ]
+},
+  "perpustakaan-alexandria": {
+    "articleSlug": "perpustakaan-alexandria",
+    "title": {
+        "id": "Kuis Perpustakaan Agung Alexandria",
+        "en": "Great Library of Alexandria Quiz"
+    },
+    "questions": [
+        {
+            "id": "library-alexandria-1",
+            "question": {
+                "id": "Dinasti penguasa Helenistik manakah di Mesir yang mendirikan dan mendanai Perpustakaan Agung Alexandria serta institusi Musaeum?",
+                "en": "Which Hellenistic ruling dynasty in Egypt founded and financed the Great Library of Alexandria and the Musaeum?"
+            },
+            "options": [
+                {
+                    "id": "Dinasti Ptolemaik (Ptolemaeus I Soter dan Ptolemaeus II Philadelphus)",
+                    "en": "Ptolemaic Dynasty (Ptolemy I Soter and Ptolemy II Philadelphus)"
+                },
+                {
+                    "id": "Dinasti Seleukia",
+                    "en": "Seleucid Dynasty"
+                },
+                {
+                    "id": "Dinasti Antigonid",
+                    "en": "Antigonid Dynasty"
+                },
+                {
+                    "id": "Dinasti Attalid dari Pergamon",
+                    "en": "Attalid Dynasty of Pergamon"
+                }
+            ],
+            "correctAnswerIndex": 0,
+            "explanation": {
+                "id": "Ptolemaeus I Soter menginisiasi pembangunan Musaeum dan perpustakaan kerajaan yang kemudian diperluas secara ambisius oleh putranya, Ptolemaeus II.",
+                "en": "Ptolemy I Soter initiated the Royal Musaeum and Library, which was ambitiously expanded by his son Ptolemy II."
+            }
+        },
+        {
+            "id": "library-alexandria-2",
+            "question": {
+                "id": "Ilmuwan agung manakah yang menjabat sebagai kepala pustakawan di Alexandria dan berhasil menghitung keliling bumi dengan akurasi mengagumkan?",
+                "en": "Which eminent scholar served as chief librarian at Alexandria and calculated the Earth's circumference with remarkable accuracy?"
+            },
+            "options": [
+                {
+                    "id": "Eratosthenes",
+                    "en": "Eratosthenes"
+                },
+                {
+                    "id": "Archimedes",
+                    "en": "Archimedes"
+                },
+                {
+                    "id": "Euclid",
+                    "en": "Euclid"
+                },
+                {
+                    "id": "Apollonius dari Rhodes",
+                    "en": "Apollonius of Rhodes"
+                }
+            ],
+            "correctAnswerIndex": 0,
+            "explanation": {
+                "id": "Eratosthenes menggunakan sudut bayangan matahari di Alexandria dan Syene (Aswan) untuk mengukur keliling bumi sekitar 40.000 km.",
+                "en": "Eratosthenes used solar shadow angles at Alexandria and Syene (Aswan) on the summer solstice to deduce Earth's circumference."
+            }
+        },
+        {
+            "id": "library-alexandria-3",
+            "question": {
+                "id": "Fakta sejarah apakah yang paling akurat mengenai proses kemunduran dan kehancuran Perpustakaan Alexandria?",
+                "en": "What is the historically accurate consensus regarding the decline and destruction of the Library of Alexandria?"
+            },
+            "options": [
+                {
+                    "id": "Kemunduran bertahap selama berabad-abad akibat kebakaran parsial era Caesar, pemotongan anggaran, dan konflik sektarian",
+                    "en": "Gradual decline over several centuries through partial fires (Caesar's siege), budget cuts, and sectarian purges"
+                },
+                {
+                    "id": "Kehancuran total dalam satu malam akibat invasi bangsa Mongol",
+                    "en": "Complete single-night devastation during Mongol invasions"
+                },
+                {
+                    "id": "Seluruh gulungan papirus sengaja ditenggelamkan ke Laut Mediterania oleh Alexander",
+                    "en": "All papyrus scrolls were deliberately sunk in the Mediterranean by Alexander"
+                },
+                {
+                    "id": "Perpustakaan tidak pernah terbakar dan bangunannya utuh hingga abad ke-19",
+                    "en": "The library never burned and stood fully intact until the 19th century"
+                }
+            ],
+            "correctAnswerIndex": 0,
+            "explanation": {
+                "id": "Konsensus akademis modern menegaskan bahwa perpustakaan mengalami degradasi bertahap melalui berbagai insiden (48 SM, 272 M, 391 M, dan 642 M), bukan peristiwa tunggal.",
+                "en": "Modern historical consensus proves the library suffered incremental loss across multiple catastrophes (48 BCE, 272 CE, 391 CE, 642 CE) rather than one single fire."
+            }
+        }
+    ]
+},
+  "penyatuan-qin-tembok-besar": {
+    "articleSlug": "penyatuan-qin-tembok-besar",
+    "title": {
+        "id": "Kuis Penyatuan Qin & Tembok Besar",
+        "en": "Qin Unification & Great Wall Quiz"
+    },
+    "questions": [
+        {
+            "id": "qin-unification-1",
+            "question": {
+                "id": "Siapakah kaisar pertama yang menyatukan enam negara yang bertikai di Tiongkok dan mendirikan Dinasti Qin pada 221 SM?",
+                "en": "Who was the first emperor to conquer the Six Warring States and establish the unified Qin Dynasty in 221 BCE?"
+            },
+            "options": [
+                {
+                    "id": "Qin Shi Huang (Ying Zheng)",
+                    "en": "Qin Shi Huang (Ying Zheng)"
+                },
+                {
+                    "id": "Han Gaozu (Liu Bang)",
+                    "en": "Han Gaozu (Liu Bang)"
+                },
+                {
+                    "id": "Kaisar Wu dari Han",
+                    "en": "Emperor Wu of Han"
+                },
+                {
+                    "id": "Kaisar Tang Taizong",
+                    "en": "Emperor Tang Taizong"
+                }
+            ],
+            "correctAnswerIndex": 0,
+            "explanation": {
+                "id": "Ying Zheng menaklukkan Han, Zhao, Yan, Wei, Chu, dan Qi, lalu memproklamasikan dirinya sebagai 'Qin Shi Huang' (Kaisar Pertama Qin).",
+                "en": "Ying Zheng subdued Han, Zhao, Yan, Wei, Chu, and Qi, adopting the exalted title 'Qin Shi Huang' (First Sovereign Emperor of Qin)."
+            }
+        },
+        {
+            "id": "qin-unification-2",
+            "question": {
+                "id": "Filsafat tata kelola negara apakah yang diterapkan oleh Dinasti Qin di bawah penasihat Li Si untuk memberlakukan sentralisasi hukum yang ketat?",
+                "en": "What governing philosophy was enforced by the Qin Dynasty under chancellor Li Si to impose rigid legal centralism?"
+            },
+            "options": [
+                {
+                    "id": "Legalisme (Fa Jia)",
+                    "en": "Legalism (Fa Jia)"
+                },
+                {
+                    "id": "Konfusianisme (Ru Jia)",
+                    "en": "Confucianism (Ru Jia)"
+                },
+                {
+                    "id": "Daoisme (Dao Jia)",
+                    "en": "Daoism (Dao Jia)"
+                },
+                {
+                    "id": "Mohisme (Mo Jia)",
+                    "en": "Mohism (Mo Jia)"
+                }
+            ],
+            "correctAnswerIndex": 0,
+            "explanation": {
+                "id": "Legalisme menekankan supremasi hukum tertulis yang kaku, ganjaran militer, dan hukuman kolektif yang berat demi menjaga stabilitas kekaisaran.",
+                "en": "Legalism mandated strict statutory codification, meritocratic military rewards, and severe penal consequences to enforce imperial stability."
+            }
+        },
+        {
+            "id": "qin-unification-3",
+            "question": {
+                "id": "Pembaruan standardisasi manakah yang berhasil merekatkan persatuan wilayah Tiongkok dalam jangka panjang di bawah Qin Shi Huang?",
+                "en": "Which standardization reforms permanently bonded Chinese cultural and economic unity under Qin Shi Huang?"
+            },
+            "options": [
+                {
+                    "id": "Standardisasi aksara tulis (Aksara Segel Kecil), mata uang logam tembaga, timbangan, dan lebar gardu poros roda kereta",
+                    "en": "Standardization of writing script (Small Seal Script), copper coinage, weights, measures, and cart axle widths"
+                },
+                {
+                    "id": "Penghapusan seluruh sistem pajak tanah pertanian",
+                    "en": "Total abolition of all agricultural land taxation"
+                },
+                {
+                    "id": "Pemberlakuan satu dialek lisan tunggal di seluruh desa pedalaman",
+                    "en": "Mandatory enforcement of a single spoken dialect across all peasant hamlets"
+                },
+                {
+                    "id": "Larangan pembuatan tembikar dan pembatasan perdagangan kain sutra",
+                    "en": "Ban on pottery manufacturing and restriction of silk fabric trading"
+                }
+            ],
+            "correctAnswerIndex": 0,
+            "explanation": {
+                "id": "Penyatuan sistem aksara (Xiaozhuan), mata uang koin keping berlubang kotak (Ban Liang), dan ukuran poros roda memungkinkan integrasi ekonomi dan birokrasi lintas daerah.",
+                "en": "Standardizing the script (Xiaozhuan), coin currency (Ban Liang), and carriage axle track widths forged lasting bureaucratic and economic cohesion."
+            }
+        }
+    ]
+},
+  "perang-punisia-hannibal": {
+    "articleSlug": "perang-punisia-hannibal",
+    "title": {
+        "id": "Kuis Perang Punisia II & Hannibal",
+        "en": "Second Punic War & Hannibal Quiz"
+    },
+    "questions": [
+        {
+            "id": "hannibal-1",
+            "question": {
+                "id": "Manuver militer luar biasa apakah yang dilakukan jenderal Kartago Hannibal Barca pada awal Perang Punisia Kedua (218 SM)?",
+                "en": "What extraordinary military maneuver was executed by Carthaginian general Hannibal Barca at the start of the Second Punic War (218 BCE)?"
+            },
+            "options": [
+                {
+                    "id": "Memimpin pasukan beserta puluhan gajah perang melintasi Pegunungan Alpen di musim dingin menuju Italia utara",
+                    "en": "Marching his multination army and war elephants across the snowy Alps into northern Italy"
+                },
+                {
+                    "id": "Menyerang pelabuhan Ostia langsung menggunakan armada 500 kapal perang",
+                    "en": "Directly invading Ostia harbor with an armada of 500 warships"
+                },
+                {
+                    "id": "Membangun benteng bawah tanah di pulau Sisilia untuk memblokade laut",
+                    "en": "Constructing subterranean forts on Sicily to execute an island blockade"
+                },
+                {
+                    "id": "Membeli aliansi seluruh legiun Romawi dengan emas batangan Spanyol",
+                    "en": "Bribing all Roman legions into defection using Spanish silver ingots"
+                }
+            ],
+            "correctAnswerIndex": 0,
+            "explanation": {
+                "id": "Hannibal mengejutkan Senat Romawi dengan menyeberangi jalur berbahaya Pegunungan Pyrenees dan Alpen demi membawa pertempuran langsung ke tanah Italia.",
+                "en": "Hannibal stunned the Roman Senate by daringly navigating the Pyrenees and the treacherous Alps, taking the war onto Italian soil."
+            }
+        },
+        {
+            "id": "hannibal-2",
+            "question": {
+                "id": "Pertempuran manakah pada 216 SM yang dianggap sebagai mahakarya taktik militer pengepungan ganda (double envelopment) Hannibal yang menewaskan puluhan ribu tentara Romawi?",
+                "en": "Which 216 BCE battle stands as Hannibal's tactical masterpiece of double envelopment, annihilating tens of thousands of Roman legionaries?"
+            },
+            "options": [
+                {
+                    "id": "Pertempuran Cannae",
+                    "en": "Battle of Cannae"
+                },
+                {
+                    "id": "Pertempuran Danau Trasimene",
+                    "en": "Battle of Lake Trasimene"
+                },
+                {
+                    "id": "Pertempuran Trebia",
+                    "en": "Battle of the Trebia"
+                },
+                {
+                    "id": "Pertempuran Zama",
+                    "en": "Battle of Zama"
+                }
+            ],
+            "correctAnswerIndex": 0,
+            "explanation": {
+                "id": "Di Cannae, Hannibal membentuk garis tengah berbentuk cembung yang sengaja mundur perlahan, membiarkan sayap kavaleri Numidia dan Spanyol menutup dan membantai kepungan Romawi.",
+                "en": "At Cannae, Hannibal deployed a convex crescent formation that yielded slowly, allowing his veteran cavalry wings to encircle and annihilate the Roman forces."
+            }
+        },
+        {
+            "id": "hannibal-3",
+            "question": {
+                "id": "Jenderal Romawi manakah yang akhirnya mengalahkan Hannibal di Pertempuran Zama (202 SM) di Afrika Utara?",
+                "en": "Which Roman commander finally defeated Hannibal Barca at the Battle of Zama (202 BCE) in North Africa?"
+            },
+            "options": [
+                {
+                    "id": "Publius Cornelius Scipio Africanus",
+                    "en": "Publius Cornelius Scipio Africanus"
+                },
+                {
+                    "id": "Fabius Maximus Cunctator",
+                    "en": "Fabius Maximus Cunctator"
+                },
+                {
+                    "id": "Marcus Claudius Marcellus",
+                    "en": "Marcus Claudius Marcellus"
+                },
+                {
+                    "id": "Lucius Aemilius Paullus",
+                    "en": "Lucius Aemilius Paullus"
+                }
+            ],
+            "correctAnswerIndex": 0,
+            "explanation": {
+                "id": "Scipio Africanus mempelajari taktik Hannibal, mengamankan kavaleri Numidia pimpinan Masinissa, dan menggunakan lorong antar-manipel untuk menetralisir amukan gajah perang Kartago di Zama.",
+                "en": "Scipio Africanus studied Hannibal's methods, recruited Numidian cavalry under Masinissa, and used open tactical lanes to neutralize charging war elephants at Zama."
+            }
+        }
+    ]
+},
+  "jalur-sutra-han": {
+    "articleSlug": "jalur-sutra-han",
+    "title": {
+        "id": "Kuis Jalur Sutra Dinasti Han",
+        "en": "Han Dynasty Silk Road Quiz"
+    },
+    "questions": [
+        {
+            "id": "silk-road-1",
+            "question": {
+                "id": "Siapakah diplomat dan penjelajah utusan Kaisar Wu dari Han yang rintisannya membuka jaringan Jalur Sutra ke wilayah Asia Tengah?",
+                "en": "Who was the imperial envoy commissioned by Emperor Wu of Han whose diplomatic journeys pioneered the Silk Road network?"
+            },
+            "options": [
+                {
+                    "id": "Zhang Qian",
+                    "en": "Zhang Qian"
+                },
+                {
+                    "id": "Ban Chao",
+                    "en": "Ban Chao"
+                },
+                {
+                    "id": "Sima Qian",
+                    "en": "Sima Qian"
+                },
+                {
+                    "id": "Xuanzang",
+                    "en": "Xuanzang"
+                }
+            ],
+            "correctAnswerIndex": 0,
+            "explanation": {
+                "id": "Zhang Qian dikirim ke Wilayah Barat (Xiyu) untuk mencari sekutu Yuezhi melawan konfederasi nomaden Xiongnu, menghasilkan laporan berharga tentang kerajaan-kerajaan Asia Tengah.",
+                "en": "Zhang Qian was dispatched to the Western Regions (Xiyu) to ally with the Yuezhi against the Xiongnu, providing Han intelligence on Dayuan, Sogdia, and Bactria."
+            }
+        },
+        {
+            "id": "silk-road-2",
+            "question": {
+                "id": "Komoditas berharga apakah dari Lembah Fergana (Dayuan) yang sangat didambakan oleh Kekaisaran Han untuk memperkuat divisi kavalerinya?",
+                "en": "What prized commodity from the Fergana Valley (Dayuan) was desperately sought by the Han Empire to enhance its cavalry warfare?"
+            },
+            "options": [
+                {
+                    "id": "Kuda Surgawi (Heavenly Horses / Kuda Berpeluh Darah)",
+                    "en": "Heavenly Horses (Blood-sweating Fergana steed)"
+                },
+                {
+                    "id": "Baja Damaskus bermutu tinggi",
+                    "en": "High-grade crucible Damascus steel"
+                },
+                {
+                    "id": "Minyak bumi zaitun Yunani",
+                    "en": "Greek olive petroleum oils"
+                },
+                {
+                    "id": "Kain wol ungu Tyre",
+                    "en": "Tyrian imperial purple wool"
+                }
+            ],
+            "correctAnswerIndex": 0,
+            "explanation": {
+                "id": "Kuda Fergana yang berstamina tinggi dan berotot kekar sangat dibutuhkan Han untuk mengimbangi kavaleri pemanah berkuda bangsa nomaden Xiongnu.",
+                "en": "The swift, powerful Fergana horses were crucial for Han armies to counter the formidable mobile horse archers of the Xiongnu steppe empire."
+            }
+        },
+        {
+            "id": "silk-road-3",
+            "question": {
+                "id": "Selain perdagangan barang mewah seperti sutra dan rempah, apa dampak transmisi kultural terbesar yang masuk ke Tiongkok melalui Jalur Sutra pada era klasik?",
+                "en": "Besides luxury goods like silk and glassware, what major cultural transmission reached China via the Silk Road in the Classical era?"
+            },
+            "options": [
+                {
+                    "id": "Penyebaran ajaran agama Buddha dari anak benua India",
+                    "en": "Transmission of Buddhism from the Indian subcontinent"
+                },
+                {
+                    "id": "Pemberlakuan aksara alfabet Latin di istana Chang'an",
+                    "en": "Adoption of the Latin alphabet in the Chang'an imperial court"
+                },
+                {
+                    "id": "Pengenalan teknologi pelayaran kano Polinesia",
+                    "en": "Introduction of Polynesian outrigger sailing technology"
+                },
+                {
+                    "id": "Penyebaran sistem demokrasi langsung ala polis Athena",
+                    "en": "Spread of Athenian direct democratic citizen assemblies"
+                }
+            ],
+            "correctAnswerIndex": 0,
+            "explanation": {
+                "id": "Melalui oasis-oasis Jalur Sutra seperti Khotan, Dunhuang, dan Kucha, para bhiksu menerjemahkan naskah-naskah Buddhis Sanskerta ke dalam bahasa Tionghoa.",
+                "en": "Through Silk Road oasis hubs like Khotan, Dunhuang, and Kucha, Buddhist monks traveled and translated Sanskrit scriptures into Chinese."
+            }
+        }
+    ]
+},
+  "pembunuhan-julius-caesar": {
+    "articleSlug": "pembunuhan-julius-caesar",
+    "title": {
+        "id": "Kuis Pembunuhan Julius Caesar",
+        "en": "Assassination of Julius Caesar Quiz"
+    },
+    "questions": [
+        {
+            "id": "caesar-ides-1",
+            "question": {
+                "id": "Pada tanggal berapakah peristiwa pembunuhan Julius Caesar yang terkenal dengan sebutan 'Ides of March' terjadi di Senat Roma?",
+                "en": "On what date did the famous 'Ides of March' assassination of Julius Caesar occur in the Roman Senate?"
+            },
+            "options": [
+                {
+                    "id": "15 Maret 44 SM",
+                    "en": "March 15, 44 BCE"
+                },
+                {
+                    "id": "1 Januari 44 SM",
+                    "en": "January 1, 44 BCE"
+                },
+                {
+                    "id": "21 April 753 SM",
+                    "en": "April 21, 753 BCE"
+                },
+                {
+                    "id": "2 September 31 SM",
+                    "en": "September 2, 31 BCE"
+                }
+            ],
+            "correctAnswerIndex": 0,
+            "explanation": {
+                "id": "Pada 15 Maret 44 SM, sekelompok senator yang dipimpin oleh Brutus dan Cassius menikam Caesar sebanyak 23 kali di Teater Pompey.",
+                "en": "On March 15, 44 BCE, a conspiracy of senators led by Brutus and Cassius stabbed Caesar 23 times in the Theatre of Pompey's Curia."
+            }
+        },
+        {
+            "id": "caesar-ides-2",
+            "question": {
+                "id": "Gelar politik apakah yang disandang Julius Caesar yang memicu kecurigaan kaum senator bahwa ia berniat menghancurkan Republik dan menjadi raja?",
+                "en": "What political title assumed by Julius Caesar stoked fears among senators that he intended to crown himself king and abolish the Republic?"
+            },
+            "options": [
+                {
+                    "id": "Dictator perpetuo (Diktator Seumur Hidup)",
+                    "en": "Dictator perpetuo (Dictator in perpetuity)"
+                },
+                {
+                    "id": "Pontifex Maximus",
+                    "en": "Pontifex Maximus"
+                },
+                {
+                    "id": "Tribunus Plebis",
+                    "en": "Tribunus Plebis"
+                },
+                {
+                    "id": "Princeps Senatus",
+                    "en": "Princeps Senatus"
+                }
+            ],
+            "correctAnswerIndex": 0,
+            "explanation": {
+                "id": "Penetapan gelar 'Dictator perpetuo' pada awal tahun 44 SM dipandang oleh faksi Liberatores sebagai ancaman mutlak terhadap sistem checks-and-balances Republik Roma.",
+                "en": "Caesar's appointment as 'Dictator perpetuo' in early 44 BCE convinced the Liberatores faction that the constitutional Republic was fatally compromised."
+            }
+        },
+        {
+            "id": "caesar-ides-3",
+            "question": {
+                "id": "Siapakah ahli waris sah Caesar yang akhirnya membentuk Triumvirat Kedua dan menjadi Kaisar Romawi pertama bergelar Augustus?",
+                "en": "Who was Caesar's designated adopted heir who formed the Second Triumvirate and became the first Roman Emperor with the title Augustus?"
+            },
+            "options": [
+                {
+                    "id": "Gaius Octavius (Octavianus / Kaisar Augustus)",
+                    "en": "Gaius Octavius (Octavian / Emperor Augustus)"
+                },
+                {
+                    "id": "Marcus Antonius (Mark Antony)",
+                    "en": "Mark Antony"
+                },
+                {
+                    "id": "Marcus Aemilius Lepidus",
+                    "en": "Marcus Aemilius Lepidus"
+                },
+                {
+                    "id": "Tiberius",
+                    "en": "Tiberius"
+                }
+            ],
+            "correctAnswerIndex": 0,
+            "explanation": {
+                "id": "Pembunuhan Caesar justru mempercepat keruntuhan Republik; cucu keponakannya, Octavianus, mengalahkan para pembunuh Caesar dan Marcus Antonius, lalu mendirikan Kekaisaran Romawi.",
+                "en": "Caesar's murder accelerated the Republic's demise; his adopted great-nephew Octavian emerged triumphant, founding the Roman Empire as Augustus in 27 BCE."
+            }
+        }
+    ]
+},
 };

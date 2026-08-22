@@ -112,72 +112,90 @@ export function PetaView() {
       </div>
 
       {/* Floating Control Bar: Tags & Civilization Layer */}
-      <div className="absolute top-4 right-4 z-10 flex flex-col gap-2 items-end">
-        {/* Civilization Layer Toggle Button */}
+      <div className="absolute top-4 right-4 z-10 flex flex-col gap-3 items-end">
+        {/* Civilization Layer Toggle Button (Icon Only) */}
         <button
           onClick={() => setShowCivilizations(!showCivilizations)}
           className={cn(
-            "flex items-center gap-2 px-3 py-2 text-xs font-semibold rounded-xl shadow-lg backdrop-blur-md border transition-all duration-200",
+            "flex items-center justify-center p-3 rounded-xl shadow-lg backdrop-blur-md border transition-all duration-200 relative group",
             showCivilizations
               ? "bg-primary text-primary-foreground border-primary shadow-primary/20"
-              : "bg-card/90 text-muted-foreground border-border hover:text-foreground"
+              : "bg-card/90 text-muted-foreground border-border hover:text-foreground hover:bg-card"
           )}
           title={locale === "id" ? "Beralih Lapisan Wilayah Kekaisaran" : "Toggle Empire Boundaries Overlay"}
         >
-          <Layers className="h-4 w-4" />
-          <span>{locale === "id" ? "Lapisan Peradaban" : "Civilization Layer"}</span>
+          <Layers className="h-5 w-5" />
           <span className={cn(
-            "w-2 h-2 rounded-full",
-            showCivilizations ? "bg-white animate-pulse" : "bg-muted-foreground"
+            "absolute top-2.5 right-2.5 w-1.5 h-1.5 rounded-full",
+            showCivilizations ? "bg-white animate-pulse" : "hidden"
           )}></span>
         </button>
 
-        {/* Floating Tag Filter */}
-        <div className="bg-card/90 backdrop-blur-md rounded-xl shadow-lg border border-border p-3 transition-all duration-300 w-full sm:w-[280px]">
-          <button 
-            onClick={() => setIsTagsOpen(!isTagsOpen)}
-            className="flex items-center justify-between w-full text-sm font-semibold text-foreground hover:text-primary transition-colors"
-          >
-            <div className="flex items-center gap-2">
-              <Tag className="h-4 w-4" />
-              {locale === "id" ? "Filter Topik" : "Topic Filter"}
-              {selectedTag && (
-                <span className="ml-2 text-xs font-normal text-muted-foreground capitalize">
-                  ({TAG_TRANSLATIONS[selectedTag]?.[locale] || selectedTag.replace("-", " ")})
-                </span>
-              )}
-            </div>
-            <span className="text-muted-foreground text-xs">{isTagsOpen ? "−" : "+"}</span>
-          </button>
-          
-          {isTagsOpen && (
-            <div className="flex flex-wrap gap-1.5 mt-3 max-h-[220px] overflow-y-auto scrollbar-hide">
-              <button
-                onClick={() => handleTagSelect(null)}
-                className={cn(
-                  "px-2.5 py-1 text-xs font-medium rounded-full transition-colors",
-                  selectedTag === null
-                    ? "bg-primary text-primary-foreground"
-                    : "bg-muted text-muted-foreground hover:bg-muted/80"
-                )}
+        {/* Floating Tag Filter (Minimized/Expanded) */}
+        <div className={cn(
+          "bg-card/90 backdrop-blur-md rounded-xl shadow-lg border border-border transition-all duration-300 overflow-hidden",
+          isTagsOpen ? "p-3 w-[260px] sm:w-[280px]" : "p-0 w-auto"
+        )}>
+          {isTagsOpen ? (
+            <>
+              <button 
+                onClick={() => setIsTagsOpen(false)}
+                className="flex items-center justify-between w-full text-sm font-semibold text-foreground hover:text-primary transition-colors"
               >
-                {locale === "id" ? "Semua" : "All"}
+                <div className="flex items-center gap-2">
+                  <Tag className="h-4 w-4" />
+                  {locale === "id" ? "Filter Topik" : "Topic Filter"}
+                  {selectedTag && (
+                    <span className="ml-1 text-xs font-normal text-muted-foreground capitalize">
+                      ({TAG_TRANSLATIONS[selectedTag]?.[locale] || selectedTag.replace("-", " ")})
+                    </span>
+                  )}
+                </div>
+                <span className="text-muted-foreground font-bold">×</span>
               </button>
-              {allTags.map(tag => (
+              
+              <div className="flex flex-wrap gap-1.5 mt-3 max-h-[220px] overflow-y-auto scrollbar-hide">
                 <button
-                  key={tag}
-                  onClick={() => handleTagSelect(tag)}
+                  onClick={() => handleTagSelect(null)}
                   className={cn(
-                    "px-2.5 py-1 text-xs font-medium rounded-full transition-colors capitalize",
-                    selectedTag === tag
+                    "px-2.5 py-1 text-xs font-medium rounded-full transition-colors",
+                    selectedTag === null
                       ? "bg-primary text-primary-foreground"
                       : "bg-muted text-muted-foreground hover:bg-muted/80"
                   )}
                 >
-                  {TAG_TRANSLATIONS[tag]?.[locale] || tag.replace("-", " ")}
+                  {locale === "id" ? "Semua" : "All"}
                 </button>
-              ))}
-            </div>
+                {allTags.map(tag => (
+                  <button
+                    key={tag}
+                    onClick={() => handleTagSelect(tag)}
+                    className={cn(
+                      "px-2.5 py-1 text-xs font-medium rounded-full transition-colors capitalize",
+                      selectedTag === tag
+                        ? "bg-primary text-primary-foreground"
+                        : "bg-muted text-muted-foreground hover:bg-muted/80"
+                    )}
+                  >
+                    {TAG_TRANSLATIONS[tag]?.[locale] || tag.replace("-", " ")}
+                  </button>
+                ))}
+              </div>
+            </>
+          ) : (
+            <button 
+              onClick={() => setIsTagsOpen(true)}
+              className={cn(
+                "flex items-center justify-center p-3 text-muted-foreground hover:text-foreground transition-colors relative",
+                selectedTag && "text-primary"
+              )}
+              title={locale === "id" ? "Filter Topik" : "Topic Filter"}
+            >
+              <Tag className="h-5 w-5" />
+              {selectedTag && (
+                <span className="absolute top-2.5 right-2.5 w-1.5 h-1.5 rounded-full bg-primary animate-pulse"></span>
+              )}
+            </button>
           )}
         </div>
       </div>

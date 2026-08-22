@@ -4151,5 +4151,353 @@ export const HISTORICAL_EVENTS: HistoricalEvent[] = ([
     "politik",
     "global"
   ]
-}
+},
+  {
+    id: "makam-aleksander-agung-iskandariyah",
+    slug: {
+      id: "makam-aleksander-agung-iskandariyah",
+      en: "tomb-of-alexander-the-great-alexandria"
+    },
+    title: {
+      id: "Misteri Lokasi Makam Aleksander Agung",
+      en: "The Mystery of Alexander the Great's Tomb"
+    },
+    summary: {
+      id: "Pencarian makam sang penakluk dunia legendaris di Iskandariyah (Alexandria) yang menjadi misteri arkeologis terbesar dunia klasik.",
+      en: "The quest for the legendary world conqueror's final resting place in Alexandria, one of classical archaeology's greatest enduring mysteries."
+    },
+    year: -323,
+    era: "classical",
+    location: {
+      name: {
+        id: "Iskandariyah (Alexandria), Mesir",
+        en: "Alexandria, Egypt"
+      },
+      lat: 31.2001,
+      lng: 29.9187
+    },
+    image: "/images/events/makam-aleksander-agung.jpg",
+    confidence: "probable",
+    references: [
+      {
+        author: "Nicholas J. Saunders",
+        title: "Alexander's Tomb: The Two-Thousand Year Obsession to Find the Lost Conqueror",
+        publisher: "Basic Books",
+        year: 2006,
+        type: "book"
+      },
+      {
+        author: "Andrew Michael Chugg",
+        title: "The Quest for the Tomb of Alexander the Great",
+        publisher: "AMC Publications",
+        year: 2020,
+        type: "book"
+      },
+      {
+        author: "Dorothy J. Thompson",
+        title: "Memphis Under the Ptolemies",
+        publisher: "Princeton University Press",
+        year: 2012,
+        type: "book"
+      }
+    ],
+    tags: [
+      "makam",
+      "aleksander-agung",
+      "arkeologi",
+      "mesir",
+      "misteri",
+      "helenistik"
+    ]
+  },
+  {
+    id: "taman-gantung-babilonia",
+    slug: {
+      id: "taman-gantung-babilonia",
+      en: "hanging-gardens-of-babylon"
+    },
+    title: {
+      id: "Keberadaan Taman Gantung Babilonia",
+      en: "The Existence of the Hanging Gardens of Babylon"
+    },
+    summary: {
+      id: "Penyelidikan arkeologis dan tekstual mengenai salah satu dari Tujuh Keajaiban Dunia Kuno yang jejak fisiknya diperdebatkan antara Babilon dan Niniwe.",
+      en: "Archaeological and textual investigation into one of the Seven Wonders of the Ancient World whose physical traces are debated between Babylon and Nineveh."
+    },
+    year: -600,
+    era: "ancient",
+    location: {
+      name: {
+        id: "Niniwe / Babilon, Irak",
+        en: "Nineveh / Babylon, Iraq"
+      },
+      lat: 36.3587,
+      lng: 43.1528
+    },
+    image: "/images/events/taman-gantung-babilonia.jpg",
+    confidence: "probable",
+    references: [
+      {
+        author: "Stephanie Dalley",
+        title: "The Mystery of the Hanging Garden of Babylon: An Elusive World Wonder Traced",
+        publisher: "Oxford University Press",
+        year: 2013,
+        type: "book"
+      },
+      {
+        author: "D. W. W. Stevenson",
+        title: "A Proposal for the Irrigation of the Hanging Gardens of Babylon",
+        publisher: "Cambridge University Press (Journal Iraq)",
+        year: 1992,
+        type: "journal"
+      },
+      {
+        author: "Irving Finkel",
+        title: "The Seven Wonders of the Ancient World",
+        publisher: "Routledge",
+        year: 1988,
+        type: "book"
+      }
+    ],
+    tags: [
+      "taman-gantung",
+      "babilonia",
+      "niniwe",
+      "keajaiban-dunia",
+      "arkeologi",
+      "mesopotamia"
+    ]
+  },
+  {
+    id: "misteri-manuskrip-voynich",
+    slug: {
+      id: "misteri-manuskrip-voynich",
+      en: "voynich-manuscript-mystery"
+    },
+    title: {
+      id: "Teka-teki Manuskrip Voynich",
+      en: "The Mystery of the Voynich Manuscript"
+    },
+    summary: {
+      id: "Naskah berilustrasi misterius abad ke-15 yang ditulis dalam alfabet dan bahasa tak dikenal yang hingga kini belum terpecahkan oleh para kriptografer dunia.",
+      en: "Mysterious 15th-century illustrated codex written in an unknown script and language that has defied decryption by the world's greatest cryptographers."
+    },
+    year: 1420,
+    era: "medieval",
+    location: {
+      name: {
+        id: "Roma / Frascati, Italia",
+        en: "Rome / Frascati, Italy"
+      },
+      lat: 41.8094,
+      lng: 12.6789
+    },
+    image: "/images/events/misteri-manuskrip-voynich.jpg",
+    confidence: "probable",
+    references: [
+      {
+        author: "Greg Kondrak & Bradley Hauer",
+        title: "Decoding Anagrammed Texts Written in an Unknown Script and Language",
+        publisher: "MIT Press (Transactions of the ACL)",
+        year: 2018,
+        type: "journal"
+      },
+      {
+        author: "René Zandbergen & Stephen Bax",
+        title: "The Voynich Manuscript: Exploring the Mystery of an Undeciphered Script",
+        publisher: "Cambridge University Press",
+        year: 2016,
+        type: "book"
+      },
+      {
+        author: "Gerry Kennedy & Rob Churchill",
+        title: "The Voynich Manuscript: The Mysterious Code That Has Defied Interpretation for Six Centuries",
+        publisher: "Inner Traditions",
+        year: 2006,
+        type: "book"
+      }
+    ],
+    tags: [
+      "manuskrip",
+      "kriptografi",
+      "voynich",
+      "abad-pertengahan",
+      "misteri",
+      "naskah-kuno"
+    ]
+  },
+  {
+    id: "misteri-peradaban-atlantis",
+    slug: {
+      id: "misteri-peradaban-atlantis",
+      en: "mystery-of-atlantis-civilization"
+    },
+    title: {
+      id: "Misteri Peradaban Atlantis & Letusan Thera",
+      en: "The Mystery of Atlantis & the Thera Eruption"
+    },
+    summary: {
+      id: "Eksplorasi historiografis dan geologis mengenai pulau adidaya legendaris yang tenggelam dalam satu hari satu malam, serta korelasinya dengan kehancuran peradaban Minoa di Santorini.",
+      en: "Historiographical and geological exploration of the legendary lost island civilization described by Plato, and its scientific correlation with the Minoan cataclysm at Santorini."
+    },
+    year: -1600,
+    era: "ancient",
+    location: {
+      name: {
+        id: "Santorini (Akrotiri), Yunani",
+        en: "Santorini (Akrotiri), Greece"
+      },
+      lat: 36.3514,
+      lng: 25.4037
+    },
+    image: "/images/events/misteri-peradaban-atlantis.jpg",
+    confidence: "disputed",
+    references: [
+      {
+        author: "Christos G. Doumas",
+        title: "Thera: Pompeii of the Ancient Aegean",
+        publisher: "Thames & Hudson",
+        year: 1983,
+        type: "book"
+      },
+      {
+        author: "Rodney Castleden",
+        title: "Atlantis Destroyed",
+        publisher: "Routledge",
+        year: 2001,
+        type: "book"
+      },
+      {
+        author: "Floyd W. McCoy & Grant Heiken",
+        title: "The Late-Bronze Age Explosive Eruption of Thera (Santorini), Greece",
+        publisher: "Geological Society of America",
+        year: 2000,
+        type: "journal"
+      }
+    ],
+    tags: [
+      "atlantis",
+      "santorini",
+      "minoa",
+      "mitologi",
+      "arkeologi",
+      "yunani-kuno"
+    ]
+  },
+  {
+    id: "tabut-perjanjian-aksum",
+    slug: {
+      id: "tabut-perjanjian-aksum",
+      en: "ark-of-the-covenant-aksum"
+    },
+    title: {
+      id: "Misteri Tabut Perjanjian di Aksum",
+      en: "The Mystery of the Ark of the Covenant at Axum"
+    },
+    summary: {
+      id: "Penyelidikan sejarah dan tradisi religius mengenai klaim keberadaan peti suci berlapis emas berisi Dua Loh Batu Musa di Kapel Tablet, Aksum, Etiopia.",
+      en: "Historical and religious inquiry into the Ethiopian Orthodox tradition claiming the sacred golden chest housing the Tablets of Law resides in Axum."
+    },
+    year: -950,
+    era: "ancient",
+    location: {
+      name: {
+        id: "Gereja Santa Maria dari Sion (Aksum), Etiopia",
+        en: "Church of Our Lady Mary of Zion (Axum), Ethiopia"
+      },
+      lat: 14.1299,
+      lng: 38.7189
+    },
+    image: "/images/events/tabut-perjanjian-aksum.jpg",
+    confidence: "disputed",
+    references: [
+      {
+        author: "Stuart Munro-Hay",
+        title: "The Quest for the Ark of the Covenant: The True History of the Tablets of Moses",
+        publisher: "I.B. Tauris",
+        year: 2005,
+        type: "book"
+      },
+      {
+        author: "Edward Ullendorff",
+        title: "Ethiopia and the Bible",
+        publisher: "Oxford University Press",
+        year: 1968,
+        type: "book"
+      },
+      {
+        author: "E. A. Wallis Budge",
+        title: "The Queen of Sheba and Her Only Son Menyelek (Kebra Nagast)",
+        publisher: "Oxford University Press",
+        year: 1922,
+        type: "book"
+      }
+    ],
+    tags: [
+      "tabut-perjanjian",
+      "aksum",
+      "etiopia",
+      "arkeologi",
+      "keberagamaan",
+      "kuno"
+    ]
+  },
+  {
+    id: "hilangnya-koloni-roanoke",
+    slug: {
+      id: "hilangnya-koloni-roanoke",
+      en: "lost-colony-of-roanoke"
+    },
+    title: {
+      id: "Hilangnya Koloni Roanoke (The Lost Colony)",
+      en: "The Disappearance of the Lost Colony of Roanoke"
+    },
+    summary: {
+      id: "Misteri lenyapnya 115 pemukim Inggris pertama di Benua Amerika pada tahun 1587 yang hanya meninggalkan ukiran kata sandi samar 'CROATOAN' di tiang kayu benteng.",
+      en: "The mysterious disappearance of 115 English settlers on Roanoke Island in 1587, leaving behind only the cryptic carved word 'CROATOAN' on a wooden palisade."
+    },
+    year: 1587,
+    era: "early-modern",
+    location: {
+      name: {
+        id: "Pulau Roanoke, North Carolina, AS",
+        en: "Roanoke Island, North Carolina, USA"
+      },
+      lat: 35.8829,
+      lng: -75.6632
+    },
+    image: "/images/events/hilangnya-koloni-roanoke.jpg",
+    confidence: "disputed",
+    references: [
+      {
+        author: "James Horn",
+        title: "A Kingdom Strange: The Brief and Tragic History of the Lost Colony of Roanoke",
+        publisher: "Basic Books",
+        year: 2010,
+        type: "book"
+      },
+      {
+        author: "Karen Ordahl Kupperman",
+        title: "Roanoke: The Abandoned Colony",
+        publisher: "Rowman & Littlefield",
+        year: 2007,
+        type: "book"
+      },
+      {
+        author: "David Beers Quinn",
+        title: "The Roanoke Voyages, 1584-1590",
+        publisher: "Cambridge University Press (Hakluyt Society)",
+        year: 1955,
+        type: "book"
+      }
+    ],
+    tags: [
+      "koloni-roanoke",
+      "croatoan",
+      "amerika",
+      "misteri",
+      "arkeologi",
+      "awal-modern"
+    ]
+  }
 ] as HistoricalEvent[]).sort((a, b) => a.year - b.year);

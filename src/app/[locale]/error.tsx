@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect } from "react";
+import { useTranslations } from "next-intl";
 import { AlertTriangle } from "lucide-react";
 
 export default function ErrorPage({
@@ -10,6 +11,8 @@ export default function ErrorPage({
   error: Error & { digest?: string };
   reset: () => void;
 }) {
+  const t = useTranslations("errorPage");
+
   useEffect(() => {
     // Optionally log the error to an error reporting service
     console.error(error);
@@ -21,16 +24,16 @@ export default function ErrorPage({
         <AlertTriangle className="h-12 w-12 text-destructive" />
       </div>
       <h2 className="mb-2 text-2xl font-bold tracking-tight text-foreground sm:text-3xl">
-        Terjadi Kesalahan Sejarah!
+        {t("title")}
       </h2>
       <p className="mb-8 max-w-md text-muted-foreground">
-        Sepertinya ada paradoks waktu atau gangguan pada sistem kami saat mencoba memuat halaman ini.
+        {t("description")}
       </p>
       <button
         onClick={() => reset()}
         className="rounded-lg bg-primary px-6 py-3 font-semibold text-primary-foreground shadow transition-colors hover:bg-primary/90"
       >
-        Coba Lagi
+        {t("retry")}
       </button>
     </div>
   );

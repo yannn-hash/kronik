@@ -4,19 +4,30 @@ import { QuizWrapper } from "@/components/article/QuizWrapper";
 export function useMDXComponents(components: MDXComponents): MDXComponents {
   return {
     QuizWrapper,
-    h1: ({ children }) => (
-      <h1 className="mt-8 text-3xl font-bold tracking-tight text-foreground">
-        {children}
-      </h1>
-    ),
-    h2: ({ children }) => (
-      <h2 className="mt-6 text-2xl font-semibold text-foreground">
-        {children}
-      </h2>
-    ),
-    h3: ({ children }) => (
-      <h3 className="mt-4 text-xl font-semibold text-foreground">{children}</h3>
-    ),
+    h1: ({ children }) => {
+      const id = typeof children === "string" ? children.toLowerCase().replace(/[^a-z0-9\s-]/g, "").trim().replace(/\s+/g, "-") : undefined;
+      return (
+        <h1 id={id} className="mt-8 text-3xl font-bold tracking-tight text-foreground scroll-mt-24">
+          {children}
+        </h1>
+      );
+    },
+    h2: ({ children }) => {
+      const id = typeof children === "string" ? children.toLowerCase().replace(/[^a-z0-9\s-]/g, "").trim().replace(/\s+/g, "-") : undefined;
+      return (
+        <h2 id={id} className="mt-8 text-2xl font-bold tracking-tight text-foreground scroll-mt-24 border-b border-border/40 pb-2">
+          {children}
+        </h2>
+      );
+    },
+    h3: ({ children }) => {
+      const id = typeof children === "string" ? children.toLowerCase().replace(/[^a-z0-9\s-]/g, "").trim().replace(/\s+/g, "-") : undefined;
+      return (
+        <h3 id={id} className="mt-6 text-xl font-semibold text-foreground scroll-mt-24">
+          {children}
+        </h3>
+      );
+    },
     p: ({ children }) => (
       <p className="mt-3 leading-relaxed text-muted-foreground">{children}</p>
     ),

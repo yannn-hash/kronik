@@ -10,6 +10,44 @@ import { Calendar, MapPin, ArrowRight, ArrowLeftRight, ChevronsUpDown, Orbit, Mi
 import { FadeIn } from "@/components/ui/Animations";
 import { ConfidenceBadge } from "@/components/article/ConfidenceBadge";
 
+interface EventSelectorProps {
+  selectedId: string;
+  onSelect: (id: string) => void;
+  label: string;
+  events: typeof HISTORICAL_EVENTS;
+  locale: "id" | "en";
+}
+
+function EventSelector({
+  selectedId,
+  onSelect,
+  label,
+  events,
+  locale,
+}: EventSelectorProps) {
+  return (
+    <div className="flex flex-col gap-2 w-full">
+      <label className="text-sm font-medium text-muted-foreground">{label}</label>
+      <div className="relative">
+        <select
+          value={selectedId}
+          onChange={(e) => onSelect(e.target.value)}
+          className="w-full appearance-none rounded-lg border border-border bg-card px-4 py-3 text-sm font-semibold text-foreground transition-colors hover:bg-muted focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary shadow-sm"
+        >
+          {events.map((e) => (
+            <option key={e.id} value={e.id}>
+              {e.title[locale]}
+            </option>
+          ))}
+        </select>
+        <div className="pointer-events-none absolute right-4 top-1/2 -translate-y-1/2 text-muted-foreground">
+          <ChevronsUpDown className="h-4 w-4" />
+        </div>
+      </div>
+    </div>
+  );
+}
+
 export default function VersusPage() {
   const t = useTranslations("versus");
   const commonT = useTranslations("common");
@@ -53,38 +91,6 @@ export default function VersusPage() {
   
   const sharedTags = event1.tags.filter(tag => event2.tags.includes(tag));
 
-  const EventSelector = ({ 
-    selectedId, 
-    onSelect, 
-    label
-  }: { 
-    selectedId: string, 
-    onSelect: (id: string) => void,
-    label: string
-  }) => {
-    return (
-      <div className="flex flex-col gap-2 w-full">
-        <label className="text-sm font-medium text-muted-foreground">{label}</label>
-        <div className="relative">
-          <select
-            value={selectedId}
-            onChange={(e) => onSelect(e.target.value)}
-            className="w-full appearance-none rounded-lg border border-border bg-card px-4 py-3 text-sm font-semibold text-foreground transition-colors hover:bg-muted focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary shadow-sm"
-          >
-            {sortedEventsList.map((e) => (
-              <option key={e.id} value={e.id}>
-                {e.title[locale]}
-              </option>
-            ))}
-          </select>
-          <div className="pointer-events-none absolute right-4 top-1/2 -translate-y-1/2 text-muted-foreground">
-            <ChevronsUpDown className="h-4 w-4" />
-          </div>
-        </div>
-      </div>
-    );
-  };
-
   return (
     <div className="mx-auto max-w-6xl px-4 py-16">
       {/* Header */}
@@ -105,7 +111,9 @@ export default function VersusPage() {
           <EventSelector 
             label={t("firstEvent")}
             selectedId={event1Id} 
-            onSelect={setEvent1Id} 
+            onSelect={setEvent1Id}
+            events={sortedEventsList}
+            locale={locale}
           />
           
           <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-primary/10 text-primary md:mx-4 mx-auto mb-1 md:mb-0">
@@ -115,7 +123,9 @@ export default function VersusPage() {
           <EventSelector 
             label={t("secondEvent")}
             selectedId={event2Id} 
-            onSelect={setEvent2Id} 
+            onSelect={setEvent2Id}
+            events={sortedEventsList}
+            locale={locale}
           />
         </div>
       </FadeIn>
