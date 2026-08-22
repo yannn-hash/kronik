@@ -1,17 +1,25 @@
 "use client";
 
 import dynamic from "next/dynamic";
+import { useLocale } from "next-intl";
 import { type HistoricalEvent } from "@/types/history";
+
+function MapLoading() {
+  const locale = useLocale();
+  return (
+    <div className="h-full w-full bg-muted flex items-center justify-center animate-pulse">
+      <div className="text-muted-foreground font-medium">
+        {locale === "id" ? "Memuat Peta..." : "Loading Map..."}
+      </div>
+    </div>
+  );
+}
 
 // Dynamically import the map component with ssr disabled
 // Leaflet uses the window object which is not available during SSR
 const Map = dynamic(() => import("./Map"), { 
   ssr: false,
-  loading: () => (
-    <div className="h-full w-full bg-muted flex items-center justify-center animate-pulse">
-      <div className="text-muted-foreground font-medium">Memuat Peta...</div>
-    </div>
-  )
+  loading: () => <MapLoading />
 });
 
 interface DynamicMapProps {

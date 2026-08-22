@@ -1,8 +1,10 @@
 import { BookOpen, Code2, Heart } from "lucide-react";
-import { useTranslations } from "next-intl";
+import { useTranslations, useLocale } from "next-intl";
+import { ConfidenceBadge } from "@/components/article/ConfidenceBadge";
 
 export default function AboutPage() {
   const t = useTranslations("about");
+  const locale = useLocale();
   
   return (
     <div className="mx-auto max-w-4xl px-4 py-16">
@@ -21,21 +23,18 @@ export default function AboutPage() {
           <p className="mt-3">
             {t("sourcesDesc")}
           </p>
-          <ul className="mt-3 space-y-2">
-            <li className="flex items-center gap-2">
-              <span className="inline-block h-3 w-3 rounded-full bg-green-500" />
-              <strong className="text-foreground">{t("badgeVerified")}</strong> —{" "}
-              {t("badgeVerifiedDesc")}
+          <ul className="mt-4 space-y-3">
+            <li className="flex flex-col sm:flex-row sm:items-center gap-2">
+              <ConfidenceBadge level="verified" locale={locale as "id" | "en"} />
+              <span className="text-sm">{t("badgeVerifiedDesc")}</span>
             </li>
-            <li className="flex items-center gap-2">
-              <span className="inline-block h-3 w-3 rounded-full bg-yellow-500" />
-              <strong className="text-foreground">{t("badgeDebatable")}</strong> —{" "}
-              {t("badgeDebatableDesc")}
+            <li className="flex flex-col sm:flex-row sm:items-center gap-2">
+              <ConfidenceBadge level="probable" locale={locale as "id" | "en"} />
+              <span className="text-sm">{t("badgeDebatableDesc")}</span>
             </li>
-            <li className="flex items-center gap-2">
-              <span className="inline-block h-3 w-3 rounded-full bg-red-500" />
-              <strong className="text-foreground">{t("badgeSpeculative")}</strong> —{" "}
-              {t("badgeSpeculativeDesc")}
+            <li className="flex flex-col sm:flex-row sm:items-center gap-2">
+              <ConfidenceBadge level="disputed" locale={locale as "id" | "en"} />
+              <span className="text-sm">{t("badgeSpeculativeDesc")}</span>
             </li>
           </ul>
         </div>

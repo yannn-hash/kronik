@@ -19,9 +19,23 @@ export default function RootLayout({
 }) {
   return (
     <html
+      data-theme="sepia"
+      suppressHydrationWarning
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
       data-scroll-behavior="smooth"
     >
+      <head>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              try {
+                const t = localStorage.getItem('kronik-theme') || 'sepia';
+                document.documentElement.setAttribute('data-theme', t);
+              } catch (_) {}
+            `,
+          }}
+        />
+      </head>
       <body className="min-h-full flex flex-col">
         {children}
         <Analytics />

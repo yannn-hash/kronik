@@ -94,7 +94,14 @@
     "readMore": "Read More",
     "back": "Go Back",
     "loading": "Loading...",
+    "loadingHistory": "Loading through the corridors of time...",
+    "loadingMap": "Loading Map...",
     "error": "An error occurred",
     "notFound": "Page not found"
+  },
+  "errorPage": {
+    "title": "A Historical Paradox Occurred!",
+    "description": "There seems to be a time anomaly or system glitch while trying to load this page.",
+    "retry": "Try Again"
   }
 }

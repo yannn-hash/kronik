@@ -33,7 +33,7 @@ export function DailyFactComponent({ locale }: DailyFactProps) {
           </div>
           
           <p className="mb-8 max-w-2xl text-xl font-medium leading-relaxed text-foreground sm:text-2xl md:text-3xl">
-            "{fact.fact[locale]}"
+            &ldquo;{fact.fact[locale]}&rdquo;
           </p>
           
           <div className="flex flex-wrap items-center justify-center gap-4 text-sm text-muted-foreground">

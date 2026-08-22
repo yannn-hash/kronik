@@ -1,11 +1,13 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import { createPortal } from "react-dom";
 import { createClient } from "@/lib/supabase/client";
 import { getAbsoluteURL } from "@/lib/url";
-import { LogIn, LogOut, Loader2 } from "lucide-react";
+import { LogIn, LogOut, Loader2, User as UserIcon } from "lucide-react";
 import type { User } from "@supabase/supabase-js";
+import { Link } from "@/i18n/routing";
+import { cn } from "@/lib/utils";
 
 export function AuthButton({ locale }: { locale: "id" | "en" }) {
   const [user, setUser] = useState<User | null>(null);
@@ -41,10 +43,22 @@ export function AuthButton({ locale }: { locale: "id" | "en" }) {
   };
 
   const [showModal, setShowModal] = useState(false);
+  const [dropdownOpen, setDropdownOpen] = useState(false);
+  const dropdownRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      if (dropdownRef.current && !dropdownRef.current.contains(event.target as Node)) {
+        setDropdownOpen(false);
+      }
+    };
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => document.removeEventListener("mousedown", handleClickOutside);
+  }, []);
 
   if (loading) {
     return (
-      <div className="flex items-center justify-center w-24 h-9 bg-muted rounded-full animate-pulse">
+      <div className="flex items-center justify-center w-9 h-9 bg-muted rounded-full animate-pulse">
         <Loader2 className="h-4 w-4 animate-spin text-muted-foreground" />
       </div>
     );
@@ -52,14 +66,44 @@ export function AuthButton({ locale }: { locale: "id" | "en" }) {
 
   if (user) {
     return (
-      <button
-        onClick={handleLogout}
-        className="inline-flex items-center gap-2 rounded-full border border-border bg-card px-4 py-1.5 text-sm font-medium text-foreground transition-colors hover:bg-muted"
-        title={user.email}
-      >
-        <LogOut className="h-4 w-4" />
-        <span className="hidden sm:inline-block">Logout</span>
-      </button>
+      <div className="relative" ref={dropdownRef}>
+        <button
+          onClick={() => setDropdownOpen(!dropdownOpen)}
+          className={cn(
+            "flex h-9 w-9 items-center justify-center rounded-full border border-border bg-card text-foreground transition-colors hover:bg-muted focus:outline-none focus:ring-2 focus:ring-primary/20",
+            dropdownOpen && "ring-2 ring-primary/30 border-primary"
+          )}
+          title={user.email}
+        >
+          <UserIcon className="h-4 w-4" />
+        </button>
+
+        {dropdownOpen && (
+          <div className="absolute right-0 mt-2 w-56 rounded-xl border border-border bg-card/95 backdrop-blur-md p-1.5 shadow-xl z-50 animate-in fade-in slide-in-from-top-2 duration-150">
+            <div className="px-2.5 py-2 text-xs text-muted-foreground border-b border-border/50 mb-1 truncate">
+              {user.email}
+            </div>
+            <Link
+              href="/profil"
+              onClick={() => setDropdownOpen(false)}
+              className="flex w-full items-center gap-2 rounded-lg px-2.5 py-2 text-sm font-medium text-foreground transition-colors hover:bg-muted"
+            >
+              <UserIcon className="h-4 w-4 text-muted-foreground" />
+              {locale === "id" ? "Profil Saya" : "My Profile"}
+            </Link>
+            <button
+              onClick={() => {
+                setDropdownOpen(false);
+                handleLogout();
+              }}
+              className="flex w-full items-center gap-2 rounded-lg px-2.5 py-2 text-sm font-medium text-red-500 transition-colors hover:bg-red-500/10"
+            >
+              <LogOut className="h-4 w-4" />
+              Logout
+            </button>
+          </div>
+        )}
+      </div>
     );
   }
 

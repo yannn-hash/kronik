@@ -6,6 +6,7 @@ import { routing } from "@/i18n/routing";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { PreviewBanner } from "@/components/layout/PreviewBanner";
+import { BottomNav } from "@/components/layout/BottomNav";
 
 type Props = {
   children: React.ReactNode;
@@ -44,8 +45,9 @@ export default async function LocaleLayout({ children, params }: Props) {
     <NextIntlClientProvider messages={messages}>
       <PreviewBanner />
       <Header />
-      <main className="flex-1">{children}</main>
+      <main className="flex-1 pb-16 md:pb-0">{children}</main>
       <Footer />
+      <BottomNav />
     </NextIntlClientProvider>
   );
 }
